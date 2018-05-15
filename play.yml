@@ -1,0 +1,11 @@
+- hosts: localhost
+  vars:
+    staticwebsite_region: eu-central-1
+    staticwebsite_redirect_domains: []
+  vars_prompt:
+    - name: path_to_index
+      prompt: 'Path to index.html file (with trailing slash)'
+      private: no
+      default: "/app/dist/"
+  roles:
+    - { role: staticwebsite, staticwebsite_domain: next.bookme.guru }

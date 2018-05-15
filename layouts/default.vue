@@ -1,0 +1,106 @@
+<template>
+  <v-app light>
+    <v-toolbar app dark color='orange' >
+      <nuxt-link to='/' >
+        <img src='~/assets/icon.png' width='40px' height='40px' />
+      </nuxt-link>
+      <v-toolbar-title color='orange' >
+        <nuxt-link to='/' style='text-decoration:none;color:white;' >
+        Appointment<span style='color:black;'>Guru</span></nuxt-link>
+      </v-toolbar-title>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat>Features</v-btn>
+        <v-btn flat>Pricing</v-btn>
+        <v-btn to='/help/' flat>Help</v-btn>
+      </v-toolbar-items>
+      <v-spacer></v-spacer>
+      <v-toolbar-side-icon class='hidden-sm-and-up' ></v-toolbar-side-icon>
+    </v-toolbar>
+
+    <nuxt/>
+
+    <footer class='callout mt-4' >
+      <v-container >
+      <v-layout wrap>
+        <v-flex sm5 xs12 >
+          <section class='pa-3' >
+            <h4 class='subheading' >ABOUT</h4>
+            <blockquote class='blockquote smaller ml-1 pl-0'>
+              AppointmentGuru is a young start-up based in Johannesburg and Cape Town. We're passionate about helping small businesses succeed by taking advantage of technology, empowering them to do more with less.
+            </blockquote>
+          </section>
+          <section class='pa-3' >
+            <h4 class='subheading' >MOBILE APP FOR CLIENTS</h4>
+            <blockquote class='blockquote smaller ml-1 pl-0'>
+              Clients of AppointmentGuru practitioners can book and manage their appointments from our mobile app.
+            </blockquote>
+          </section>
+          <section>
+            <div >
+              <a class="app-link" id="appleLink"
+                href="https://itunes.apple.com/us/app/appointment-guru/id1163805838?mt=8">
+                <img class="ml-3 app-icon img-responsive" src="https://getapp.guru/template/badgeappstore.png">
+              </a>
+              <a class="app-link" id="googleLink" href="https://play.google.com/store/apps/details?id=za.co.AppointmentGuru&amp;utm_source=getapp.guru&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                <img class="ml-3 app-icon img-responsive" src="https://getapp.guru/template/badgegoogleplay.png">
+              </a>
+            </div>
+          </section>
+        </v-flex>
+        <v-flex sm7 xs12 >
+          <v-layout class='mt-3'>
+            <v-flex class='text-xs-right'>
+              <h4 class='subheading uppercase' >Connect</h4>
+              <ul class="list-unstyled list-spaced mt-3">
+                <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
+                <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Find us on Facebook</a></li>
+                <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
+                <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
+              </ul>
+            </v-flex>
+            <v-flex class='text-xs-right'>
+              <h4 class='subheading uppercase' >Navigate</h4>
+              <ul class="list-unstyled list-spaced mt-3">
+                <li class="text-muted"><a href="/blog/">Blog</a></li>
+                <li class="text-muted"><a href="/help/">Help</a></li>
+                <li class="text-muted"><a href="/privacy/">Privacy</a></li>
+                <li class="text-muted"><a href="/terms/">Terms &amp; Conditions</a></li>
+               </ul>
+            </v-flex>
+            <v-flex class='text-xs-right' >
+              <h4 class='subheading uppercase' >Access</h4>
+              <ul class="list-unstyled list-spaced mt-3">
+                <li class="text-muted"><a href="">Signup</a></li>
+                <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
+                <li class="text-muted"><a href="/guru-does-it-for-you/">Guru Does It For You</a></li>
+                <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
+              </ul>
+            </v-flex>
+          </v-layout>
+          <v-layout class='text-xs-right' >
+            <v-spacer></v-spacer>
+            <img class='mt-4' align='right' src='~/assets/logo-full-dark.png' />
+          </v-layout>
+        </v-flex>
+      </v-layout>
+      </v-container>
+      <v-divider dark></v-divider>
+      <v-footer dark class='pl-3 pr-3'>
+        <v-spacer></v-spacer>
+        &copy; AppointmentGuru {{ new Date().getFullYear() }}</v-footer>
+    </footer>
+
+  </v-app>
+</template>
+
+<style scoped>
+.list-unstyled {list-style: none;}
+.list-unstyled li a {
+  color: white !important;
+  text-decoration: none;
+}
+.uppercase { text-transform: uppercase; }
+.callout { background-color:#262f36;color:white;border-top: solid 4px #E65100; }
+.app-icon { max-width: 140px; }
+.img-responsive{ width: 100%; }
+</style>

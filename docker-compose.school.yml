@@ -1,0 +1,12 @@
+version: "3"
+services:
+  school:
+    image: appointmentguru/infrastructure:latest
+    volumes:
+      - ~/.ssh:/root/.ssh # map ssh keys
+      - ./dist/:/app/dist/
+      - ./play.yml:/code/ansible/play.yml
+    command: ansible-playbook /code/ansible/play.yml
+    environment:
+      - ANSIBLE_HOST_KEY_CHECKING=False
+      - ANSIBLE_LIBRARY=/etc/ansible/library
