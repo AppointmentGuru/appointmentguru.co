@@ -4,6 +4,8 @@
 
 ## Build Setup
 
+**Before you start**
+
 ``` bash
 # install dependencies
 $ npm install # Or yarn install
