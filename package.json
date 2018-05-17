@@ -13,13 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "nuxt": "^1.0.0",
-    "vue-instantsearch": "^1.6.0",
-    "vuetify": "^1.0.17",
-    "vue-i18n": "^7.6.0",
-    "vue-markdown": "^2.2.4",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.1",
+    "vue-i18n": "^7.6.0",
+    "vue-instantsearch": "^1.6.0",
+    "vue-markdown": "^2.2.4",
+    "vuetify": "^1.0.17"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -29,6 +29,14 @@
       content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
       image='https://appointmentguru.co/assets/img/homepage/invoicing.png' >
     </feature-block>
+
+    <v-container>
+    <blockquote class='blockquote grey lighten-4' >
+      AppointmentGuru is amazeballs
+      <footer> - Sean Johnson. <i>Natural Therapist</i>.
+      <a href='http://bookme.guru/p/structuralmedicine/' >Book an apopintment with Sean</a></footer>
+    </blockquote>
+    </v-container>
 </div>
 </template>
 

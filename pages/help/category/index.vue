@@ -1,5 +1,5 @@
 <template>
-  <section style='margin-top:80px;' >
+  <v-container style='margin-top:80px;' >
     <div v-for='category in categories' :key='category.id' >
       <h1 class='headline'>{{category.fields.Title}}</h1>
       <ul>
@@ -7,7 +7,7 @@
           {{page.fields.Title}}</li>
       </ul>
     </div>
-  </section>
+  </v-container>
 
 </template>
 
