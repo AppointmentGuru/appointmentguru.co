@@ -1,25 +1,24 @@
 <template>
-<div >
-    <hero-parallax
-      headline='Be better at admin.<br/>Spend less time doing it.'
-      tagline='Appointments. Invoices. Clients. More.'
-      image='~/assets/calendar-mobile-laptop.png'
-      background-image='https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80' >
-    </hero-parallax>
-
-    <callout callout='AppointmentGuru is perfect for Physios, Biokinetisists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment based business.' ></callout>
-
+<div style='margin-top:60px;' >
     <v-container>
-      <feature-box :features='features' ></feature-box>
+    <hero-info
+      headline='Flexible and easy to use invoicing'
+      tagline='Our Appointment management will change you life'
+      col1-headline='For your business'
+      col2-headline='For your clients'
+      col1-content='Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow.'
+      col2-content='Professional invoices received by email, SMS or in-app, suitable for medical aid submission. And payment reminders!' >
+    </hero-info>
     </v-container>
+    <callout callout='AppointmentGuru is perfect for Physios, Biokinetisists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment based business.' ></callout>
 
     <feature-block
       class='mt-4'
       is-left with-background
-      headline='RUN YOUR BUSINESS LIKE A PRO'
-      tagline='Manage your bookings on the go'
-      content='Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.'
-      img='https://appointmentguru.co/assets/img/homepage/manage-appointments-v2.png' >
+      headline='Automatically Generated Invoices'
+      tagline='Send professional invoices that clients, bookkeepers and medical aids will love'
+      content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
+      img='https://appointmentguru.co/assets/img/homepage/invoicing.png' >
     </feature-block>
 
     <feature-block
@@ -30,19 +29,11 @@
       img='https://appointmentguru.co/assets/img/homepage/invoicing.png' >
     </feature-block>
 
-    <v-container>
-    <blockquote class='blockquote grey lighten-4 pa-2' >
-      AppointmentGuru is amazeballs
-      <footer class='text-xs-right'>
-          - Sean Johnson. <i>Natural Therapist</i>.<br/>
-          <small><a href='http://bookme.guru/p/structuralmedicine/' target='_blank' >Book an apopintment with Sean</a></small>
-      </footer>
-    </blockquote>
-    </v-container>
 </div>
 </template>
 
 <script>
+import HeroInfo from '@/components/HeroInfo'
 import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
@@ -50,7 +41,7 @@ import HeroParallax from '@/components/HeroParallax'
 
 export default {
   name: 'HomePage',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   data () {
     return {
       features: [

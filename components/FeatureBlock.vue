@@ -3,16 +3,16 @@
   <v-container>
     <v-layout row wrap>
       <v-flex xs12 sm6 :class='col1Order' >
-        <h1 class='ml-4 mr-4 mt-4 blue-grey--text'>Automatically Generated Invoices</h1>
-        <h2 class='ml-4 mr-4 headline deep-orange--text darken-4--text'>Send professional invoices that clients, bookkeepers and medical aids will love</h2>
+        <h1 class='ml-4 mr-4 mt-4 blue-grey--text'>{{headline}}</h1>
+        <h2 class='ml-4 mr-4 headline deep-orange--text darken-4--text'>{{tagline}}</h2>
         <blockquote class='blockquote' >
-          Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.
+          {{content}}
         </blockquote>
       </v-flex>
       <v-flex xs12 sm6 :class='col2Order' >
         <img
           style='width:100%;' class='pa-2'
-          src='https://appointmentguru.co/assets/img/homepage/invoicing.png' />
+          :src='img' />
       </v-flex>
     </v-layout>
   </v-container>

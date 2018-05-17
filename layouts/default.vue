@@ -9,7 +9,7 @@
         Appointment<span style='color:black;'>Guru</span></nuxt-link>
       </v-toolbar-title>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Features</v-btn>
+        <v-btn to='/features/' flat>Features</v-btn>
         <v-btn flat>Pricing</v-btn>
         <v-btn to='/help/' flat>Help</v-btn>
       </v-toolbar-items>
@@ -93,14 +93,25 @@
   </v-app>
 </template>
 
-<style scoped>
+<style>
+@media only screen and (min-width: 1264px) {
+  .container {
+    max-width: 900px !important;
+  }
+}
+.page-container {
+  margin-top:60px;
+}
 .list-unstyled {list-style: none;}
 .list-unstyled li a {
   color: white !important;
   text-decoration: none;
 }
 .uppercase { text-transform: uppercase; }
-.callout { background-color:#262f36;color:white;border-top: solid 4px #E65100; }
+.callout {
+  background-color:#262f36;color:white;
+  border-top: solid 4px #E65100;
+}
 .app-icon { max-width: 140px; }
 .img-responsive{ width: 100%; }
 </style>
