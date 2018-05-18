@@ -1,8 +1,8 @@
 <template lang="md" >
 <v-container class='page-container' >
   <v-breadcrumbs divider="/">
-    <v-breadcrumbs-item to='/' nuxt >AppointmentGuru</v-breadcrumbs-item>
-    <v-breadcrumbs-item to='/help/topics/' nuxt >Help</v-breadcrumbs-item>
+    <v-breadcrumbs-item to='/' >AppointmentGuru</v-breadcrumbs-item>
+    <v-breadcrumbs-item to='/help/topics/' >Help</v-breadcrumbs-item>
     <v-breadcrumbs-item disabled>{{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <h1 class='headline mb-4' >{{page.fields.Title}}</h1>
@@ -79,5 +79,8 @@ export default {
   font-weight: 400;
 }
 .help-content ul,
-.help-content ol{ margin-left: 20px !important; }
+.help-content ol{
+  margin-left: 20px !important;
+  margin-bottom: 20px;
+}
 </style>
