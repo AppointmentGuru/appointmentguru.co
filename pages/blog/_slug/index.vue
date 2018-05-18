@@ -1,23 +1,84 @@
 <template>
-<v-container>
+<v-container class='page-container' >
+  <v-breadcrumbs divider="/">
+    <v-breadcrumbs-item to='/' >AppointmentGuru</v-breadcrumbs-item>
+    <v-breadcrumbs-item to='/blog/' >Blog</v-breadcrumbs-item>
+    <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
+  </v-breadcrumbs>
   <v-layout>
-    <div v-html="revamped"></div>
+    <v-card v-if='page && page.fields' >
+      <v-card-title>
+        <h1 class='headline' >{{page.fields.Title}}</h1>
+      </v-card-title>
+      <v-card-text>
+        <div class='blog-content' v-html='$md.render(page.fields.Post)' ></div>
+      </v-card-text>
+    </v-card>
   </v-layout>
 </v-container>
 </template>
 
 <script>
-  import revamped from './2017-06-21-revamped-mobile-app.md'
+import axios from 'axios'
 
-  export default {
-    computed: {
-      revamped() {
-        return revamped
-      }
+export default {
+  name: 'BlogPostPage',
+  async asyncData ({ params, query }) {
+    let headers = {
+      'Authorization': 'Bearer ' + process.env.airtableToken
     }
-  }
+    let slug = params.slug
+    let formula = `{Slug} = '${slug}'`
+    let queryParams = {filterByFormula: formula}
+    let url = process.env.airtableBlogBaseUrl + '/BlogPost'
+    let options = {
+      headers: headers,
+      params: queryParams
+    }
+    let pageResponse = await axios.get(url, options)
+    console.log(pageResponse)
+    return {
+      page: pageResponse.data.records[0]
+    }
+  },
+}
 </script>
 
-<style scoped>
-li { margin-left: 40px; }
+<style >
+.blog-content {
+  font-size: 16px;
+  /* font-weight: 300; */
+}
+.blog-content blockquote {
+  padding: 16px 0 16px 24px;
+  font-size: 16px;
+  font-weight: 300;
+  border-left: solid 3px #E65100;
+  background-color: #FAFAFA;
+}
+.blog-content h1 {
+  font-size: 24px!important;
+  font-weight: 400;
+  line-height: 32px!important;
+  letter-spacing: normal!important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.blog-content h2 {
+  font-size: 20px!important;
+  font-weight: 500;
+  line-height: 1!important;
+  letter-spacing: .02em!important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.blog-content h3 {
+  font-size: 16px!important;
+  font-weight: 400;
+}
+.blog-content ul,
+.blog-content ol{
+  margin-left: 20px !important;
+  margin-bottom: 20px;
+}
 </style>

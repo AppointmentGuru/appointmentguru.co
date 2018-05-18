@@ -16,6 +16,7 @@ module.exports = {
   },
   env: {
     airtableBaseUrl: process.env.AIRTABLE_BASE_URL || 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt',
+    airtableBlogBaseUrl: process.env.AIRTABLE_BLOG_BASE_URL || 'https://api.airtable.com/v0/appUmwBIxunmbdDPs',
     airtableToken: process.env.AIRTABLE_TOKEN || 'keyt7MKFDGrXm3set'
   },
   router: {
