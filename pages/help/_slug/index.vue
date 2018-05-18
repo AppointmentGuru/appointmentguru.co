@@ -31,12 +31,12 @@ export default {
   name: 'HelpPage',
   async asyncData ({ params, query }) {
     let headers = {
-      'Authorization': 'Bearer keyt7MKFDGrXm3set'
+      'Authorization': 'Bearer ' + process.env.airtableToken
     }
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
     let queryParams = {filterByFormula: formula, view: 'Summary'}
-    let url = 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt/HelpPage'
+    let url = process.env.airtableBaseUrl + '/HelpPage'
     let options = {
       headers: headers,
       params: queryParams

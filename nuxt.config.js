@@ -14,6 +14,10 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+  env: {
+    airtableBaseUrl: process.env.AIRTABLE_BASE_URL || 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt',
+    airtableToken: process.env.AIRTABLE_TOKEN || 'keyt7MKFDGrXm3set'
+  },
   router: {
     middleware: 'i18n'
   },
