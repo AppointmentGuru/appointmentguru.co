@@ -58,6 +58,17 @@ export default {
 </script>
 
 <style >
+.help-content {
+  font-size: 16px;
+  /* font-weight: 300; */
+}
+.help-content blockquote {
+  padding: 16px 0 16px 24px;
+  font-size: 16px;
+  font-weight: 300;
+  border-left: solid 3px #E65100;
+  background-color: #FAFAFA;
+}
 .help-content h1 {
   font-size: 24px!important;
   font-weight: 400;
