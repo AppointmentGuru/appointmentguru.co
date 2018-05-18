@@ -12,6 +12,7 @@
         <v-btn to='/features/' flat>Features</v-btn>
         <v-btn flat>Pricing</v-btn>
         <v-btn to='/help/topics/' flat>Help</v-btn>
+        <v-btn to='/blog/' flat>Blog</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-side-icon class='hidden-sm-and-up' ></v-toolbar-side-icon>

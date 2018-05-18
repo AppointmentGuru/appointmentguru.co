@@ -19,7 +19,7 @@
           <v-list-tile-title>{{category.fields.Title}}</v-list-tile-title>
         </v-list-tile>
         <v-divider></v-divider>
-        <v-list-tile v-for='page in pages[category.id]' :key='page.id' :to='`/help/page/${page.fields.Slug}`' >
+        <v-list-tile v-for='page in pages[category.id]' :key='page.id' :to='`/help/${page.fields.Slug}`' >
           <v-list-tile-content>
             <v-list-tile-sub-title>{{ page.fields.Title }}</v-list-tile-sub-title>
           </v-list-tile-content>
