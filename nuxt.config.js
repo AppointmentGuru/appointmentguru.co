@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'AppointmentGuru website' }
+      { hid: 'description', name: 'description', content: 'AppointmentGuru. For any appointment based business. Manage your appointments, invoices and customers with ease' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
@@ -16,6 +16,12 @@ module.exports = {
   },
   router: {
     middleware: 'i18n'
+  },
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
+  markdownit: {
+    injected: true
   },
   plugins: [
     '~/plugins/i18n.js',
