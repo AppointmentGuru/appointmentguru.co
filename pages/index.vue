@@ -31,14 +31,25 @@
     </feature-block>
 
     <v-container>
-    <blockquote class='blockquote grey lighten-4 pa-2' >
+      <testimonial
+        class='elevation-2'
+        quote="I don't think I could imagine running my business without AppointmentGuru anymore. I don't think I could imaging running my business without AppointmentGuru anymore"
+        authorName='Sean Johnson'
+        authorBio='Natural Therapist'
+        link='http://bookme.guru/structuralmedicine/'
+        linkText='Book now with the Center for Structural Medicine'
+        image='https://media-appointmentguru.s3.amazonaws.com/practitioner/images/1/profile.jpg' >
+      </testimonial>
+    </v-container>
+
+    <!-- <blockquote class='blockquote grey lighten-4 pa-2' >
       AppointmentGuru is amazeballs
       <footer class='text-xs-right'>
           - Sean Johnson. <i>Natural Therapist</i>.<br/>
           <small><a href='http://bookme.guru/p/structuralmedicine/' target='_blank' >Book an apopintment with Sean</a></small>
       </footer>
-    </blockquote>
-    </v-container>
+    </blockquote> -->
+
 </div>
 </template>
 
@@ -47,10 +58,11 @@ import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
+import Testimonial from '@/components/Testimonial'
 
 export default {
   name: 'HomePage',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, Testimonial},
   data () {
     return {
       features: [
