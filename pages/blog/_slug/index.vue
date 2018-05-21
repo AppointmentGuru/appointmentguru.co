@@ -36,11 +36,10 @@ export default {
       params: queryParams
     }
     let pageResponse = await axios.get(url, options)
-    console.log(pageResponse)
     return {
       page: pageResponse.data.records[0]
     }
-  },
+  }
 }
 </script>
 
