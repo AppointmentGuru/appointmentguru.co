@@ -10,9 +10,9 @@
       </blockquote>
     </v-layout>
     <v-divider></v-divider>
-    <v-layout v-for='category in categories' :key='category.id' >
-      <v-flex xs6>
-        <v-card class='ma-4' >
+    <v-layout v-for='category in categories' :key='category.id' row wrap >
+      <v-flex xs12 sm6>
+        <v-card class='mt-4 mb-4 mr-xs-2 ml-xs-2 mr-2 ml-2' >
           <v-card-title>
             <h2 class='title text-xs-center' >
                 <v-avatar color='blue-grey' class='mr-1' >
@@ -26,9 +26,9 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6>
+      <v-flex xs12 sm6>
         <v-expansion-panel class='mt-4 mb-4' >
-          <v-expansion-panel-content v-for='page in pages[category.id]' :key='page.id' >
+          <v-expansion-panel-content v-for='page in pages[category.id]' :key='page.id' class='mr-2 ml-2' >
             <div slot="header">
               <nuxt-link :to='`/help/${page.fields.Slug}/`' >{{page.fields.Title}}</nuxt-link>
             </div>

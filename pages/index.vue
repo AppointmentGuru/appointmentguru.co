@@ -38,7 +38,7 @@
         authorBio='Natural Therapist'
         link='http://bookme.guru/structuralmedicine/'
         linkText='Book now with the Center for Structural Medicine'
-        image='https://media-appointmentguru.s3.amazonaws.com/practitioner/images/1/profile.jpg' >
+        image='https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png' >
       </testimonial>
     </v-container>
 
