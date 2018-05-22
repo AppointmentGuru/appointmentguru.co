@@ -7,13 +7,40 @@
     </blockquote>
     <ul class='pl-4'>
       <li >
-        <nuxt-link to='/features/invoices' >Invoices</nuxt-link>
-      </li>
-      <li >
         <nuxt-link to='/features/appointments' >Appointments</nuxt-link>
       </li>
       <li >
-        <nuxt-link to='/features/clients' >Clients</nuxt-link>
+        <nuxt-link to='/features/notifications' >Notifications</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/client-self-service' >Client self-service</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/get-paid' >Get paid</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/automation' >Automation</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/keep-track' >Keep track</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/apps' >Apps</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/website-integration' >Website integration</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/sync' >Calendar syncing</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/get-online' >Get your business online</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/training-and-support' >Training and support</nuxt-link>
+      </li>
+      <li >
+        <nuxt-link to='/features/refer-and-earn' >Refer and earn</nuxt-link>
       </li>
     </ul>
   </v-container>

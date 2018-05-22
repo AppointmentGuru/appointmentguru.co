@@ -27,7 +27,7 @@
     <v-flex xs12 sm6 class='order-sm2 order-xs1' >
       <img
         style='width:100%;' class='mt-4-sm pt-4-sm'
-        src='https://appointmentguru.co/assets/img/homepage/invoicing.png' />
+        src='/img/hero_3.png' />
     </v-flex>
   </v-layout>
 </section>

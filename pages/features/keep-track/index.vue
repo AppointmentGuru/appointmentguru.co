@@ -2,28 +2,31 @@
 <div style='margin-top:60px;' >
     <v-container>
     <hero-info
-      tagline='Quick, easy appointment management'
+      headline='Flexible and easy to use invoicing'
+      tagline='Our invoicing will change you life'
       col1-headline='For your business'
       col2-headline='For your clients'
-      col1-content='Handy appointment management with reminders, notifications and notes.'
-      col2-content='Receive relevant info on their appointment and be on time.' >
+      col1-content='Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow.'
+      col2-content='Professional invoices received by email, SMS or in-app, suitable for medical aid submission. And payment reminders!' >
     </hero-info>
     </v-container>
-    <callout callout='AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants - any appointment-driven business.' ></callout>
+    <callout callout='AppointmentGuru is perfect for Physios, Biokinetisists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment based business.' ></callout>
 
     <feature-block
       class='mt-4'
       is-left with-background
+      headline='Automatically Generated Invoices'
       tagline='Send professional invoices that clients, bookkeepers and medical aids will love'
       content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
-      img='/placeholder.png' >
+      img='https://appointmentguru.co/assets/img/homepage/invoicing.png' >
     </feature-block>
 
     <feature-block
       class='mt-4'
+      headline='Automatically Generated Invoices'
       tagline='Send professional invoices that clients, bookkeepers and medical aids will love'
       content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
-      img='/placeholder.png' >
+      img='https://appointmentguru.co/assets/img/homepage/invoicing.png' >
     </feature-block>
 
 </div>
@@ -37,7 +40,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'HomePage',
+  name: 'InvoicesPage',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   data () {
     return {
