@@ -31,7 +31,8 @@ module.exports = {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/vuetify.js',
-    '~/plugins/vue-instantsearch'
+    '~/plugins/vue-instantsearch',
+    { src: '~plugins/drift.js', ssr: false }
   ],
   css: [
     '~/assets/style/app.styl'
