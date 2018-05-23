@@ -20,6 +20,14 @@ import Testimonial from '@/components/Testimonial'
 export default {
   name: 'HomePage',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, Testimonial},
+  head () {
+    return {
+      title: 'AppointmentGuru - Be better at admin, spend less time doing it',
+      meta: [
+        { hid: 'description', name: 'description', content: 'AppointmentGuru helps you to automate appointments, invoices and customer management' }
+      ]
+    }
+  },
   data () {
     return {
       blocks: [
