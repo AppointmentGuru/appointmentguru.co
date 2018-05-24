@@ -2,6 +2,7 @@
 <div style='margin-top:60px;' >
     <v-container>
     <hero-info
+      class='mt-4'
       tagline='Quick, easy, flexible appointment management'
       col1-headline='For your business'
       col2-headline='For your clients'
