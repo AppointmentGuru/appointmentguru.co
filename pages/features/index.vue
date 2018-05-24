@@ -60,7 +60,7 @@ export default {
         },
         {
           title: 'Automation',
-          link: '/features/automations',
+          link: '/features/automation',
           icon: 'power',
           description: ''
         },

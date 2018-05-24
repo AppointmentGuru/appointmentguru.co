@@ -106,6 +106,7 @@
                 <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
                 <li class="text-muted"><a href="/guru-does-it-for-you/">Guru Does It For You</a></li>
                 <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
+                <li class="text-muted"><a href="https://bookme.guru">Find a practitioner</a></li>
               </ul>
             </v-flex>
           </v-layout>
