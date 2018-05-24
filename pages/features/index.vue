@@ -38,7 +38,7 @@ export default {
           title: 'Appointments',
           link: '/features/appointments',
           // description: 'Get total comfort that you are managing your appointments in the best way possible'
-          icon: 'event'
+          icon: 'event' // comes from: https://material.io/tools/icons/
         },
         {
           title: 'Notifications',
