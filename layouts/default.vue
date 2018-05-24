@@ -1,5 +1,32 @@
 <template>
   <v-app light>
+     <v-navigation-drawer app disable-resize-watcher dark :value='showNav' >
+      <v-toolbar app dark color='orange' >
+        <nuxt-link to='/' >
+          <img src='~/assets/icon.png' width='40px' height='40px' />
+        </nuxt-link>
+        <v-toolbar-title color='orange' >
+          <nuxt-link to='/' style='text-decoration:none;color:white;' >
+          Appointment<span style='color:black;'>Guru</span></nuxt-link>
+        </v-toolbar-title>
+      </v-toolbar>
+      <v-list class='page-container' >
+        <v-subheader>Navigation</v-subheader>
+        <v-divider></v-divider>
+        <v-list-tile to='/features' >
+          <v-list-tile-title >Features</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile to='/pricing' >
+          <v-list-tile-title >Pricing</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile to='/help' >
+          <v-list-tile-title >Help</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile to='/blog'>
+          <v-list-tile-title >Blog</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+     </v-navigation-drawer>
     <v-toolbar app dark color='orange' >
       <nuxt-link to='/' >
         <img src='~/assets/icon.png' width='40px' height='40px' />
@@ -11,11 +38,15 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to='/features/' flat>Features</v-btn>
         <v-btn flat>Pricing</v-btn>
-        <v-btn to='/help/topics/' flat>Help</v-btn>
+        <v-btn to='/help/' flat>Help</v-btn>
         <v-btn to='/blog/' flat>Blog</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-toolbar-side-icon class='hidden-sm-and-up' ></v-toolbar-side-icon>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn to='https://portal.appointmentguru.co' flat>Login</v-btn>
+        <v-btn color='green' class='elevation-0' >Sign up</v-btn>
+      </v-toolbar-items>
+      <v-toolbar-side-icon class='hidden-md-and-up' @click='showNav = !showNav' ></v-toolbar-side-icon>
     </v-toolbar>
 
     <nuxt/>
@@ -49,17 +80,17 @@
           </section>
         </v-flex>
         <v-flex sm7 xs12 >
-          <v-layout class='mt-3'>
-            <v-flex class='text-xs-right'>
+          <v-layout class='mt-3' row wrap >
+            <v-flex xs12 sm4 class='text-sm-right pa-2'>
               <h4 class='subheading uppercase' >Connect</h4>
-              <ul class="list-unstyled list-spaced mt-3">
+              <ul class="list-unstyled list-spaced mt-3 ">
                 <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
                 <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Find us on Facebook</a></li>
                 <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
                 <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
               </ul>
             </v-flex>
-            <v-flex class='text-xs-right'>
+            <v-flex xs12 sm4 class='text-sm-right pa-2'>
               <h4 class='subheading uppercase' >Navigate</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
@@ -68,7 +99,7 @@
                 <li class="text-muted"><a href="/terms/">Terms &amp; Conditions</a></li>
                </ul>
             </v-flex>
-            <v-flex class='text-xs-right' >
+            <v-flex xs12 sm4 class='text-sm-right pa-2' >
               <h4 class='subheading uppercase' >Access</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="">Signup</a></li>
@@ -93,7 +124,16 @@
 
   </v-app>
 </template>
-
+<script>
+export default {
+  name: 'Main',
+  data () {
+    return {
+      showNav: false
+    }
+  }
+}
+</script>
 <style>
 @media only screen and (min-width: 1264px) {
   .container {

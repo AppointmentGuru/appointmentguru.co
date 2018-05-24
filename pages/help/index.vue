@@ -2,80 +2,110 @@
 <section style='margin-top:60px;' >
   <v-container>
     <v-layout class='ml-4 mr-4 mt-4' >
-      <h1 class='headline' >AppointmentGuru Help</h1>
+      <h1 class='headline' >{{ $t('headline') }}</h1>
     </v-layout>
     <v-layout class='ml-4 mr-4' >
       <blockquote class='blockquote pl-0' >
-        Need help using AppointmentGuru? Here you’ll find all the info you need!
+        {{ $t('tagline') }}
       </blockquote>
     </v-layout>
     <v-divider></v-divider>
-    <v-layout v-for='help in helps' :key='help.icon' >
-      <v-flex xs6>
-        <v-card class='ma-4' flat >
+    <v-layout v-for='category in categories' :key='category.id' row wrap >
+      <v-flex xs12 sm6>
+        <v-card class='mt-4 mb-4 mr-xs-2 ml-xs-2 mr-2 ml-2' >
           <v-card-title>
             <h2 class='title text-xs-center' >
                 <v-avatar color='blue-grey' class='mr-1' >
-                <v-icon large dark >{{help.icon}}</v-icon>
+                <v-icon large dark >{{category.fields.Icon}}</v-icon>
               </v-avatar>
-              {{help.title}}</h2>
+              {{category.fields.Title}}</h2>
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
-            <blockquote class='blockquote ml-1 pl-0'>{{help.description}}</blockquote>
+            <blockquote class='blockquote ml-1 pl-0'>{{category.fields.Summary}}</blockquote>
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6>
+      <v-flex xs12 sm6>
         <v-expansion-panel class='mt-4 mb-4' >
-          <v-expansion-panel-content v-for="section in help.sections" :key="section.title" >
-            <div slot="header">{{section.title}}</div>
+          <v-expansion-panel-content v-for='page in pages[category.id]' :key='page.id' class='mr-2 ml-2' >
+            <div slot="header">
+              <nuxt-link :to='`/help/${page.fields.Slug}/`' >{{page.fields.Title}}</nuxt-link>
+            </div>
+            <v-divider></v-divider>
             <v-card>
-              <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
-              <v-divider></v-divider>
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn icon ><v-icon>open_in_new</v-icon></v-btn>
-                <v-btn icon ><v-icon>play_circle_outline</v-icon></v-btn>
-              </v-card-actions>
+              <v-card-text>{{page.fields.Summary}}</v-card-text>
             </v-card>
+            <v-card-actions>
+              <v-footer style='width:100%' >
+                <v-spacer></v-spacer>
+                <v-btn icon :to='`/help/${page.fields.Slug}/`' ><v-icon>open_in_new</v-icon></v-btn>
+                <v-btn
+                  v-if='page.fields.Video'
+                  icon @click='showVideo = true; activeVideo = page.fields.Video' ><v-icon>play_circle_outline</v-icon></v-btn>
+              </v-footer>
+            </v-card-actions>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
+      <v-divider></v-divider>
     </v-layout>
   </v-container>
+  <v-dialog max-width="560px" v-model='showVideo' >
+    <v-card flat class='ma-0 pa-0' >
+      <iframe width="560" height="315" class='ma-0'
+        :src="activeVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </v-card>
+  </v-dialog>
 </section>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'HelpPage',
   data () {
     return {
-      helps: [
-        {
-          title: 'Getting started',
-          icon: 'important_devices',
-          description: 'Some quick lessons to get you up and running quickly',
-          sections: [
-            { title: 'Set up your account'},
-            { title: 'Create your first appointment'},
-            { title: 'Create a block appointment to mark time as unavailable'},
-            { title: 'Create a quick invoice'}
-          ]
-        },
-        {
-          title: 'Getting started',
-          icon: 'important_devices',
-          description: 'Some quick lessons to get you up and running quickly',
-          sections: [
-            { title: 'Set up your account'},
-            { title: 'Create your first appointment'},
-            { title: 'Create a block appointment to mark time as unavailable'},
-            { title: 'Create a quick invoice'}
-          ]
-        }
-      ]
+      showVideo: false,
+      activeVideo: null
+    }
+  },
+  async asyncData ({ query }) {
+    let headers = {
+      'Authorization': 'Bearer ' + process.env.airtableToken
+    }
+    let url = process.env.airtableBaseUrl + '/Category'
+    let options = { headers }
+    let categoryResponse = await axios.get(url, options)
+
+    url = process.env.airtableBaseUrl + '/HelpPage'
+    let categories = categoryResponse.data.records.sort((a, b) => {
+      return a.fields.Order - b.fields.Order
+    })
+    let pages = {}
+    for (let x = 0; x <= categories.length; x++) {
+      let category = categories[x]
+      if (category && category.fields) {
+        // [' + category.fields.HelpPage + ']'}
+        let formula = 'FIND(RECORD_ID(), "' + category.fields.HelpPage + '")'
+        let params = {filterByFormula: formula, view: 'Summary'}
+        let res = await axios.get(url, {headers, params})
+        pages[category.id] = res.data.records
+      }
+    }
+    return {
+      categories,
+      pages
+    }
+  },
+  i18n: {
+    messages: {
+      en: {
+        headline: 'AppointmentGuru Help',
+        tagline: 'Need help using AppointmentGuru? Here you’ll find all the info you need!'
+      }
     }
   }
 }

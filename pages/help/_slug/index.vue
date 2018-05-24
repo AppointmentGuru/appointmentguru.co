@@ -1,8 +1,8 @@
 <template lang="md" >
 <v-container class='page-container' >
   <v-breadcrumbs divider="/">
-    <v-breadcrumbs-item to='/' nuxt >AppointmentGuru</v-breadcrumbs-item>
-    <v-breadcrumbs-item to='/help/topics/' nuxt >Help</v-breadcrumbs-item>
+    <v-breadcrumbs-item to='/' >AppointmentGuru</v-breadcrumbs-item>
+    <v-breadcrumbs-item to='/help/' >Help</v-breadcrumbs-item>
     <v-breadcrumbs-item disabled>{{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <h1 class='headline mb-4' >{{page.fields.Title}}</h1>
@@ -31,12 +31,12 @@ export default {
   name: 'HelpPage',
   async asyncData ({ params, query }) {
     let headers = {
-      'Authorization': 'Bearer keyt7MKFDGrXm3set'
+      'Authorization': 'Bearer ' + process.env.airtableToken
     }
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
     let queryParams = {filterByFormula: formula, view: 'Summary'}
-    let url = 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt/HelpPage'
+    let url = process.env.airtableBaseUrl + '/HelpPage'
     let options = {
       headers: headers,
       params: queryParams
@@ -58,6 +58,17 @@ export default {
 </script>
 
 <style >
+.help-content {
+  font-size: 16px;
+  /* font-weight: 300; */
+}
+.help-content blockquote {
+  padding: 16px 0 16px 24px;
+  font-size: 16px;
+  font-weight: 300;
+  border-left: solid 3px #E65100;
+  background-color: #FAFAFA;
+}
 .help-content h1 {
   font-size: 24px!important;
   font-weight: 400;
@@ -79,5 +90,8 @@ export default {
   font-weight: 400;
 }
 .help-content ul,
-.help-content ol{ margin-left: 20px !important; }
+.help-content ol{
+  margin-left: 20px !important;
+  margin-bottom: 20px;
+}
 </style>

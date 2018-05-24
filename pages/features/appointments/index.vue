@@ -56,23 +56,11 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   data () {
     return {
-      features: [
-        {
-          icon: 'event',
-          title: 'Appointments',
-          description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-        },
-        {
-          icon: 'bookmark',
-          title: 'Invoices',
-          description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-        },
-        {
-          icon: 'person',
-          title: 'Client management',
-          description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-        }
-      ]
+      campaignParts: {
+        utmSource: 'website',
+        utmMedium: 'landing-page',
+        utmCampaign: ''
+      }
     }
   }
 }

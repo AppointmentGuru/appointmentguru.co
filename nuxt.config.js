@@ -14,6 +14,11 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+  env: {
+    airtableBaseUrl: process.env.AIRTABLE_BASE_URL || 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt',
+    airtableBlogBaseUrl: process.env.AIRTABLE_BLOG_BASE_URL || 'https://api.airtable.com/v0/appUmwBIxunmbdDPs',
+    airtableToken: process.env.AIRTABLE_TOKEN || 'keyt7MKFDGrXm3set'
+  },
   router: {
     middleware: 'i18n'
   },
@@ -26,7 +31,8 @@ module.exports = {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/vuetify.js',
-    '~/plugins/vue-instantsearch'
+    '~/plugins/vue-instantsearch',
+    { src: '~plugins/drift.js', ssr: false }
   ],
   css: [
     '~/assets/style/app.styl'
