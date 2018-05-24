@@ -22,7 +22,7 @@
     <feature-block
       class='mt-4'
       tagline='Specify your availability'
-      content='Set your operating hours so that appointments are made when you're available.'
+      content="Set your operating hours so that appointments are made when you're available."
       img='/placeholder.png' >
     </feature-block>
 
