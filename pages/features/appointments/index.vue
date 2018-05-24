@@ -54,6 +54,14 @@ import HeroParallax from '@/components/HeroParallax'
 export default {
   name: 'HomePage',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
+  head () {
+    return {
+      title: 'Manage your appointments efficiently | AppointmentGuru',
+      meta: [
+        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+      ]
+    }
+  },
   data () {
     return {
       campaignParts: {
