@@ -34,7 +34,7 @@
         <nuxt-link to='/features/sync' >Calendar syncing</nuxt-link>
       </li>
       <li >
-        <nuxt-link to='/features/get-online' >Get your business online</nuxt-link>
+        <nuxt-link to='/features/marketing' >Marketing</nuxt-link>
       </li>
       <li >
         <nuxt-link to='/features/training-and-support' >Training and support</nuxt-link>

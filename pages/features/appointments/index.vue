@@ -2,27 +2,42 @@
 <div style='margin-top:60px;' >
     <v-container>
     <hero-info
-      tagline='Quick, easy appointment management'
+      tagline='Quick, easy, flexible appointment management'
       col1-headline='For your business'
       col2-headline='For your clients'
-      col1-content='Handy appointment management with reminders, notifications and notes.'
-      col2-content='Receive relevant info on their appointment and be on time.' >
+      col1-content='Powerful appointment creation and management'
+      col2-content='Get relevant info on their appointment and be on time.' >
     </hero-info>
     </v-container>
-    <callout callout='AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants - any appointment-driven business.' ></callout>
+    <callout callout='Spend less time doing appointment admin and free up more time for the important things.' ></callout>
 
     <feature-block
       class='mt-4'
       is-left with-background
-      tagline='Send professional invoices that clients, bookkeepers and medical aids will love'
-      content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
+      tagline='Appointment types'
+      content='Offer a variety of appointment types that suit your business. Include different locations, appointment length and cost.'
       img='/placeholder.png' >
     </feature-block>
 
     <feature-block
       class='mt-4'
-      tagline='Send professional invoices that clients, bookkeepers and medical aids will love'
-      content='Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.'
+      tagline='Specify your availability'
+      content='Set your operating hours so that appointments are made when you're available.'
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      is-left with-background
+      tagline='Make one or many appointments'
+      content='Create a once-off appointment or schedule a series of repeat appointments.'
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      tagline='Block off ad hoc time'
+      content='Taking Friday off or have a dentist appointment? Block off your calendar and new appointments cant be made.'
       img='/placeholder.png' >
     </feature-block>
 
