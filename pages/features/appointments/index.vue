@@ -9,35 +9,65 @@
       col2-content='Get relevant info on their appointment and be on time.' >
     </hero-info>
     </v-container>
-    <callout callout='Spend less time doing appointment admin and free up more time for the important things.' ></callout>
+    <callout callout='Spend less time on your appointment admin and free up more time for the important things.' ></callout>
 
     <feature-block
       class='mt-4'
       is-left with-background
       tagline='Appointment types'
-      content='Offer a variety of appointment types that suit your business. Include different locations, appointment length and cost.'
+      content='Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.'
       img='/placeholder.png' >
     </feature-block>
 
     <feature-block
       class='mt-4'
       tagline='Specify your availability'
-      content="Set your operating hours so that appointments are made when you're available."
+      content="Set your daily operating hours so that appointments are made when you are available."
       img='/placeholder.png' >
     </feature-block>
 
     <feature-block
       class='mt-4'
       is-left with-background
-      tagline='Make one or many appointments'
-      content='Create a once-off appointment or schedule a series of repeat appointments.'
+      tagline='Make one appointment or a series of repeats'
+      content='Create a single appointment or schedule a series of repeat appointments with a client.'
       img='/placeholder.png' >
     </feature-block>
 
     <feature-block
       class='mt-4'
       tagline='Block off ad hoc time'
-      content='Taking Friday off or have a dentist appointment? Block off your calendar and new appointments cant be made.'
+      content="Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable."
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      is-left with-background
+      tagline='Quickly cancel or reschedule appointments'
+      content="Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before."
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      tagline='Clients make their own appointments'
+      content='Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.'
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      is-left with-background
+      tagline='Add notes'
+      content='Keep tabs on each client session by adding notes to an appointment.'
+      img='/placeholder.png' >
+    </feature-block>
+
+    <feature-block
+      class='mt-4'
+      tagline='Send an invoice'
+      content="AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)."
       img='/placeholder.png' >
     </feature-block>
 
