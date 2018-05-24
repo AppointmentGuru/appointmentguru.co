@@ -42,6 +42,10 @@
         <v-btn to='/blog/' flat>Blog</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn to='https://portal.appointmentguru.co' flat>Login</v-btn>
+        <v-btn color='green' class='elevation-0' >Sign up</v-btn>
+      </v-toolbar-items>
       <v-toolbar-side-icon class='hidden-md-and-up' @click='showNav = !showNav' ></v-toolbar-side-icon>
     </v-toolbar>
 
