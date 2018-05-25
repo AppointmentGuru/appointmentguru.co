@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'Calendar Syncing',
+  name: 'Client Self Service',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: "Sync to the calendar app on your phone",
+            tagline: 'Empower your clients to book and manage their appointments with you',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Always be on top of your schedule',
-            col2Content: 'Add appointments to their calendar app'
+            col1Content: "Continue doing business even when you're not available",
+            col2Content: 'The convenience of making and managing appointments anytime'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Sync your AppointmentGuru calendar to your phone',
-            content: 'One-way calendar syncing from AppointmentGuru to the calendar app on your phone or computer.',
+            tagline: 'Clients self-book appointments',
+            content: 'Instead of phoning or messaging you, clients can make and manage appointments themselves. AppointmentGuru offers a mobile app, a free website or booking code you can add to your site.',
             img: '/placeholder.png'
           }
         },
@@ -68,8 +68,28 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Clients add appointments to their own calendar apps',
-            content: 'Clients using the AppointmentGuru app can add appointments to their calendar app.',
+            tagline: 'Information, directions and even an Uber!',
+            content: 'Clients can get your address, easily find their way using Google Maps or even order an Uber from the AppointmentGuru app.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Self-rescheduling',
+            content: 'Reduce calls from clients asking to reschedule their appointment, the AppointmentGuru app allows for rescheduling up to 24 hours before the appointment starts.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'View and pay invoices',
+            content: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and if you've enabled the SnapScan integration - payment can be made using SnapScan.",
             img: '/placeholder.png'
           }
         }
