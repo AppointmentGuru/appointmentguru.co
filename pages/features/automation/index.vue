@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'HomePage',
+  name: 'Automation',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: 'Automating repetitive tasks',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: 'Up-to-date information and more time.',
+            col2Content: 'Easier and better service from your business'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Manage your bookings on the go',
-            content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
+            tagline: 'Automatic notifications',
+            content: 'Automatically notify your clients of newly created appointments, reminders the day before and even rescheduled or canceled appointments.',
             img: '/placeholder.png'
           }
         },
@@ -68,8 +68,19 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Send professional invoices that clients, bookkeepers and medical aids will love',
-            content: 'Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.',
+            tagline: 'Automatically updated reporting',
+            content: 'Super-handy reporting on your appointments and invoices updates itself.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Clients create their own appointments',
+            content: 'Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget.',
             img: '/placeholder.png'
           }
         }

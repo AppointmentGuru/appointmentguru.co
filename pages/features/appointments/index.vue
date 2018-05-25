@@ -1,77 +1,11 @@
 <template>
-<div style='margin-top:60px;' >
-    <v-container>
-    <hero-info
-      class='mt-4'
-      tagline='Quick, easy, flexible appointment management'
-      col1-headline='For your business'
-      col2-headline='For your clients'
-      col1-content='Powerful appointment creation and management'
-      col2-content='Get relevant info on their appointment and be on time.' >
-    </hero-info>
-    </v-container>
-    <callout callout='Spend less time dealing with your appointment admin and free up more time for the important things.' ></callout>
-
-    <feature-block
-      class='mt-4'
-      is-left with-background
-      tagline='Appointment types'
-      content='Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.'
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      tagline='Specify your availability'
-      content="Set your daily operating hours so that appointments are made when you are available."
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      is-left with-background
-      tagline='Make one appointment or a series of repeats'
-      content='Create a single appointment or schedule a series of repeat appointments with a client.'
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      tagline='Block off ad hoc time'
-      content="Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable."
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      is-left with-background
-      tagline='Quickly cancel or reschedule appointments'
-      content="Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before."
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      tagline='Clients make their own appointments'
-      content='Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.'
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      is-left with-background
-      tagline='Add notes'
-      content='Keep tabs on each client session by adding notes to an appointment.'
-      img='/placeholder.png' >
-    </feature-block>
-
-    <feature-block
-      class='mt-4'
-      tagline='Send an invoice'
-      content="AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)."
-      img='/placeholder.png' >
-    </feature-block>
-
+<div class='page-container' >
+    <template v-for='(block, index) in blocks'  >
+      <v-container v-if='block.inContainer' :key='index' >
+        <component :is='block.name' v-bind='block.props' :class='block.classes' />
+      </v-container>
+      <component v-else :is='block.name' v-bind='block.props' :key='index' :class='block.classes' />
+    </template>
 </div>
 </template>
 
@@ -83,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'HomePage',
+  name: 'Appointments',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -99,7 +33,107 @@ export default {
         utmSource: 'website',
         utmMedium: 'landing-page',
         utmCampaign: ''
-      }
+      },
+      blocks: [
+        {
+          name: 'HeroInfo',
+          inContainer: true,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Quick, easy, flexible appointment management',
+            col1Headline: 'For your business',
+            col2Headline: 'For your clients',
+            col1Content: 'Powerful appointment creation and management',
+            col2Content: 'Get relevant info on their appointment and be on time.'
+          }
+        },
+        {
+          name: 'Callout',
+          props: {
+            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Appointment types',
+            content: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Specify your availability',
+            content: "Set your daily operating hours so that appointments are made when you are available.",
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Make one appointment or a series of repeats',
+            content: 'Create a single appointment or schedule a series of repeat appointments with a client.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Block off ad hoc time',
+            content: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable.",
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Quickly cancel or reschedule appointments',
+            content: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before.",
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Clients make their own appointments',
+            content: "Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.",
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Add notes',
+            content: 'Keep tabs on each client session by adding notes to an appointment.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Send an invoice',
+            content: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)",
+            img: '/placeholder.png'
+          }
+        }
+      ]
     }
   }
 }

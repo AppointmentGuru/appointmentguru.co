@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'HomePage',
+  name: 'Calendar Syncing',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {

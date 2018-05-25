@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'HomePage',
+  name: 'Apps',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: "Manage your business on the run with AppointmentGuru's apps",
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: 'Never get behind with appointments or invoicing',
+            col2Content: 'Get relevant info on an appointment and be on time.'
           }
         },
         {
@@ -59,7 +59,7 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Manage your bookings on the go',
+            tagline: 'Create and manage appointments in the mobile app',
             content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
             img: '/placeholder.png'
           }
@@ -68,8 +68,28 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Send professional invoices that clients, bookkeepers and medical aids will love',
-            content: 'Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.',
+            tagline: 'Update and send invoices from the app',
+            content: 'Quickly catch up on your invoicing admin, add line items and send invoices on the go. Send automated reminders to your clients to make payment and mark invoices as paid.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'An app for your clients!',
+            content: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: "Get listed in the AppointmentGuru directory (it's optional, of course!)",
+            content: 'New and returning clients can find you in the AppointmentGuru app to find out more about your business and make appointments with you. ',
             img: '/placeholder.png'
           }
         }
