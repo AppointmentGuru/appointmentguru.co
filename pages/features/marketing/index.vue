@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Automated notifications with customised business and appointment info',
+            tagline: 'AppointmentGuru provides marketing material that includes your branding',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Lessen no-shows and keep you and your clients informed',
-            col2Content: 'Relevant info on their appointment and reminders to be on time.'
+            col1Content: 'Brand awareness and more options to reach your customers',
+            col2Content: 'Find out about your business and keep informed'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Appointment confirmations',
-            content: 'Send an automated SMS or email to you and your client whenever an appointment is created.',
+            tagline: 'A free website',
+            content: 'Your AppointmentGuru account includes a free website so that your clients can make appointments and get more information on your business.',
             img: '/placeholder.png'
           }
         },
@@ -68,28 +68,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Appointment reminders',
-            content: 'Automatically send an SMS or email to your client 24 hours before their appointment, reminding them of the time, your address and any other information.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Reschedule and cancellation notifications',
-            content: 'Notifications to you and your client when an appointment is rescheduled (clients can reschedule their own appointments up to 24 hours before). Cancellation notifications can include information on how to make another appointment, encouraging clients to see you again.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: "Or don't send notifications at all",
-            content: "The option to not send an appointment confirmation, reminder, reschedule or cancel notification whenever you're managing your appointments.",
+            tagline: 'Table talkers',
+            content: "A free table talker, displaying a QR code for your clients to scan with their phone. It'll open your website, prompt them to download the AppointmentGuru app or open your listing in the AppointmentGuru app. Making it easy for them to find information on your business and make an appointment with you.",
             img: '/placeholder.png'
           }
         },
@@ -99,8 +79,17 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Invoice and payment reminder notifications',
-            content: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice with an automatic follow-up payment reminder notification.',
+            tagline: 'Business cards',
+            content: 'Business cards displaying your contact information and QR code (with the same functionality as the table talkers) to take bookings. The first 100 are a gift from us!',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Free listing in the AppointmentGuru app directory',
+            content: 'An optional, free listing in the AppointmentGuru app directory. Clients will be able to book and manage appointments with you.',
             img: '/placeholder.png'
           }
         }

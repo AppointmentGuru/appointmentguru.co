@@ -1,8 +1,9 @@
 <template>
+<section style='background: url("https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/images/pricing-background.png") no-repeat right top;' >
 <v-container class='page-container' >
   <v-layout>
-    <v-flex xs6 offset-xs3>
-      <v-card class='elevation-24 mt-4 ' >
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card class='elevation-24 mt-4 pl=0 pr-0' >
         <div class='pa-2 text-xs-center orange--text' >
           <span class='currency display-3' >R</span>
           <span class='price display-4' >400</span>
@@ -30,13 +31,13 @@
           <v-card flat>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn small flat :key='index' to='/features/' >See all features</v-btn>
+              <v-btn small flat to='/features/' >See all features</v-btn>
             </v-card-actions>
           </v-card>
         </v-card-text>
         <v-divider></v-divider>
-        <v-card-actions>
-          <v-btn block color='primary' >Start Free Trial</v-btn>
+        <v-card-actions class='pa-0'>
+          <v-btn block dark large color='orange' class='ma-0' >Start Free Trial</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -55,6 +56,7 @@
     </v-flex>
   </v-layout>
 </v-container>
+</section>
 </template>
 
 <script>

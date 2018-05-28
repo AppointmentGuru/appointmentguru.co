@@ -96,7 +96,7 @@ export default {
         },
         {
           title: 'Training and support',
-          link: '/features/trainging-and-support',
+          link: '/features/training-and-support',
           icon: 'help_outline',
           description: ''
         },
