@@ -37,7 +37,7 @@
       </v-toolbar-title>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to='/features/' flat>Features</v-btn>
-        <v-btn flat>Pricing</v-btn>
+        <v-btn to='/pricing/' flat>Pricing</v-btn>
         <v-btn to='/help/' flat>Help</v-btn>
         <v-btn to='/blog/' flat>Blog</v-btn>
       </v-toolbar-items>
