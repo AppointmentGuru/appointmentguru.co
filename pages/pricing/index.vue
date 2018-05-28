@@ -1,5 +1,5 @@
 <template>
-<section style='background: url("https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/images/pricing-background.png") no-repeat right top;' >
+<section style='background: url("https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/images/pricing-background-2.png") no-repeat right top;' >
 <v-container class='page-container' >
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
