@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: 'Automated notifications with customised business and appointment info',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: 'Lessen no-shows and keep you and your clients informed',
+            col2Content: 'Relevant info on their appointment and reminders to be on time.'
           }
         },
         {
@@ -59,20 +59,49 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            headline: 'RUN YOUR BUSINESS LIKE A PRO',
-            tagline: 'Manage your bookings on the go',
-            content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
-            img: 'https://appointmentguru.co/assets/img/homepage/manage-appointments-v2.png'
+            tagline: 'Appointment confirmations',
+            content: 'Send an automated SMS or email to you and your client whenever an appointment is created.',
+            img: '/placeholder.png'
           }
         },
         {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            headline: 'Automatically Generated Invoices',
-            tagline: 'Send professional invoices that clients, bookkeepers and medical aids will love',
-            content: 'Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.',
-            img: 'https://appointmentguru.co/assets/img/homepage/invoicing.png'
+            tagline: 'Appointment reminders',
+            content: 'Automatically send an SMS or email to your client 24 hours before their appointment, reminding them of the time, your address and any other information.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Reschedule and cancellation notifications',
+            content: 'Notifications to you and your client when an appointment is rescheduled (clients can reschedule their own appointments up to 24 hours before). Cancellation notifications can include information on how to make another appointment, encouraging clients to see you again.',
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: "Or don't send notifications at all",
+            content: "The option to not send an appointment confirmation, reminder, reschedule or cancel notification whenever you're managing your appointments.",
+            img: '/placeholder.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Invoice and payment reminder notifications',
+            content: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice with an automatic follow-up payment reminder notification.',
+            img: '/placeholder.png'
           }
         }
       ]
