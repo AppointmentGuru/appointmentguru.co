@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'Appointments',
+  name: 'Apps',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: "Manage your business on the run with AppointmentGuru's apps",
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: 'Never get behind with appointments or invoicing',
+            col2Content: 'Get relevant info on an appointment and be on time.'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Appointment types',
-            content: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.',
+            tagline: 'Create and manage appointments in the mobile app',
+            content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
             img: '/placeholder.png'
           }
         },
@@ -68,28 +68,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Specify your availability',
-            content: "Set your daily operating hours so that appointments are made when you are available.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Make one appointment or a series of repeats',
-            content: 'Create a single appointment or schedule a series of repeat appointments with a client.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Block off ad hoc time',
-            content: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable.",
+            tagline: 'Update and send invoices from the app',
+            content: 'Quickly catch up on your invoicing admin, add line items and send invoices on the go. Send automated reminders to your clients to make payment and mark invoices as paid.',
             img: '/placeholder.png'
           }
         },
@@ -99,8 +79,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Quickly cancel or reschedule appointments',
-            content: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before.",
+            tagline: 'An app for your clients!',
+            content: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you',
             img: '/placeholder.png'
           }
         },
@@ -108,28 +88,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Clients make their own appointments',
-            content: "Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Add notes',
-            content: 'Keep tabs on each client session by adding notes to an appointment.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Send an invoice',
-            content: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)",
+            tagline: "Get listed in the AppointmentGuru directory (it's optional, of course!)",
+            content: 'New and returning clients can find you in the AppointmentGuru app to find out more about your business and make appointments with you. ',
             img: '/placeholder.png'
           }
         }

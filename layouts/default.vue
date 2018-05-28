@@ -7,10 +7,10 @@
         </nuxt-link>
         <v-toolbar-title color='orange' >
           <nuxt-link to='/' style='text-decoration:none;color:white;' >
-          Appointment<span style='color:black;'>Guru</span></nuxt-link>
+          Appointment<span style='color:black;' >Guru</span></nuxt-link>
         </v-toolbar-title>
       </v-toolbar>
-      <v-list class='page-container' >
+      <v-list class='page-container'  >
         <v-subheader>Navigation</v-subheader>
         <v-divider></v-divider>
         <v-list-tile to='/features' >
@@ -31,17 +31,21 @@
       <nuxt-link to='/' >
         <img src='~/assets/icon.png' width='40px' height='40px' />
       </nuxt-link>
-      <v-toolbar-title color='orange' >
+      <v-toolbar-title color='orange' class='mr-4' >
         <nuxt-link to='/' style='text-decoration:none;color:white;' >
         Appointment<span style='color:black;'>Guru</span></nuxt-link>
       </v-toolbar-title>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to='/features/' flat>Features</v-btn>
-        <v-btn flat>Pricing</v-btn>
+        <v-btn to='/pricing/' flat>Pricing</v-btn>
         <v-btn to='/help/' flat>Help</v-btn>
         <v-btn to='/blog/' flat>Blog</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn href='https://app.appointmentguru.co' flat>Login</v-btn>
+        <v-btn color='green' class='elevation-0' >Sign up</v-btn>
+      </v-toolbar-items>
       <v-toolbar-side-icon class='hidden-md-and-up' @click='showNav = !showNav' ></v-toolbar-side-icon>
     </v-toolbar>
 
@@ -102,6 +106,7 @@
                 <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
                 <li class="text-muted"><a href="/guru-does-it-for-you/">Guru Does It For You</a></li>
                 <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
+                <li class="text-muted"><a href="https://bookme.guru">Find a practitioner</a></li>
               </ul>
             </v-flex>
           </v-layout>

@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'Appointments',
+  name: 'Client Self Service',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: 'Empower your clients to book and manage their appointments with you',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: "Continue doing business even when you're not available",
+            col2Content: 'The convenience of making and managing appointments anytime'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Appointment types',
-            content: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.',
+            tagline: 'Clients self-book appointments',
+            content: 'Instead of phoning or messaging you, clients can make and manage appointments themselves. AppointmentGuru offers a mobile app, a free website or booking code you can add to your site.',
             img: '/placeholder.png'
           }
         },
@@ -68,28 +68,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Specify your availability',
-            content: "Set your daily operating hours so that appointments are made when you are available.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Make one appointment or a series of repeats',
-            content: 'Create a single appointment or schedule a series of repeat appointments with a client.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Block off ad hoc time',
-            content: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable.",
+            tagline: 'Information, directions and even an Uber!',
+            content: 'Clients can get your address, easily find their way using Google Maps or even order an Uber from the AppointmentGuru app.',
             img: '/placeholder.png'
           }
         },
@@ -99,8 +79,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Quickly cancel or reschedule appointments',
-            content: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before.",
+            tagline: 'Self-rescheduling',
+            content: 'Reduce calls from clients asking to reschedule their appointment, the AppointmentGuru app allows for rescheduling up to 24 hours before the appointment starts.',
             img: '/placeholder.png'
           }
         },
@@ -108,28 +88,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Clients make their own appointments',
-            content: "Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Add notes',
-            content: 'Keep tabs on each client session by adding notes to an appointment.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Send an invoice',
-            content: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)",
+            tagline: 'View and pay invoices',
+            content: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and if you've enabled the SnapScan integration - payment can be made using SnapScan.",
             img: '/placeholder.png'
           }
         }

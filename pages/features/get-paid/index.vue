@@ -17,7 +17,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'Appointments',
+  name: 'Get Paid',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
@@ -40,11 +40,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Quick, easy, flexible appointment management',
+            tagline: 'Invoicing, magically generated from your appointments',
             col1Headline: 'For your business',
             col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
+            col1Content: 'Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow.',
+            col2Content: 'Professional invoices received by email, SMS or in-app, suitable for medical aid submission. And payment reminders!'
           }
         },
         {
@@ -59,8 +59,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Appointment types',
-            content: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.',
+            tagline: 'Customise your invoices with your business and client information',
+            content: 'Include your business logo, name, address and bank details and your client info (name, address, phone and medical aid info).',
             img: '/placeholder.png'
           }
         },
@@ -68,28 +68,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Specify your availability',
-            content: "Set your daily operating hours so that appointments are made when you are available.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Make one appointment or a series of repeats',
-            content: 'Create a single appointment or schedule a series of repeat appointments with a client.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Block off ad hoc time',
-            content: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable.",
+            tagline: 'Generate invoices automatically',
+            content: 'Send an invoice after each appointment or consolidate multiple appointments on a single invoice at month-end (or anytime really).',
             img: '/placeholder.png'
           }
         },
@@ -99,8 +79,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Quickly cancel or reschedule appointments',
-            content: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before.",
+            tagline: 'Powerful support for medical codes',
+            content: 'AppointmentGuru allows you to add ICD10, NAPPI, procedure and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.',
             img: '/placeholder.png'
           }
         },
@@ -108,8 +88,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Clients make their own appointments',
-            content: "Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.",
+            tagline: 'Accept payment via SnapScan',
+            content: "AppointmentGuru's SnapScan integration adds a SnapScan code to each invoice. Once payment has been made via the SnapScan app, the invoice will be marked as paid in your AppointmentGuru account. Less work for you!",
             img: '/placeholder.png'
           }
         },
@@ -119,8 +99,8 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Add notes',
-            content: 'Keep tabs on each client session by adding notes to an appointment.',
+            tagline: 'Send, remind, receipt',
+            content: "Send invoices to your clients by email, SMS or in-app, remind them if they haven't paid and send a receipt once they have. All at the touch of a button.",
             img: '/placeholder.png'
           }
         },
@@ -128,8 +108,8 @@ export default {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Send an invoice',
-            content: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)",
+            tagline: 'Reconcile and view your reports',
+            content: "Mark invoices as paid as you get paid and easily view those still outstanding. Reporting updates to show your financial health over the month.",
             img: '/placeholder.png'
           }
         }
