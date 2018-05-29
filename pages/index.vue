@@ -57,6 +57,7 @@ export default {
           name: FeatureBox,
           inContainer: true,
           props: {
+            rowSize: 3,
             features: [
               {
                 icon: 'event',

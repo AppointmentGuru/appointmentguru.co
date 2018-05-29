@@ -1,6 +1,6 @@
 <template>
 <v-layout row wrap class='mt-4' >
-  <v-flex v-for='feature in features' :key='feature.icon' xs12 sm4 >
+  <v-flex v-for='feature in features' :key='feature.icon' xs12 :class='flexWidth' >
     <v-card class='ma-2' >
       <v-card-title>
         <h2 class='title text-xs-center' >
@@ -21,7 +21,14 @@
 export default {
   name: 'FeatureBox',
   props: {
-    features: { type: Array, default: () => { return [] } }
+    features: { type: Array, default: () => { return [] } },
+    rowSize: { type: Number, default: 3 }
+  },
+  computed: {
+    flexWidth () {
+      let width = (12/this.rowSize).toString()
+      return `sm${width}`
+    }
   }
 }
 </script>
