@@ -26,7 +26,7 @@
           <slot>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn @click='showVideo=true' flat class='mt-3' >See how it works
+              <v-btn @click='showVideo=true' flat class='mt-3' style='z-index:2' >See how it works
               <v-icon class='ml-2' large >play_circle_outline</v-icon></v-btn>
             </v-card-actions>
             <v-card-actions>
