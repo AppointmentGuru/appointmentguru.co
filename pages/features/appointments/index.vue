@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Quick, easy, flexible appointment management',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Powerful appointment creation and management',
-            col2Content: 'Get relevant info on their appointment and be on time.'
           }
         },
         {
@@ -54,85 +50,54 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
+          name: FeatureBox,
+          inContainer: true,
           props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Appointment types',
-            content: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.',
-            img: '/placeholder.png'
+            rowSize: 2,
+            features: [
+              {
+                icon: 'settings',
+                title: 'Appointment types',
+                description: 'Add a variety of appointment types that suit your business. Operate from more than one location? No problem! Offer appointments at different locations, each with their own set of appointment types and specific operating hours.'
+              },
+              {
+                icon: 'visibility',
+                title: 'Specify your availability',
+                description: "Set your daily operating hours so that appointments are made when you are available."
+              },
+              {
+                icon: 'restore',
+                title: 'Make one appointment or a series of repeats',
+                description: 'Create a single appointment or schedule a series of repeat appointments with a client.'
+              },
+              {
+                icon: 'visibility_off',
+                title: 'Block off ad hoc time',
+                description: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable."
+              },
+              {
+                icon: 'schedule',
+                title: 'Quickly cancel or reschedule appointments',
+                description: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before."
+              },
+              {
+                icon: 'accessibility_new',
+                title: 'Clients make their own appointments',
+                description: 'Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.'
+              },
+              {
+                icon: 'create',
+                title: 'Add notes',
+                description: 'Keep tabs on each client session by adding notes to an appointment.'
+              },
+              {
+                icon: 'send',
+                title: 'Send an invoice',
+                description: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)"
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Specify your availability',
-            content: "Set your daily operating hours so that appointments are made when you are available.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Make one appointment or a series of repeats',
-            content: 'Create a single appointment or schedule a series of repeat appointments with a client.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Block off ad hoc time',
-            content: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Quickly cancel or reschedule appointments',
-            content: "Cancel and reschedule existing appointments (it'll also automatically notify your client). Using the AppointmentGuru app, clients can reschedule their own appointments up to 24 hours before.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Clients make their own appointments',
-            content: "Take bookings via the AppointmentGuru app, your free website or by adding an AppointmentGuru booking widget to your site.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Add notes',
-            content: 'Keep tabs on each client session by adding notes to an appointment.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Send an invoice',
-            content: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)",
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }
