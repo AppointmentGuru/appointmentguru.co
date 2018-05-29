@@ -50,7 +50,7 @@ export default {
         {
           name: Callout,
           props: {
-            callout: 'AppointmentGuru is perfect for Physios, Biokinetisists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment based business.'
+            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment-based business.'
           }
         },
         {
@@ -103,11 +103,11 @@ export default {
           inContainer: true,
           props: {
             classes: 'elevation-2',
-            quote: "I don't think I could imagine running my business without AppointmentGuru anymore. I don't think I could imaging running my business without AppointmentGuru anymore",
+            quote: "I don't think I could imagine running my business without AppointmentGuru anymore.",
             authorName: 'Sean Johnson',
             authorBio: 'Natural Therapist',
             link: 'http://bookme.guru/structuralmedicine/',
-            linkText: 'Book now with the Center for Structural Medicine',
+            linkText: 'Book now with the Centre for Structural Medicine',
             image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png'
           }
         }
