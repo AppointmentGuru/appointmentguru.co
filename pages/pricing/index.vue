@@ -7,10 +7,7 @@
         <div class='pa-2 text-xs-center orange--text' >
           <span class='currency display-3' >R</span>
           <span class='price display-4' >400</span>
-          <span class='frequency title uppercase' >/mo</span>
-          <div class='subheading uppercase' >
-            Thereafter only R150/head
-          </div>
+          <span class='frequency title uppercase' >/month</span>
         </div>
         <v-divider></v-divider>
         <v-card-text>
@@ -31,7 +28,7 @@
           <v-card flat>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn small flat to='/features/' >See all features</v-btn>
+              <v-btn small flat to='/features/' >Learn more about our features</v-btn>
             </v-card-actions>
           </v-card>
         </v-card-text>
@@ -71,37 +68,41 @@ export default {
         },
         {
           icon: 'star',
-          title: 'Online calendar'
+          title: 'Mobile apps for you and your clients'
         },
         {
           icon: 'star',
-          title: 'Notifications by SMS and/or email'
+          title: 'Automatic SMS and/or email notifications'
         },
         {
           icon: 'star',
-          title: 'Integrated invoicing'
+          title: 'Integrated invoicing (with medical codes)'
         },
         {
           icon: 'star',
-          title: 'Customer Relationship management'
-        }
+          title: 'A free website and marketing material'
+        },
+        {
+          icon: 'star',
+          title: 'Calendar syncing'
+        },
       ],
       faqs: [
         {
-          question: 'Who pays for SMSes',
-          answer: 'We do. The SMSes that are sent on your behalf by AppointmentGuru are included in the pricing.'
+        question: 'Are there any hidden or extra fees?',
+        answer: 'No. We aim to keep our pricing simple and fair. There are no sneaky, separate charges for any services provided by AppointmentGuru.'
         },
         {
-          question: 'How does multi-seat pricing work?',
-          answer: 'For practitiones who work together in a practice the cost is R400/month for your practice account. This includes 1 practitioner. For each practitioner you add to your practice it will cost an extra R150.'
+          question: 'Can I use AppointmentGuru for my practice?',
+          answer: 'For practitioners who work together in a practice the cost is R400/month for your practice account (this includes 1 practitioner). Each additional practitioner costs an extra R150/month.'
         },
         {
-          question: 'What happens if I work in a practice _and_ have run my own practice?',
-          answer: 'In this scenario, the cheaper pricing will apply to you. As long as you are part of that practice, you will only pay R150 to AppointmentGuru'
+          question: 'Can clients make their own appointments?',
+          answer: 'Absolutely, this is one of the great benefits of AppointmentGuru. Clients can book and manage their appointments with you plus view invoices in the AppointmentGuru app.'
         },
         {
-          question: 'Are there any hidden fees?',
-          answer: 'No. We aim to keep our pricing simple and fair. AppointmentGuru does not charge seperately for any services provided by AppointmentGuru'
+          question: 'Can I sync my appointments to the calendar app on my phone?',
+          answer: 'Yes!'
         }
       ]
     }
