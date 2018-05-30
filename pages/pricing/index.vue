@@ -52,6 +52,14 @@
       </v-card>
     </v-flex>
   </v-layout>
+  <v-layout row wrap >
+    <v-spacer></v-spacer>
+    <v-btn to='/help/' flat >See more FAQs <v-icon >chevron_right</v-icon></v-btn>
+  </v-layout>
+  <v-layout>
+    <v-flex xs12 sm6 offset-sm3 >
+      <v-btn color='orange' block large class='mt-4 mb-4' >Get started for free</v-btn></v-flex>
+  </v-layout>
 </v-container>
 </section>
 </template>
