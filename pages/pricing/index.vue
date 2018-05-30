@@ -72,7 +72,7 @@ export default {
         },
         {
           icon: 'star',
-          title: 'Automatic SMS and/or email notifications'
+          title: 'Automatic SMS or email notifications'
         },
         {
           icon: 'star',

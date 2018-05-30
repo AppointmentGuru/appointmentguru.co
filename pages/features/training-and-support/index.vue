@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "We want you to succeed and we're here with free training and support!",
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'All the help you need to get the most out of AppointmentGuru',
-            col2Content: 'Just more awesomeness!'
           }
         },
         {
@@ -54,45 +50,34 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Account setup',
-            content: "Setting up an account with a new service can be time-consuming - we're here to help every step of the way.",
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'settings_applications',
+              title: 'Account setup',
+              description: "Setting up an account with a new service can be time-consuming - we're here to help every step of the way."
+            },
+            {
+              icon: 'people',
+              title: 'Training',
+              description: "If you're located in Joburg or Cape Town, we'll come and give you some one-on-one training. Or, online video training!"
+            },
+            {
+              icon: 'live_help',
+              title: 'Support',
+              description: "Live chat on our website or in the app - we're available almost all of the time. And lots of useful information in the help section of our website."
+            },
+            {
+              icon: 'video_library',
+              title: 'Quick how-to videos',
+              description: 'If you prefer to watch a video, we have lots of quick how-to videos to help get your AppointmentGuru account up-and-running.'
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Training',
-            content: "If you're located in Joburg or Cape Town, we'll come and give you some one-on-one training. Or, online video training!",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Support',
-            content: "Live chat on our website or in the app - we're available almost all of the time. And lots of useful information in the help section of our website.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Quick how-to videos',
-            content: 'If you prefer to watch a video, our Youtube channel has lots of quick how-to videos to help get your AppointmentGuru account up-and-running.',
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

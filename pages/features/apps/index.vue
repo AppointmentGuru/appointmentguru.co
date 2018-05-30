@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Manage your business on the run with AppointmentGuru's apps",
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Never get behind with appointments or invoicing',
-            col2Content: 'Get relevant info on an appointment and be on time.'
           }
         },
         {
@@ -54,48 +50,37 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
+          name: FeatureBox,
+          inContainer: true,
           props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Create and manage appointments in the mobile app',
-            content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Update and send invoices from the app',
-            content: 'Quickly catch up on your invoicing admin, add line items and send invoices on the go. Send automated reminders to your clients to make payment and mark invoices as paid.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'An app for your clients!',
-            content: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: "Get listed in the AppointmentGuru directory (it's optional, of course!)",
-            content: 'New and returning clients can find you in the AppointmentGuru app to find out more about your business and make appointments with you. ',
-            img: '/placeholder.png'
-          }
-        }
-      ]
-    }
-  }
+            rowSize: 1,
+            features: [
+              {
+              icon: 'mobile_friendly',
+              title: 'Create and manage appointments in the mobile app',
+              description: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.'
+            },
+            {
+              icon: 'send',
+              title: 'Update and send invoices from the app',
+              description: 'Quickly catch up on your invoicing admin, add line items and send invoices on the go. Send automated reminders to your clients to make payment and mark invoices as paid.'
+            },
+            {
+             icon: 'phone_android',
+             title: 'An app for your clients!',
+             description: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you.'
+           },
+           {
+             icon: 'list',
+             title: "Get listed in the AppointmentGuru directory (it's optional, of course!)",
+             description: 'New and returning clients can find you in the AppointmentGuru app to find out more about your business and make appointments with you.'
+             }
+           ]
+         }
+       },
+     ]
+   }
+ }
 }
 </script>
 

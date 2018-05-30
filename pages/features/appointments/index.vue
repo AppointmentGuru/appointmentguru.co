@@ -53,7 +53,7 @@ export default {
           name: FeatureBox,
           inContainer: true,
           props: {
-            rowSize: 2,
+            rowSize: 1,
             features: [
               {
                 icon: 'settings',

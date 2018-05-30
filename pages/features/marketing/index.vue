@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'AppointmentGuru provides marketing material that includes your branding',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Brand awareness and more options to reach your customers',
-            col2Content: 'Find out about your business and keep informed'
           }
         },
         {
@@ -54,45 +50,34 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'A free website',
-            content: 'Your AppointmentGuru account includes a free website so that your clients can make appointments and get more information on your business.',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'devices',
+              title: 'A free website',
+              description: 'Your AppointmentGuru account includes a free website so that your clients can make appointments and get more information on your business.'
+            },
+            {
+              icon: 'touch_app',
+              title: 'Table talkers',
+              description: "A free table talker, displaying a QR code for your clients to scan with their phone. It'll open your website, prompt them to download the AppointmentGuru app or open your listing in the AppointmentGuru app. Making it easy for them to find information on your business and make an appointment with you."
+            },
+            {
+              icon: 'input',
+              title: 'Business cards',
+              description: 'Business cards displaying your contact information and QR code (with the same functionality as the table talkers) to take bookings. The first 100 are a gift from us!'
+            },
+            {
+              icon: 'list',
+              title: 'Free listing in the AppointmentGuru app directory',
+              description: 'An optional, free listing in the AppointmentGuru app directory. Clients will be able to book and manage appointments with you.'
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Table talkers',
-            content: "A free table talker, displaying a QR code for your clients to scan with their phone. It'll open your website, prompt them to download the AppointmentGuru app or open your listing in the AppointmentGuru app. Making it easy for them to find information on your business and make an appointment with you.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Business cards',
-            content: 'Business cards displaying your contact information and QR code (with the same functionality as the table talkers) to take bookings. The first 100 are a gift from us!',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Free listing in the AppointmentGuru app directory',
-            content: 'An optional, free listing in the AppointmentGuru app directory. Clients will be able to book and manage appointments with you.',
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

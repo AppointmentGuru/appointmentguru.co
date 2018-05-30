@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'High-level reporting gives insight into your business',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Understand key aspects and keep an eye on your overall financial status.',
-            col2Content: 'Not much, unless you want to show them!'
           }
         },
         {
@@ -54,45 +50,34 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'View reporting over different date ranges',
-            content: 'Generate a report for a week, a calendar month, the whole year.',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'show_chart',
+              title: 'View reporting over different date ranges',
+              description: 'Generate a report for a week, a calendar month, the whole year.'
+            },
+            {
+              icon: 'account_balance',
+              title: 'Check on your cashflow',
+              description: "Quickly see how much money you've earned, what's been paid and the total amount still outstanding."
+            },
+            {
+              icon: 'favorite',
+              title: 'Which appointment types are more popular?',
+              description: 'Graphs break down the appointment types and their numbers.'
+            },
+            {
+              icon: 'trending_up',
+              title: 'Which days and times are the busiest?',
+              description: "This kind of insight can be valuable when making decisions about when to best serve your clients."
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: "Check on your cashflow",
-            content: "Quickly see how much money you've earned, what's been paid and the total amount still outstanding.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Which appointment types are more popular?',
-            content: 'Graphs break down the appointment types and their numbers.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Which days and times are the busiest?',
-            content: "This kind of insight can be valuable when making decisions about when to best serve your clients.",
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

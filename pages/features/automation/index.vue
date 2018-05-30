@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automating repetitive tasks',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Up-to-date information and more time.',
-            col2Content: 'Easier and better service from your business'
           }
         },
         {
@@ -86,8 +82,6 @@ export default {
         }
       ]
     }
-  }
-}
 </script>
 
 <style>

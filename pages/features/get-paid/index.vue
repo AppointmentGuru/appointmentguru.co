@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Invoicing, magically generated from your appointments',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow.',
-            col2Content: 'Professional invoices received by email, SMS or in-app, suitable for medical aid submission. And payment reminders!'
           }
         },
         {
@@ -54,65 +50,44 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Customise your invoices with your business and client information',
-            content: 'Include your business logo, name, address and bank details and your client info (name, address, phone and medical aid info).',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'business',
+              title: 'Customise your invoices with your business and client information',
+              description: 'Include your business logo, name, address and bank details and your client info (name, address, phone and medical aid info).'
+            },
+            {
+              icon: 'assignment_turned_in',
+              title: 'Generate invoices automatically',
+              description: 'Send an invoice after each appointment or consolidate multiple appointments on a single invoice at month-end (or anytime really).'
+            },
+            {
+              icon: 'local_hospital',
+              title: 'Powerful support for medical codes',
+              description: 'AppointmentGuru allows you to add ICD10, NAPPI, procedure and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.'
+            },
+            {
+              icon: 'credit_card',
+              title: 'Accept payment via SnapScan',
+              description: "AppointmentGuru's SnapScan integration adds a SnapScan code to each invoice. Once payment has been made via the SnapScan app, the invoice will be marked as paid in your AppointmentGuru account. Less work for you!"
+            },
+            {
+              icon: 'receipt',
+              title: 'Send, remind, receipt',
+              description: "Send invoices to your clients by email, SMS or in-app, remind them if they haven't paid and send a receipt once they have. All at the touch of a button."
+            },
+            {
+              icon: 'done_all',
+              title: 'Reconcile and view your reports',
+              description: "Mark invoices as paid as you get paid and easily view those still outstanding. Reporting updates to show your financial health over the month."
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Generate invoices automatically',
-            content: 'Send an invoice after each appointment or consolidate multiple appointments on a single invoice at month-end (or anytime really).',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Powerful support for medical codes',
-            content: 'AppointmentGuru allows you to add ICD10, NAPPI, procedure and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Accept payment via SnapScan',
-            content: "AppointmentGuru's SnapScan integration adds a SnapScan code to each invoice. Once payment has been made via the SnapScan app, the invoice will be marked as paid in your AppointmentGuru account. Less work for you!",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Send, remind, receipt',
-            content: "Send invoices to your clients by email, SMS or in-app, remind them if they haven't paid and send a receipt once they have. All at the touch of a button.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Reconcile and view your reports',
-            content: "Mark invoices as paid as you get paid and easily view those still outstanding. Reporting updates to show your financial health over the month.",
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

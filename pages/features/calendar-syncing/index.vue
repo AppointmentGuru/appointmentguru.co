@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Sync to the calendar app on your phone",
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Always be on top of your schedule',
-            col2Content: 'Add appointments to their calendar app'
           }
         },
         {
@@ -54,29 +50,28 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
+          name: FeatureBox,
+          inContainer: true,
           props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Sync your AppointmentGuru calendar to your phone',
-            content: 'One-way calendar syncing from AppointmentGuru to the calendar app on your phone or computer.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Clients add appointments to their own calendar apps',
-            content: 'Clients using the AppointmentGuru app can add appointments to their calendar app.',
-            img: '/placeholder.png'
-          }
-        }
-      ]
+            rowSize: 1,
+            features: [
+              {
+                icon: 'sync',
+                title: 'Sync your AppointmentGuru calendar to your phone',
+                description: 'One-way calendar syncing from AppointmentGuru to the calendar app on your phone or computer.'
+              },
+              {
+                icon: 'calendar_today',
+                title: 'Clients add appointments to their own calendar apps',
+                description: 'Clients using the AppointmentGuru app can add appointments to their calendar app.'
+                }
+              ]
+            }
+          },
+        ]
+      }
     }
   }
-}
 </script>
 
 <style>

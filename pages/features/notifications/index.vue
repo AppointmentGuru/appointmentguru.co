@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automated notifications with customised business and appointment info',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Lessen no-shows and keep you and your clients informed',
-            col2Content: 'Relevant info on their appointment and reminders to be on time.'
           }
         },
         {
@@ -54,56 +50,39 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Appointment confirmations',
-            content: 'Send an automated SMS or email to you and your client whenever an appointment is created.',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'check',
+              title: 'Appointment confirmations',
+              description: 'Send an automated SMS or email to you and your client whenever an appointment is created.'
+            },
+            {
+              icon: 'notification_important',
+              title: 'Appointment reminders',
+              description: 'Automatically send an SMS or email to your client 24 hours before their appointment, reminding them of the time, your address and any other information.'
+            },
+            {
+              icon: 'refresh',
+              title: 'Reschedule and cancellation notifications',
+              description: 'Notifications to you and your client when an appointment is rescheduled (clients can reschedule their own appointments up to 24 hours before). Cancellation notifications can include information on how to make another appointment, encouraging clients to see you again.'
+            },
+            {
+              icon: 'notifications_off',
+              title: "Or don't send notifications at all",
+              description: "The option to not send an appointment confirmation, reminder, reschedule or cancel notification whenever you're managing your appointments."
+            },
+            {
+              icon: 'send',
+              title: 'Invoice and payment reminder notifications',
+              description: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice with an automatic follow-up payment reminder notification.'
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Appointment reminders',
-            content: 'Automatically send an SMS or email to your client 24 hours before their appointment, reminding them of the time, your address and any other information.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Reschedule and cancellation notifications',
-            content: 'Notifications to you and your client when an appointment is rescheduled (clients can reschedule their own appointments up to 24 hours before). Cancellation notifications can include information on how to make another appointment, encouraging clients to see you again.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: "Or don't send notifications at all",
-            content: "The option to not send an appointment confirmation, reminder, reschedule or cancel notification whenever you're managing your appointments.",
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Invoice and payment reminder notifications',
-            content: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice with an automatic follow-up payment reminder notification.',
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }
