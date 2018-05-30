@@ -84,7 +84,7 @@ export default {
         },
         {
           icon: 'star',
-          title: 'Calendar syncing'
+          title: 'Calendar syncing, and so much more...'
         },
       ],
       faqs: [
