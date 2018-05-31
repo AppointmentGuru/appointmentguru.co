@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Get online and accept appointments',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'An online presence and available for anytime-appointment booking',
-            col2Content: 'Make appointments anytime and also get info on your business'
           }
         },
         {
@@ -54,36 +50,29 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Free AppointmentGuru website',
-            content: 'A one-page website with information on your business and a place to accept appointments.',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'devices',
+              title: 'Free AppointmentGuru website',
+              description: 'A one-page website with information on your business and a place to accept appointments.'
+            },
+            {
+              icon: 'list',
+              title: 'List in the AppointmentGuru app',
+              description: 'Clients can download the AppointmentGuru app to make and manage their appointments with you.'
+            },
+            {
+              icon: 'code',
+              title: 'Add the AppointmentGuru booking widget to your website',
+              description: 'Add the AppointmentGuru booking code to your existing website so that appointments can be made.'
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'List in the AppointmentGuru app',
-            content: 'Clients can download the AppointmentGuru app to make and manage their appointments with you.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Add AppointmentGuru to your website',
-            content: 'Add the AppointmentGuru booking code to your existing website so that appointments can be made.',
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

@@ -41,53 +41,42 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automating repetitive tasks',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'Up-to-date information and more time.',
-            col2Content: 'Easier and better service from your business'
           }
         },
         {
           name: 'Callout',
           props: {
             callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Automatic notifications',
-            content: 'Automatically notify your clients of newly created appointments, reminders the day before and even rescheduled or canceled appointments.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Automatically updated reporting',
-            content: 'Super-handy reporting on your appointments and invoices updates itself.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Clients create their own appointments',
-            content: 'Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget.',
-            img: '/placeholder.png'
-          }
+            }
+          },
+          {
+            name: FeatureBox,
+            inContainer: true,
+            props: {
+              rowSize: 1,
+              features: [
+                {
+                  icon: 'notification_important',
+                  title: 'Automatic notifications',
+                  description: 'Automatically notify your clients of newly created appointments, reminders the day before and even rescheduled or canceled appointments.'
+                },
+                {
+                  icon: 'show_chart',
+                  title: 'Automatically updated reporting',
+                  description: 'Super-handy reporting on your appointments and invoices updates itself.'
+                },
+                {
+                  icon: 'accessibility_new',
+                  title: 'Clients create their own appointments',
+                  description: 'Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget.'
+                  }
+                ]
+              }
+            },
+          ]
         }
-      ]
+      }
     }
-  }
-}
 </script>
 
 <style>

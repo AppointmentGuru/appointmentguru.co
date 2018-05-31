@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Empower your clients to book and manage their appointments with you',
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: "Continue doing business even when you're not available",
-            col2Content: 'The convenience of making and managing appointments anytime'
           }
         },
         {
@@ -54,45 +50,34 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Clients self-book appointments',
-            content: 'Instead of phoning or messaging you, clients can make and manage appointments themselves. AppointmentGuru offers a mobile app, a free website or booking code you can add to your site.',
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'accessibility_new',
+              title: 'Clients self-book appointments',
+              description: 'Instead of phoning or messaging you, clients can make and manage appointments themselves. AppointmentGuru offers a mobile app, a free website or booking code you can add to your site.'
+            },
+            {
+              icon: 'location_on',
+              title: 'Information, directions and even an Uber!',
+              description: 'Clients can get your address, easily find their way using Google Maps or even order an Uber from the AppointmentGuru app.'
+            },
+            {
+              icon: 'restore',
+              title: 'Self-rescheduling',
+              description: 'Reduce calls from clients asking to reschedule their appointment, the AppointmentGuru app allows for rescheduling up to 24 hours before the appointment starts.'
+            },
+            {
+              icon: 'pageview',
+              title: 'View and pay invoices',
+              description: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and if you've enabled the SnapScan integration - payment can be made using SnapScan."
+              }
+            ]
           }
         },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Information, directions and even an Uber!',
-            content: 'Clients can get your address, easily find their way using Google Maps or even order an Uber from the AppointmentGuru app.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Self-rescheduling',
-            content: 'Reduce calls from clients asking to reschedule their appointment, the AppointmentGuru app allows for rescheduling up to 24 hours before the appointment starts.',
-            img: '/placeholder.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'View and pay invoices',
-            content: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and if you've enabled the SnapScan integration - payment can be made using SnapScan.",
-            img: '/placeholder.png'
-          }
-        }
       ]
     }
   }

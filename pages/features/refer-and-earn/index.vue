@@ -41,10 +41,6 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Refer AppointmentGuru and you'll get rewarded",
-            col1Headline: 'For your business',
-            col2Headline: 'For your clients',
-            col1Content: 'A free month for each successful referral!',
-            col2Content: 'Access to more practitioners on the AppointmentGuru platform'
           }
         },
         {
@@ -54,16 +50,24 @@ export default {
           }
         },
         {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            isLeft: true,
-            withBackground: true,
-            tagline: 'Refer AppointmentGuru to your network',
-            content: "For each successful referral (your referral becomes a paying AppointmentGuru customer), we'll give you a free month on your AppointmentGuru subscription.",
-            img: '/placeholder.png'
+        name: FeatureBox,
+        inContainer: true,
+        props: {
+          rowSize: 1,
+          features: [
+            {
+              icon: 'share',
+              title: 'Refer AppointmentGuru to your network',
+              description: 'Help spread the word, refer AppointmentGuru within your network.'
+            },
+            {
+              icon: 'favorite',
+              title: 'Earn rewards for successful referrals',
+              description: "For each successful referral (your referral becomes a paying AppointmentGuru customer), we'll give you a free month on your AppointmentGuru subscription."
+              }
+            ]
           }
-        }
+        },
       ]
     }
   }
