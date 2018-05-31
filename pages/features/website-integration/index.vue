@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Website integration | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'Get your business online, AppointmentGuru provides a free website, app and booking widget to add to your existing site.' }
       ]
     }
   },
@@ -40,13 +40,13 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Get online and accept appointments',
+            tagline: 'Accept appointments online',
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'AppointmentGuru gives you an online presence. Your clients will be to get info on your business and make appointments anytime.'
           }
         },
         {

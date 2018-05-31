@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Efficient appointment management with AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru offers powerful AppointmentGuru appointment management that includes online appointment creation, a schedule and calendar, invoicing, appointment notifications and more.' }
       ]
     }
   },

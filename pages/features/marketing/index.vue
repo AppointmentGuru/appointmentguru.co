@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Marketing is included | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: "AppointmentGuru provides marketing tools such as table talkers, business cards, a free website and a free listing in the AppointmentGuru app. Content is branded with logo's and profile pictures." }
       ]
     }
   },
@@ -40,13 +40,13 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'AppointmentGuru provides marketing material that includes your branding',
+            tagline: 'Marketing tools are included',
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'AppointmentGuru provides branded marketing tools to help retain and find more clients.'
           }
         },
         {

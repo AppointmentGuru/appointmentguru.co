@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'View, update and sync your calendar | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: "AppointmentGuru's calendar can be synced to Calendar apps (iOS, Android and desktops). Clients can also add appointments to their own calendar apps." }
       ]
     }
   },
@@ -46,7 +46,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'Always be on top of your schedule, sync your AppointmentGuru calendar to your Calendar app.'
           }
         },
         {

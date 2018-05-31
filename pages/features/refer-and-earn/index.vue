@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Refer and get rewarded | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru rewards customers who refer AppointmentGuru on to their network.' }
       ]
     }
   },
@@ -40,13 +40,13 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: "Refer AppointmentGuru and you'll get rewarded",
+            tagline: "Refer AppointmentGuru and you'll get rewarded!",
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'Be part of our growth and success, refer AppointmentGuru and win!'
           }
         },
         {

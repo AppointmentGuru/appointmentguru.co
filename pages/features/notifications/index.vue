@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Automatic notifications | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru provides automatic SMS or email notifications to confirm, remind, reschedule or cancel an appointment. Invoices and payment reminders can also be sent by SMS and email to you and your client.' }
       ]
     }
   },
@@ -40,13 +40,13 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Automated notifications with customised business and appointment info',
+            tagline: 'Automated SMS or email notifications',
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'Automatic appointment notifications lessen client no-shows. Include relevant info about their appointment and send payment reminders afterwards.'
           }
         },
         {

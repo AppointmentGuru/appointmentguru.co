@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Keep track | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'Automatically updated reporting shows information such as how many appointments have been paid, how much money is outstanding, which appointments are popular, the busiest times and more.' }
       ]
     }
   },
@@ -46,7 +46,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: "Take a step back and get an idea of the numbers. View information on your cashflow, reporting on your appointment types and when you're most busy."
           }
         },
         {

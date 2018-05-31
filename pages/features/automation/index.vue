@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Automate repetitive tasks | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru automatically sends SMS or email notifications, gives updated reporting and enables clients to book and manage their own appointments.' }
       ]
     }
   },
@@ -46,7 +46,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: 'Automation enables you to spend less time dealing with appointment admin and freeing up more time to do real work.'
             }
           },
           {
