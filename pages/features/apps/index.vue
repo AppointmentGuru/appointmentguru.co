@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'iOS and Android apps for you and your clients | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru offers mobile apps for iOS and Android, both apps empower AppointmentGuru clients and their clients to manage appointments, notifications, an online shared calendar, directions, invoices and more.' }
       ]
     }
   },
@@ -40,13 +40,13 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: "Manage your business on the run with AppointmentGuru's apps",
+            tagline: "AppointmentGuru's apps help you manage your business on the run",
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: "Keep up-to-date with your appointments and invoicing by using the AppointmentGuru app. And there's an app for your clients too!"
           }
         },
         {

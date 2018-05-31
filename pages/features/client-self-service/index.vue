@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Client self-service | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'Clients can make their own appointments, reschedule them up to 24 hours before, get information and directions, view due and paid invoices.' }
       ]
     }
   },
@@ -46,7 +46,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: "Your business can continually take appointments and help clients even when you're not personally available. And your clients can conveniently make and manage appointments anytime."
           }
         },
         {

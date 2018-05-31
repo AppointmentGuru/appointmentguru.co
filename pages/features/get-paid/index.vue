@@ -21,9 +21,9 @@ export default {
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Manage your appointments efficiently | AppointmentGuru',
+      title: 'Invoicing directly from appointments | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru appointment management give you: appointment notifications, an online shared calendar, mobile app for managing on the go and more' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru offers integrated invoicing that includes ICD10, NAPPI, procedure and process codes for medical aid submission. An invoice can be immediately sent from an appointment or a consolidated invoice with multiple appointments (and line items) at month-end. Accept payment via SnapScan.' }
       ]
     }
   },
@@ -46,7 +46,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Spend less time dealing with your appointment admin and free up more time for the important things.'
+            callout: "Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow. AppointmentGuru's invoicing also includes built-in ICD10, NAPPI, procedure and process codes for medical aid submission. And payment reminders!"
           }
         },
         {
