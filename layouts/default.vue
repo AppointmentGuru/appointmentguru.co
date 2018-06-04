@@ -96,7 +96,7 @@
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="/help/">Help</a></li>
                 <li class="text-muted"><a href="/privacy/">Privacy</a></li>
-                <li class="text-muted"><a href="/terms/">Terms &amp; Conditions</a></li>
+                <li class="text-muted"><a href="/terms/">Terms</a></li>
                </ul>
             </v-flex>
             <v-flex xs12 sm4 class='text-sm-right pa-2' >
@@ -104,7 +104,6 @@
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="">Signup</a></li>
                 <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
-                <li class="text-muted"><a href="/guru-does-it-for-you/">Guru Does It For You</a></li>
                 <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
                 <li class="text-muted"><a href="https://bookme.guru">Find a practitioner</a></li>
               </ul>
