@@ -13,8 +13,12 @@
           {{post.fields.Title}}</nuxt-link></h2>
         </v-card-title>
         <v-divider></v-divider>
-        <v-card-text>
-          <p v-html='$md.render(post.fields.Summary)' ></p>
+        <v-card-text  >
+          <p v-if='post.fields.Summary' v-html='$md.render(post.fields.Summary)' ></p>
+          <v-layout v-if='post.fields.TagLookup'>
+            <strong class='mt-2'><v-icon left>label</v-icon> Tags: </strong>
+            <v-chip label small v-for='tag in post.fields.TagLookup' :key='tag' >{{tag}}</v-chip>
+          </v-layout>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
@@ -23,7 +27,7 @@
             {{ new Date(post.fields.DatePublished).toDateString() }}
           </span>
           <v-spacer></v-spacer>
-          <v-btn flat >{{ $t('readMore') }}</v-btn>
+          <v-btn :to='`/blog/${post.fields.Slug}`' flat >{{ $t('readMore') }}</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -45,11 +49,16 @@ export default {
     let url = process.env.airtableBlogBaseUrl + '/BlogPost'
 
     let options = {
+      url: url,
       headers: headers,
-      view: 'Overview',
-      sort: '[{field: "DatePublished", direction: "asc"}]'
+      method: 'get',
+      params: {
+        view: 'WebsiteBlogPage'
+        // filterByFormula: '({Status}="Published")',
+        // sort: '[{field: "Name", direction: "desc"}]'
+      }
     }
-    let response = await axios.get(url, options)
+    let response = await axios(options)
     return {
       posts: response.data.records
     }
