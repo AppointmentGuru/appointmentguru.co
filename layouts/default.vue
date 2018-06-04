@@ -44,10 +44,14 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn href='https://app.appointmentguru.co' flat>Login</v-btn>
-        <v-btn color='green' class='elevation-0' >Sign up</v-btn>
+        <v-btn @click='showsignup = true' color='green' class='elevation-0' >Sign up</v-btn>
       </v-toolbar-items>
       <v-toolbar-side-icon class='hidden-md-and-up' @click='showNav = !showNav' ></v-toolbar-side-icon>
     </v-toolbar>
+
+    <no-ssr placeholder="Loading...">
+      <div id="agsignup"></div>
+    </no-ssr>
 
     <nuxt/>
 
@@ -123,6 +127,21 @@
         &copy; AppointmentGuru {{ new Date().getFullYear() }}</v-footer>
     </footer>
 
+    <v-dialog v-model="showsignup" max-width="500px" >
+      <v-card>
+        <v-toolbar class='orange lighten-2' dark>
+          <v-toolbar-title >
+          Get started with AppointmentGuru
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-side-icon >
+            <v-btn icon @click='showsignup=false' ><v-icon>close</v-icon></v-btn>
+          </v-toolbar-side-icon>
+        </v-toolbar>
+        <div id="agsignup"></div>
+      </v-card>
+    </v-dialog>
+
   </v-app>
 </template>
 <script>
@@ -130,8 +149,18 @@ export default {
   name: 'Main',
   data () {
     return {
-      showNav: false
+      showNav: false,
+      showsignup: false
     }
+  },
+  head: {
+    script: [
+      {
+        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.8f476e82265871fe6f0d.js',
+        body: true,
+        defer: true
+      }
+    ]
   }
 }
 </script>

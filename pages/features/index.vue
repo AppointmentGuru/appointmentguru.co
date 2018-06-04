@@ -1,10 +1,16 @@
 <template>
 <section class='page-container' >
-  <gradient-jumbotron
+  <!-- <gradient-jumbotron
     :gradient='gradient'
     headline='Features'
     tagline='Learn more about what AppointmentGuru offers and how it can work for your business' >
-  </gradient-jumbotron>
+  </gradient-jumbotron> -->
+  <v-parallax
+    height='400' class='pa-0 ma-0 features'
+    src='https://images.unsplash.com/photo-1511371496040-1fb40794e675?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362c0aaebcb9f87edf9f84b50547c090&auto=format&fit=crop&w=1949&q=80' >
+    <v-spacer></v-spacer>
+    <h1 class='display-1 text-xs-right pa-2 pr-4 ma-0'>{{ $t('title') }}</h1>
+  </v-parallax>
   <v-container>
     <v-layout row wrap>
       <v-flex sm4 xs12
@@ -30,6 +36,13 @@ import GradientJumbotron from '@/components/GradientJumbotron'
 export default {
   name: 'FeaturesPage',
   components: {GradientJumbotron},
+  i18n: {
+    messages: {
+      en: {
+        title: 'AppointmentGuru Features'
+      }
+    }
+  },
   data () {
     return {
       gradient: 'to top, #7B1FA2, #E1BEE7',
@@ -111,3 +124,12 @@ export default {
   }
 }
 </script>
+<style >
+.features .parallax__content {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.features h1 {
+  background:rgba(0,0,0,0.6);
+}
+</style>
