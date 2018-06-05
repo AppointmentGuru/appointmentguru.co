@@ -1,10 +1,13 @@
 <template>
 <section>
+  <v-layout>
+    <h1 class='ma-4 text-xs-center hidden-sm-and-up headline'>{{tagline}}</h1>
+  </v-layout>
   <v-layout row wrap>
-    <v-flex xs12 sm6 class='order-sm1 order-xs2' >
-      <h1 class='mr-4 mt-4 blue-grey--text'>{{headline}}</h1>
-      <h2 class='mb-4 headline deep-orange--text darken-4--text'>{{tagline}}</h2>
-      <v-layout>
+    <v-flex xs12 sm6 class='order-sm1 order-xs2 pa-2 mt-4' >
+      <h1 class='mr-4 mt-4 blue-grey--text headline hidden-sm-and-up'>{{headline}}</h1>
+      <h2 class='mb-4 headline deep-orange--text darken-4--text hidden-xs-only'>{{tagline}}</h2>
+      <v-layout v-if='col1Headline || col2Headline'>
         <v-flex xs12 sm6 >
           <div class='mr-2' >
             <h3 class='subheading' >{{col1Headline}}</h3>
@@ -26,7 +29,7 @@
     </v-flex>
     <v-flex xs12 sm6 class='order-sm2 order-xs1' >
       <img
-        style='width:100%;' class='mt-4-sm pt-4-sm'
+        style='width:90%;' class='ma-4 pt-4-sm'
         src='/img/hero_3.png' />
     </v-flex>
   </v-layout>
@@ -44,11 +47,11 @@ export default {
     col2Content: { type: String },
     img: { type: String },
     ctaText: { type: String, default: 'Get Started for Free' }
-  },
+  }
 }
 </script>
 <style scoped>
-h1 {
+h1.headline {
   text-transform: uppercase; font-size:14px;
 }
 h2.headline {
