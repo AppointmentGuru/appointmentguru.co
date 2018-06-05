@@ -30,7 +30,7 @@
     <v-flex xs12 sm6 class='order-sm2 order-xs1' >
       <img
         style='width:90%;' class='ma-4 pt-4-sm'
-        src='/img/hero_3.png' />
+        :src='img' />
     </v-flex>
   </v-layout>
 </section>
@@ -45,7 +45,7 @@ export default {
     col1Content: { type: String },
     col2Headline: { type: String },
     col2Content: { type: String },
-    img: { type: String },
+    img: { type: String, default: '/img/hero_3.png' },
     ctaText: { type: String, default: 'Get Started for Free' }
   }
 }
