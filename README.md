@@ -1,4 +1,4 @@
-# appointmentguru.co
+]# appointmentguru.co
 
 > AppointmentGuru website
 
@@ -10,6 +10,11 @@ docker-compose up -d
 
 open: http://localhost:3000
 
+## Deploy
+
+```
+sh ./deploy.sh
+```
 
 ## Build Setup
 

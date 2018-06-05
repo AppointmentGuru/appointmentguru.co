@@ -8,4 +8,4 @@
       private: no
       default: "/app/dist/"
   roles:
-    - { role: staticwebsite, staticwebsite_domain: next.bookme.guru }
+    - { role: staticwebsite, staticwebsite_domain: next.appointmentguru.co }

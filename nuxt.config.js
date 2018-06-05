@@ -1,3 +1,4 @@
+const axios = require('axios')
 module.exports = {
   /*
   ** Headers of the page
@@ -55,6 +56,39 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  generate: {
+    routes: function () {
+      function getAirtable (base, table) {
+        let airtable = 'keyt7MKFDGrXm3set'
+        let method = 'get'
+        let headers = { 'Authorization': 'Bearer ' + airtable }
+        let url = `https://api.airtable.com/v0/${base}/${table}`
+        return axios({url, method, headers})
+      }
+      function airtableToRoutes (data, path, key) {
+        return data.map((item) => {
+          payload = {}
+          payload[key] = item
+          return {
+            route: path + item.fields.Slug,
+            payload: payload
+          }
+        })
+      }
+      return axios
+        .all([
+          getAirtable('appB8tJlSNDM6eeWt', 'HelpPage'),
+          getAirtable('appUmwBIxunmbdDPs', 'BlogPost')])
+        .then(axios.spread(
+          function (helppages, blogposts) {
+            let helpRoutes = airtableToRoutes(helppages.data.records, 'help/', 'page')
+            let blogRoutes = airtableToRoutes(blogposts.data.records, 'blog/', 'page')
+            let routes = helpRoutes.concat(blogRoutes)
+            return routes
+          }
+        ))
     }
   }
 }
