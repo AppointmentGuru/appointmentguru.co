@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Refer AppointmentGuru and you'll get rewarded!",
+            img: '/img/icons/networking.png'
           }
         },
         {

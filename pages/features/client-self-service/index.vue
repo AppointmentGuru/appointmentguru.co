@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Empower your clients to book and manage their appointments with you',
+            img: '/img/free_website.png'
           }
         },
         {

@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "AppointmentGuru's apps help you manage your business on the run",
+            img: '/img/free_website.png'
           }
         },
         {

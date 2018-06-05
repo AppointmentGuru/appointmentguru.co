@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automating repetitive tasks',
+            img: '/img/free_website.png'            
           }
         },
         {

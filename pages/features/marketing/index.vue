@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Marketing tools are included',
+            img: '/img/free_website.png'
           }
         },
         {

@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Accept appointments online',
-            img: '/img/online-appointments-v2.png'
+            img: '/img/free_website.png'
           }
         },
         {
