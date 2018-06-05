@@ -78,7 +78,7 @@ export default {
             classes: 'mt-4',
             tagline: 'Manage your business on the go',
             content: 'Keep up-to-date with your appointments and invoicing with the AppointmentGuru app.',
-            img: 'placeholder.png'
+            img: 'img/manage-appointments.png'
           }
         },
         {
@@ -89,14 +89,14 @@ export default {
             withBackground: true,
             tagline: 'Lessen no-shows with notifications',
             content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments.',
-            img: 'placeholder.png'
+            img: 'img/notificationsV2.png'
           }
         },
         {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            tagline: 'Built-in invoicing and integration with SnapScan',
+            tagline: 'Built-in invoicing plus an integration with SnapScan',
             content: 'Industry-standard invoices generated from your appointments. Include extra medical info like ICD-10, NAPPI and procedure codes. Accept credit card payments with SnapScan and AppointmentGuru. Each invoice displays a unique SnapScan QR code your clients can use to make payment.',
             img: 'placeholder.png'
           }
@@ -109,7 +109,7 @@ export default {
             withBackground: true,
             tagline: 'Empower and know your client',
             content: 'Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.',
-            img: 'placeholder.png'
+            img: 'img/online-appointments.png'
           }
         },
         {
