@@ -69,7 +69,7 @@ export default {
             withBackground: true,
             tagline: 'More than just an appointment manager',
             content: 'Automate your appointment management, send good-looking invoices, be better at running your business, free up more time.',
-            img: 'placeholder.png'
+            img: 'img/schedule.png'
           }
         },
         {
@@ -78,7 +78,7 @@ export default {
             classes: 'mt-4',
             tagline: 'Manage your business on the go',
             content: 'Keep up-to-date with your appointments and invoicing with the AppointmentGuru app.',
-            img: 'img/manage-appointments.png'
+            img: 'img/create_appointment.png'
           }
         },
         {
@@ -89,7 +89,7 @@ export default {
             withBackground: true,
             tagline: 'Lessen no-shows with notifications',
             content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments.',
-            img: 'img/notificationsV2.png'
+            img: 'img/notification.png'
           }
         },
         {
@@ -98,7 +98,7 @@ export default {
             classes: 'mt-4',
             tagline: 'Built-in invoicing plus an integration with SnapScan',
             content: 'Industry-standard invoices generated from your appointments. Include extra medical info like ICD-10, NAPPI and procedure codes. Accept credit card payments with SnapScan and AppointmentGuru. Each invoice displays a unique SnapScan QR code your clients can use to make payment.',
-            img: 'placeholder.png'
+            img: 'img/invoice.png'
           }
         },
         {
@@ -109,16 +109,7 @@ export default {
             withBackground: true,
             tagline: 'Empower and know your client',
             content: 'Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.',
-            img: 'img/online-appointments.png'
-          }
-        },
-        {
-          name: FeatureBlock,
-          props: {
-            classes: 'mt-4',
-            tagline: 'Free stuff!',
-            content: 'With your AppointmentGuru account, you get a free website, free mobile apps, table talkers and business cards',
-            img: 'placeholder.png'
+            img: 'img/book_online.png'
           }
         },
         {
