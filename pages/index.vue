@@ -25,7 +25,7 @@ export default {
     return {
       title: 'AppointmentGuru - Be better at admin, spend less time doing it',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru helps you to automate appointments, invoices and customer management' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru helps you to automate appointments, invoices and customer management. It has an online calendar, automated notifications and mobile apps for you and your clients to book and manage their appointments.' }
       ]
     }
   },
@@ -49,33 +49,16 @@ export default {
           }
         },
         {
-          name: Callout,
-          props: {
-            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment-based business.'
-          }
-        },
-        {
-          name: FeatureBox,
-          inContainer: true,
-          props: {
-            rowSize: 3,
-            features: [
-              {
-                icon: 'event',
-                title: 'Appointments',
-                description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-              },
-              {
-                icon: 'bookmark',
-                title: 'Invoices',
-                description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-              },
-              {
-                icon: 'person',
-                title: 'Client management',
-                description: 'Manage your appointments like a pro with online bookings, automated notifications, integrated online calendar and more'
-              }
-            ]
+        name: Testimonial,
+        inContainer: true,
+        props: {
+          classes: 'elevation-2',
+          quote: "This company has changed how my clinic runs over the last 2 years. Bookings, invoicing and anything admin - AppointmentGuru is a necessity for any modern business in today's technology-driven workplace.",
+          authorName: 'Sean Johnson',
+          authorBio: 'Natural Therapist',
+          link: 'http://bookme.guru/structuralmedicine/',
+          linkText: 'Book now with the Centre for Structural Medicine',
+          image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png'
           }
         },
         {
@@ -84,33 +67,55 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            headline: 'RUN YOUR BUSINESS LIKE A PRO',
-            tagline: 'Manage your bookings on the go',
-            content: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.',
-            img: 'https://appointmentguru.co/assets/img/homepage/manage-appointments-v2.png'
+            tagline: 'More than just an appointment manager',
+            content: 'Automate your appointment management, send good-looking invoices, be better at running your business, free up more time.',
+            img: 'img/schedule.png'
           }
         },
         {
           name: FeatureBlock,
           props: {
             classes: 'mt-4',
-            headline: 'Automatically Generated Invoices',
-            tagline: 'Send professional invoices that clients, bookkeepers and medical aids will love',
-            content: 'Industry-standard invoices sent at the touch of a button. Include extra medical info like ICD-10, NAPPI and procedure codes.',
-            img: 'https://appointmentguru.co/assets/img/homepage/invoicing.png'
+            tagline: 'Manage your business on the go',
+            content: 'Keep up-to-date with your appointments and invoicing with the AppointmentGuru app.',
+            img: 'img/create_appointment.png'
           }
         },
         {
-          name: Testimonial,
-          inContainer: true,
+          name: FeatureBlock,
           props: {
-            classes: 'elevation-2',
-            quote: "I don't think I could imagine running my business without AppointmentGuru anymore.",
-            authorName: 'Sean Johnson',
-            authorBio: 'Natural Therapist',
-            link: 'http://bookme.guru/structuralmedicine/',
-            linkText: 'Book now with the Centre for Structural Medicine',
-            image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png'
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Lessen no-shows with notifications',
+            content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments.',
+            img: 'img/notification.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            tagline: 'Built-in invoicing plus an integration with SnapScan',
+            content: 'Industry-standard invoices generated from your appointments. Include extra medical info like ICD-10, NAPPI and procedure codes. Accept credit card payments with SnapScan and AppointmentGuru. Each invoice displays a unique SnapScan QR code your clients can use to make payment.',
+            img: 'img/invoice.png'
+          }
+        },
+        {
+          name: FeatureBlock,
+          props: {
+            classes: 'mt-4',
+            isLeft: true,
+            withBackground: true,
+            tagline: 'Empower and know your client',
+            content: 'Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.',
+            img: 'img/book_online.png'
+          }
+        },
+        {
+          name: Callout,
+          props: {
+            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment-based business.'
           }
         }
       ]
