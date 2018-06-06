@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Invoicing, magically generated from your appointments',
+            img: '/img/invoicing_v2.png'
           }
         },
         {

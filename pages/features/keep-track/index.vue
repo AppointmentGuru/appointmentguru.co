@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'High-level reporting gives insight into your business',
+            img: '/img/reporting-3_half.png'
           }
         },
         {

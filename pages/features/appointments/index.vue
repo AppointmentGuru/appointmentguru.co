@@ -41,6 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Quick, easy, flexible appointment management',
+            img: '/img/schedule_half.png'
           }
         },
         {
