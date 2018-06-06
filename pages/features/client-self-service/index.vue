@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Empower your clients to book and manage their appointments with you',
-            img: '/img/free_website.png'
+            img: '/img/app_for_clients_half.png'
           }
         },
         {
@@ -60,6 +60,11 @@ export default {
               icon: 'accessibility_new',
               title: 'Clients self-book appointments',
               description: 'Instead of phoning or messaging you, clients can make and manage appointments themselves. AppointmentGuru offers a mobile app, a free website or booking code you can add to your site.'
+            },
+            {
+              icon: 'account_box',
+              title: 'Clients manage their information',
+              description: 'Your clients can update their personal information including contact details and medical aid info.'
             },
             {
               icon: 'location_on',

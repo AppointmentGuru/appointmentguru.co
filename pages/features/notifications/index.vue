@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automated SMS or email notifications',
-            img: '/img/free_website.png'
+            img: '/img/notification_half.png'
           }
         },
         {

@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Sync to the calendar app on your phone",
-            img: '/img/free_website.png'
+            img: '/img/calendar.png'
           }
         },
         {

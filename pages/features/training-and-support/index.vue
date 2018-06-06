@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: "Free training and support",
-            img: '/img/free_website.png'
+            img: '/img/icons/help.png'
           }
         },
         {
