@@ -59,7 +59,7 @@ export default {
               {
               icon: 'mobile_friendly',
               title: 'Create and manage appointments in the mobile app',
-              description: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients.'
+              description: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients. The app is available in the Apple and Google Play stores'
             },
             {
               icon: 'send',
