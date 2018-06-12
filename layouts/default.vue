@@ -25,6 +25,13 @@
         <v-list-tile to='/blog'>
           <v-list-tile-title >Blog</v-list-tile-title>
         </v-list-tile>
+        <v-divider></v-divider>
+        <v-list-tile href='https://app.appointmentguru.co' >
+          <v-list-tile-title >Login</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile @click='showsignup = true' >
+          <v-list-tile-title >Sign up</v-list-tile-title>
+        </v-list-tile>
       </v-list>
      </v-navigation-drawer>
     <v-toolbar app dark color='orange' >
@@ -106,7 +113,7 @@
             <v-flex xs12 sm4 class='text-sm-right pa-2' >
               <h4 class='subheading uppercase' >Access</h4>
               <ul class="list-unstyled list-spaced mt-3">
-                <li class="text-muted"><a href="">Signup</a></li>
+                <li class="text-muted"><a ><span @click='showsignup = true' >Signup</span></a></li>
                 <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
                 <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
                 <li class="text-muted"><a href="https://bookme.guru">Find a practitioner</a></li>
@@ -126,7 +133,7 @@
         &copy; AppointmentGuru {{ new Date().getFullYear() }}</v-footer>
     </footer>
 
-    <v-dialog v-model="showsignup" max-width="500px" >
+    <v-dialog :fullscreen='isMobile' v-model="showsignup" max-width="500px" >
       <v-card>
         <v-toolbar class='orange lighten-2' dark>
           <v-toolbar-title >
@@ -152,10 +159,15 @@ export default {
       showsignup: false
     }
   },
+  computed: {
+    isMobile () {
+      return this.$vuetify.breakpoint.smAndDown
+    }
+  },
   head: {
     script: [
       {
-        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.074ad47ab476b6b4a98f.js',
+        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.8f476e82265871fe6f0d.js',
         body: true,
         defer: true
       }
