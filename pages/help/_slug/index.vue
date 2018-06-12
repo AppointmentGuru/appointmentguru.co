@@ -29,6 +29,14 @@ import axios from 'axios'
 
 export default {
   name: 'HelpPage',
+  head () {
+    return {
+      title: this.page.fields.Title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.page.fields.Summary }
+      ]
+    }
+  },
   async asyncData ({ params, query }) {
     let headers = {
       'Authorization': 'Bearer ' + process.env.airtableToken
