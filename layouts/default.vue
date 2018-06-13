@@ -167,7 +167,7 @@ export default {
   head: {
     script: [
       {
-        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.8f476e82265871fe6f0d.js',
+        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.074ad47ab476b6b4a98f.js',
         body: true,
         defer: true
       }
