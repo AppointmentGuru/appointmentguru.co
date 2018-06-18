@@ -76,6 +76,10 @@ export default {
         },
         {
           icon: 'star',
+          title: 'Create and manage your appointments'
+        },
+        {
+          icon: 'star',
           title: 'Mobile apps for you and your clients'
         },
         {
@@ -106,7 +110,7 @@ export default {
         },
         {
           question: 'Can clients make their own appointments?',
-          answer: 'Absolutely, this is one of the great benefits of AppointmentGuru. Clients can book and manage their appointments with you plus view invoices in the AppointmentGuru app.'
+          answer: "Absolutely, this is one of AppointmentGuru's fabulous benefits. Clients can book and manage their appointments with you (and have access to a bunch of other things in the AppointmentGuru app)."
         },
         {
           question: 'Can I sync my appointments to the calendar app on my phone?',
