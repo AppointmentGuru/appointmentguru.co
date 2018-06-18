@@ -41,7 +41,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Automating repetitive tasks',
-            img: '/img/notification_half.png'            
+            img: '/img/notification_half.png'
           }
         },
         {
@@ -59,17 +59,17 @@ export default {
                 {
                   icon: 'notification_important',
                   title: 'Automatic notifications',
-                  description: 'Automatically notify your clients of newly created appointments, reminders the day before and even rescheduled or canceled appointments.'
+                  description: "SMS or email notifications are automatically sent to your clients when an appointment is created, sends a reminder the day before and when appointments are rescheduled or canceled. [See more on AppointmentGuru's automated notifications](/features/notifications)."
                 },
                 {
                   icon: 'show_chart',
                   title: 'Automatically updated reporting',
-                  description: 'Super-handy reporting on your appointments and invoices updates itself.'
+                  description: "Super-handy reporting on your appointments and invoices updates itself. [See more on AppointmentGuru's reporting](/features/keep-track)."
                 },
                 {
                   icon: 'accessibility_new',
                   title: 'Clients create their own appointments',
-                  description: 'Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget.'
+                  description: "Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget. [See more on AppointmentGuru's self-service features for your clients](/features/client-self-service)."
                   }
                 ]
               }

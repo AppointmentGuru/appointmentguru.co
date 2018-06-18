@@ -74,7 +74,7 @@ export default {
             {
               icon: 'trending_up',
               title: 'Which days and times are the busiest?',
-              description: "This kind of insight can be valuable when making decisions about when to best serve your clients."
+              description: "This kind of insight can be valuable when making decisions about when it's best to be available for your clients."
               }
             ]
           }

@@ -59,7 +59,7 @@ export default {
               {
               icon: 'mobile_friendly',
               title: 'Create and manage appointments in the mobile app',
-              description: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients. The app is available in the Apple and Google Play stores'
+              description: 'Use our mobile and web app to manage your appointments, invoices, calendar, reminders and clients. The app is available in the [Apple](https://itunes.apple.com/us/app/appointmentguru-mypractice/id1186604931) and [Google Play](https://play.google.com/store/apps/details?id=za.co.AppointmentGuru.practitioner) stores'
             },
             {
               icon: 'send',
@@ -69,7 +69,7 @@ export default {
             {
              icon: 'phone_android',
              title: 'An app for your clients!',
-             description: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you.'
+             description: 'Your clients also get to use an AppointmentGuru app to book and manage their appointments with you. The app is available in the [Apple](https://itunes.apple.com/us/app/appointment-guru/id1163805838?mt=8) and [Google Play](https://play.google.com/store/apps/details?id=za.co.AppointmentGuru) stores'
            },
            {
              icon: 'list',
