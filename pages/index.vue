@@ -66,7 +66,7 @@ export default {
         {
           name: FeatureBlock,
           props: {
-            classes: 'mt-4',
+            classes: 'mt-0',
             isLeft: true,
             withBackground: true,
             tagline: 'More than just an appointment manager',

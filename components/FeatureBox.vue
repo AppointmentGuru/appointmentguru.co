@@ -9,7 +9,8 @@
           </v-avatar>
             {{feature.title}}</h2></v-card-title>
       <v-divider></v-divider>
-      <v-card-text v-html='renderContent(feature.description)' >
+      <v-card-text >
+        <blockquote class='blockquote' v-html='renderContent(feature.description)' ></blockquote>
       </v-card-text>
     </v-card>
   </v-flex>

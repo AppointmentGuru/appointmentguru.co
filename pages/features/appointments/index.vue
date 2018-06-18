@@ -10,15 +10,16 @@
 </template>
 
 <script>
-import HeroInfo from '@/components/HeroInfo'
+import FeatureHero from '@/components/FeatureHero'
 import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
+import Vue from 'vue'
 
 export default {
   name: 'Appointments',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {
       title: 'Efficient appointment management with AppointmentGuru',
@@ -26,6 +27,12 @@ export default {
         { hid: 'description', name: 'description', content: 'AppointmentGuru offers powerful AppointmentGuru appointment management that includes online appointment creation, a schedule and calendar, invoicing, appointment notifications and more.' }
       ]
     }
+  },
+  mounted () {
+    let features = this.blocks[2].props.features.map((item) => { return item.title })
+    console.log(features)
+    Vue.set(this.blocks[0].props, 'features', features)
+
   },
   data () {
     return {
@@ -36,12 +43,12 @@ export default {
       },
       blocks: [
         {
-          name: 'HeroInfo',
+          name: 'FeatureHero',
           inContainer: true,
           props: {
             classes: 'mt-4',
             tagline: 'Quick, easy, flexible appointment management',
-            img: '/img/schedule_half.png'
+            img: '/img/schedule_half.png',
           }
         },
         {
