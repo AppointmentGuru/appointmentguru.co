@@ -24,7 +24,10 @@ module.exports = {
     middleware: 'i18n'
   },
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-93898571-1'
+    }]
   ],
   markdownit: {
     injected: true

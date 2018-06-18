@@ -26,7 +26,7 @@
           <v-list-tile-title >Blog</v-list-tile-title>
         </v-list-tile>
         <v-divider></v-divider>
-        <v-list-tile href='https://app.appointmentguru.co' >
+        <v-list-tile href='https://app.appointmentguru.co' target='_blank' >
           <v-list-tile-title >Login</v-list-tile-title>
         </v-list-tile>
         <v-list-tile @click='showsignup = true' >
