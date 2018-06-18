@@ -30,9 +30,7 @@ export default {
   },
   mounted () {
     let features = this.blocks[2].props.features.map((item) => { return item.title })
-    console.log(features)
     Vue.set(this.blocks[0].props, 'features', features)
-
   },
   data () {
     return {

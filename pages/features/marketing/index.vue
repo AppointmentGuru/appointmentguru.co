@@ -1,5 +1,5 @@
 <template>
-<div class='page-container' >
+<div class='page-container marketing' >
     <template v-for='(block, index) in blocks'  >
       <v-container v-if='block.inContainer' :key='index' >
         <component :is='block.name' v-bind='block.props' :class='block.classes' />
@@ -10,15 +10,16 @@
 </template>
 
 <script>
-import HeroInfo from '@/components/HeroInfo'
 import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
+import FeatureHero from '@/components/FeatureHero'
+import Vue from 'vue'
 
 export default {
   name: 'HomePage',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {
       title: 'Marketing is included | AppointmentGuru',
@@ -26,6 +27,10 @@ export default {
         { hid: 'description', name: 'description', content: "AppointmentGuru provides marketing tools such as table talkers, business cards, a free website and a free listing in the AppointmentGuru app. Content is branded with logo's and profile pictures." }
       ]
     }
+  },
+  mounted () {
+    let features = this.blocks[2].props.features.map((item) => { return item.title })
+    Vue.set(this.blocks[0].props, 'features', features)
   },
   data () {
     return {
@@ -36,7 +41,7 @@ export default {
       },
       blocks: [
         {
-          name: 'HeroInfo',
+          name: 'FeatureHero',
           inContainer: true,
           props: {
             classes: 'mt-4',
@@ -97,5 +102,7 @@ export default {
   }
 }
 .blockquote.smaller { font-size: 16px; }
-
+.marketing .feature-list {
+  margin-top: 60px !important;
+}
 </style>

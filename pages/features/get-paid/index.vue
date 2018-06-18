@@ -1,5 +1,5 @@
 <template>
-<div class='page-container' >
+<div class='page-container get-paid' >
     <template v-for='(block, index) in blocks'  >
       <v-container v-if='block.inContainer' :key='index' >
         <component :is='block.name' v-bind='block.props' :class='block.classes' />
@@ -10,15 +10,16 @@
 </template>
 
 <script>
-import HeroInfo from '@/components/HeroInfo'
 import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
+import FeatureHero from '@/components/FeatureHero'
+import Vue from 'vue'
 
 export default {
   name: 'Get Paid',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {
       title: 'Invoicing directly from appointments | AppointmentGuru',
@@ -26,6 +27,10 @@ export default {
         { hid: 'description', name: 'description', content: 'AppointmentGuru offers integrated invoicing that includes ICD10, NAPPI, procedure and process codes for medical aid submission. An invoice can be immediately sent from an appointment or a consolidated invoice with multiple appointments (and line items) at month-end. Accept payment via SnapScan.' }
       ]
     }
+  },
+  mounted () {
+    let features = this.blocks[2].props.features.map((item) => { return item.title })
+    Vue.set(this.blocks[0].props, 'features', features)
   },
   data () {
     return {
@@ -36,7 +41,7 @@ export default {
       },
       blocks: [
         {
-          name: 'HeroInfo',
+          name: 'FeatureHero',
           inContainer: true,
           props: {
             classes: 'mt-4',
@@ -107,5 +112,7 @@ export default {
   }
 }
 .blockquote.smaller { font-size: 16px; }
-
+.get-paid img.hero {
+  width:90% !important;
+}
 </style>

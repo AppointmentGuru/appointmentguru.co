@@ -1,5 +1,5 @@
 <template>
-<section>
+<section class='feature-hero' >
   <v-layout>
     <h1 class='ma-4 text-xs-center hidden-sm-and-up headline'>{{tagline}}</h1>
   </v-layout>
@@ -16,7 +16,7 @@
     </v-flex>
     <v-flex xs12 sm3 class='order-sm2 order-xs1' >
 
-      <section class='hidden-xs-only mt-4 pt-4' >
+      <section class='hidden-xs-only mt-4 pt-4 feature-list' >
         <template v-for='(feature, index) in features' >
           <v-layout :key='`sm-${index}`' >
             <v-flex xs2 >

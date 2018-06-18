@@ -10,15 +10,16 @@
 </template>
 
 <script>
-import HeroInfo from '@/components/HeroInfo'
+import FeatureHero from '@/components/FeatureHero'
 import FeatureBox from '@/components/FeatureBox'
 import FeatureBlock from '@/components/FeatureBlock'
 import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
+import Vue from 'vue'
 
 export default {
   name: 'Client Self Service',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
+  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {
       title: 'Client self-service | AppointmentGuru',
@@ -26,6 +27,10 @@ export default {
         { hid: 'description', name: 'description', content: 'Clients can make their own appointments, reschedule them up to 24 hours before, get information and directions, view due and paid invoices.' }
       ]
     }
+  },
+  mounted () {
+    let features = this.blocks[2].props.features.map((item) => { return item.title })
+    Vue.set(this.blocks[0].props, 'features', features)
   },
   data () {
     return {
@@ -36,7 +41,7 @@ export default {
       },
       blocks: [
         {
-          name: 'HeroInfo',
+          name: 'FeatureHero',
           inContainer: true,
           props: {
             classes: 'mt-4',
@@ -102,5 +107,7 @@ export default {
   }
 }
 .blockquote.smaller { font-size: 16px; }
-
+.feature-list {
+  margin-top: 90px !important;
+}
 </style>
