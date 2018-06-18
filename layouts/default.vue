@@ -92,7 +92,7 @@
         </v-flex>
         <v-flex sm7 xs12 >
           <v-layout class='mt-3' row wrap >
-            <v-flex xs12 sm4 class='text-sm-right pa-2'>
+            <v-flex xs6 sm4 class='text-sm-right pa-4'>
               <h4 class='subheading uppercase' >Connect</h4>
               <ul class="list-unstyled list-spaced mt-3 ">
                 <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
@@ -101,7 +101,7 @@
                 <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
               </ul>
             </v-flex>
-            <v-flex xs12 sm4 class='text-sm-right pa-2'>
+            <v-flex xs6 sm4 class='text-sm-right pa-4'>
               <h4 class='subheading uppercase' >Navigate</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
@@ -110,7 +110,7 @@
                 <li class="text-muted"><a href="/terms/">Terms</a></li>
                </ul>
             </v-flex>
-            <v-flex xs12 sm4 class='text-sm-right pa-2' >
+            <v-flex xs6 sm4 class='text-sm-right pa-4' >
               <h4 class='subheading uppercase' >Access</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a ><span @click='showsignup = true' >Signup</span></a></li>

@@ -1,10 +1,12 @@
 <template>
 <div >
   <template v-for='(block, index) in blocks'  >
-    <v-container v-if='block.inContainer' :key='index' >
-      <component :is='block.name' v-bind='block.props' :class='block.classes' />
-    </v-container>
-    <component v-else :is='block.name' v-bind='block.props' :key='index' :class='block.classes' />
+    <div name='foo' :class='block.props.classes' :key='index' >
+      <v-container v-if='block.inContainer' >
+          <component :is='block.name' v-bind='block.props' />
+      </v-container>
+      <component v-else :is='block.name' v-bind='block.props' />
+    </div>
   </template>
 
 </div>
@@ -95,7 +97,7 @@ export default {
         {
           name: FeatureBlock,
           props: {
-            classes: 'mt-4',
+            classes: ['mt-4', 'invoicing'],
             tagline: 'Built-in invoicing plus an integration with SnapScan',
             content: 'Industry-standard invoices generated from your appointments. Include extra medical info like ICD-10, NAPPI and procedure codes. Accept credit card payments with SnapScan and AppointmentGuru. Each invoice displays a unique SnapScan QR code your clients can use to make payment.',
             img: 'img/invoice.png'
@@ -125,6 +127,25 @@ export default {
 </script>
 
 <style>
+
+.feature-block h1 {
+  font-size: 32px;
+}
+.feature-block h2.headline {
+  font-size: 32px !important;
+  margin-top: 80px;
+}
+.invoicing .feature-block h2.headline {
+  font-size: 32px !important;
+  margin-top: 0px;
+}
+.feature-block blockquote.blockquote {
+  font-size: 28px !important;
+}
+.invoicing .feature-block blockquote.blockquote {
+  font-size: 26px !important;
+}
+
 @media only screen and (min-width: 1904px) {
   .container {
     max-width: 1185px !important;

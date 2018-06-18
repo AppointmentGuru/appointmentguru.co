@@ -1,7 +1,7 @@
 <template>
 <section :class='containerClasses' >
   <v-container>
-    <v-layout row wrap>
+    <v-layout class='feature-block' row wrap>
       <v-flex xs12 sm6 :class='col1Order' >
         <h1 class='ml-4 mr-4 mt-4 blue-grey--text'>{{headline}}</h1>
         <h2 class='ml-4 mr-4 headline deep-orange--text darken-4--text'>{{tagline}}</h2>
