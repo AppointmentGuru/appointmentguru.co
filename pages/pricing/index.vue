@@ -102,11 +102,11 @@ export default {
       faqs: [
         {
         question: 'Are there any hidden or extra fees?',
-        answer: 'No. We aim to keep our pricing simple and fair. There are no sneaky, separate charges for any services provided by AppointmentGuru.'
+        answer: "No. We aim to keep our pricing simple and fair. There are no sneaky, hidden charges and we're always upfront about extra costs for additional features that you choose to use."
         },
         {
           question: 'Can I use AppointmentGuru for my practice?',
-          answer: 'For practitioners who work together in a practice the cost is R400/month for your practice account (this includes 1 practitioner). Each additional practitioner costs an extra R150/month.'
+          answer: 'For practitioners who work together in a practice the cost is R400/month for your practice account (this includes one practitioner). Each additional practitioner costs an extra R150/month.'
         },
         {
           question: 'Can clients make their own appointments?',
