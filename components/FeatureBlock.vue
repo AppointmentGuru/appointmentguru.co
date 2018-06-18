@@ -5,9 +5,7 @@
       <v-flex xs12 sm6 :class='col1Order' >
         <h1 class='ml-4 mr-4 mt-4 blue-grey--text'>{{headline}}</h1>
         <h2 class='ml-4 mr-4 headline deep-orange--text darken-4--text'>{{tagline}}</h2>
-        <blockquote class='blockquote' >
-          {{content}}
-        </blockquote>
+        <blockquote class='blockquote' v-html='renderedContent' ></blockquote>
       </v-flex>
       <v-flex xs12 sm6 :class='col2Order' >
         <img
@@ -39,6 +37,9 @@ export default {
     },
     containerClasses () {
       if (this.withBackground) { return 'grey lighten-2' }
+    },
+    renderedContent () {
+      return this.$md.render(this.content)
     }
   }
 }

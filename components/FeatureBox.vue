@@ -9,8 +9,7 @@
           </v-avatar>
             {{feature.title}}</h2></v-card-title>
       <v-divider></v-divider>
-      <v-card-text>
-        {{feature.description}}
+      <v-card-text v-html='renderContent(feature.description)' >
       </v-card-text>
     </v-card>
   </v-flex>
@@ -23,6 +22,14 @@ export default {
   props: {
     features: { type: Array, default: () => { return [] } },
     rowSize: { type: Number, default: 3 }
+  },
+  methods: {
+    renderContent (txt) {
+      if (txt) {
+        return this.$md.render(txt)
+      }
+      return ''
+    }
   },
   computed: {
     flexWidth () {
