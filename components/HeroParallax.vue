@@ -30,7 +30,9 @@
               <v-icon class='ml-2' large >play_circle_outline</v-icon></v-btn>
             </v-card-actions>
             <v-card-actions>
-              <v-btn color='orange' block >Get started for free</v-btn>
+              <v-btn
+                @click='$store.commit("SHOW_SIGNUP")'
+                color='orange' block >Get started for free</v-btn>
             </v-card-actions>
           </slot>
         </v-card>

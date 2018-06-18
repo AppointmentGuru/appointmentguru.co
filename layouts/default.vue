@@ -162,6 +162,14 @@ export default {
   computed: {
     isMobile () {
       return this.$vuetify.breakpoint.smAndDown
+    },
+    signupDialog () {
+      return this.$store.state.showSignupDialog
+    }
+  },
+  watch: {
+    signupDialog () {
+      this.showsignup = true
     }
   },
   head: {
