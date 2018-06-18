@@ -59,22 +59,22 @@ export default {
             {
               icon: 'settings_applications',
               title: 'Account setup',
-              description: "Setting up an account with a new service can be time-consuming - we're here to help every step of the way."
+              description: "Use our handy, step-by-step setup guides in the AppointmentGuru web or mobile app and your account will be ready in a jiffy. We're always here to help every step of the way!"
             },
             {
               icon: 'people',
               title: 'Training',
-              description: "If you're located in Joburg or Cape Town, we'll come and give you some one-on-one training. Or, online video training!"
+              description: "If you're located in Joburg or Cape Town, we're available for one-on-one training. Or, online video training!"
             },
             {
               icon: 'live_help',
               title: 'Support',
-              description: "Live chat on our website or in the app - we're available almost all of the time. And lots of useful information in the help section of our website."
+              description: "Live chat on our website or in the app - we're available almost all of the time. And read up on lots of useful information in our [help pages](https://appointmentguru.co/help)."
             },
             {
               icon: 'video_library',
               title: 'Quick how-to videos',
-              description: 'If you prefer to watch a video, we have lots of quick how-to videos to help get your AppointmentGuru account up-and-running.'
+              description: 'If you prefer to watch a video, we have lots of quick how-to videos on our [YouTube channel](https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg) to help get your AppointmentGuru account up-and-running.'
               }
             ]
           }

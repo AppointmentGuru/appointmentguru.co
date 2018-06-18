@@ -74,7 +74,7 @@ export default {
               {
                 icon: 'visibility_off',
                 title: 'Block off ad hoc time',
-                description: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show that you're unavailable."
+                description: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show you're unavailable."
               },
               {
                 icon: 'schedule',
@@ -94,7 +94,7 @@ export default {
               {
                 icon: 'send',
                 title: 'Send an invoice',
-                description: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from the appointment (or invoice for a bunch of appointments)"
+                description: "AppointmentGuru's nifty built-in invoicing enables you to send an invoice from an appointment (or invoice for a bunch of appointments). [See more on AppointmentGuru's invoicing](/features/get-paid)."
               }
             ]
           }

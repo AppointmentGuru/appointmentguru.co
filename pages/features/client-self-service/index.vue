@@ -79,7 +79,7 @@ export default {
             {
               icon: 'pageview',
               title: 'View and pay invoices',
-              description: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and if you've enabled the SnapScan integration - payment can be made using SnapScan."
+              description: "Once you've created an invoice for a client, they'll be able to view it in the AppointmentGuru app. It'll show whether it's due or paid, and, if you've enabled the SnapScan integration - payment can be made using SnapScan."
               }
             ]
           }

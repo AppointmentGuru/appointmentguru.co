@@ -80,9 +80,9 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 11.1 AppointmentGuru offers a [Refer a Friend program](/refer-a-friend) whereby AppointmentGuru customers (or any other interested person) can refer another person to AppointmentGuru and get a reward.
 
-11.2 The referree has to have signed up via appointmentguru.co, used the free trial and made their first monthly subscription payment in order for the referrer to receive a discount of R400 on their AppointmentGuru subscription.
+11.2 The referee has to have signed up via appointmentguru.co, used the free trial and made their first monthly subscription payment in order for the referrer to receive a discount of R400 on their AppointmentGuru subscription.
 
-11.3 Should the referrer not be an AppointmentGuru customer, they will receive a once-off R400 payment (via EFT) once the referree has become a paying AppointmentGuru customer.
+11.3 Should the referrer not be an AppointmentGuru customer, they will receive a once-off R400 payment (via EFT) once the referee has become a paying AppointmentGuru customer.
 
 ### 12. Online appointments
 
@@ -90,10 +90,16 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 12.2 The online appointments feature is currently in beta and AppointmentGuru customers may experience some bugs and hiccups. We encourage any problems be reported.
 
+### 13. SnapScan integration
+
+13.1 SnapScan ([snapscan.co.za](https://www.snapscan.co.za/)) is a 3rd-party payment service that enables AppointmentGuru clients to accept payments from their clients. For more information on SnapScan and their service, we encourage AppointmentGuru clients to visit their website.
+
+13.2 The AppointmentGuru monthly subscription does not include any SnapScan fees, those are charged separately by SnapScan.
+
 ### Service contact
 
 support@appointmentguru.com
 
 ### Last updated
 
-8 May 2018.
+18 June 2018.
