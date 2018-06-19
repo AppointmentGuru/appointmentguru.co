@@ -62,7 +62,7 @@
 
     <nuxt/>
 
-    <footer class='callout mt-4' >
+    <footer class='page-footer callout mt-4' >
       <v-container >
       <v-layout wrap>
         <v-flex sm5 xs12 >

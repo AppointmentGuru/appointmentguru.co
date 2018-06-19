@@ -8,7 +8,16 @@
       <component v-else :is='block.name' v-bind='block.props' />
     </div>
   </template>
-
+  <v-parallax :src='backgroundImage' height='200' >
+    <v-flex class='text-xs-center mt-4' >
+      <h3 class='headline' >
+        Try AppointmentGuru for free
+      </h3>
+      <v-btn @click='$store.commit("SHOW_SIGNUP")' dark large
+        class='mt-4 elevation-20'
+        color='orange' >Get started</v-btn>
+    </v-flex>
+  </v-parallax>
 </div>
 </template>
 
@@ -33,6 +42,7 @@ export default {
   },
   data () {
     return {
+      backgroundImage: 'https://images.unsplash.com/photo-1515136194762-84618729b8df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f26f412a62f4e342b739989b9e8aa308&auto=format&fit=crop&w=1950&q=80',
       blocks: [
         {
           name: 'HeroParallax',
@@ -144,6 +154,9 @@ export default {
 }
 .invoicing .feature-block blockquote.blockquote {
   font-size: 26px !important;
+}
+.page-footer {
+  margin-top:0px !important;
 }
 
 @media only screen and (min-width: 1904px) {
