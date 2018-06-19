@@ -11,7 +11,7 @@
           <!-- <div class="title mb-3">
             The page you're looking for doesn't seem to exist.
           </div> -->
-          <v-btn large color="primary" class="mx-0 my-4">
+          <v-btn href='/' nuxt large color="primary" class="mx-0 my-4">
             <v-icon class='mr-4'>home</v-icon>
             Return to the home page</v-btn>
         </v-flex>
