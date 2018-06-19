@@ -204,4 +204,18 @@ export default {
 }
 .app-icon { max-width: 140px; }
 .img-responsive{ width: 100%; }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: height .5s
+}
+.slide-enter, .slide-leave-to /* .fade-leave-active in <2.1.8 */ {
+  height: 0px;
+}
 </style>
