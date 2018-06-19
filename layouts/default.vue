@@ -67,9 +67,8 @@
       <v-layout wrap>
         <v-flex sm5 xs12 >
           <section class='pa-3' >
-            <h4 class='subheading' >ABOUT</h4>
             <blockquote class='blockquote smaller ml-1 pl-0'>
-              AppointmentGuru is a young start-up based in Johannesburg and Cape Town. We're passionate about helping small businesses succeed by taking advantage of technology, empowering them to do more with less.
+              AppointmentGuru is a South African start-up based in Johannesburg and Cape Town. We're passionate about helping small businesses succeed by taking advantage of technology, empowering them to do more with less.
             </blockquote>
           </section>
           <section class='pa-3' >
@@ -92,30 +91,30 @@
         </v-flex>
         <v-flex sm7 xs12 >
           <v-layout class='mt-3' row wrap >
-            <v-flex xs6 sm4 class='text-sm-right pa-4'>
-              <h4 class='subheading uppercase' >Connect</h4>
+            <v-flex xs6 sm4 class='text-sm-right pa-3'>
+            <h4 class='subheading uppercase' >About us</h4>
               <ul class="list-unstyled list-spaced mt-3 ">
-                <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
-                <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Find us on Facebook</a></li>
-                <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
+                <li class="text-muted"><a href="/features/">Features</a></li>
+                <li class="text-muted"><a href="/pricing/">Pricing</a></li>
+                <li class="text-muted"><a href="/features/apps/">Apps</a></li>
                 <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
               </ul>
             </v-flex>
-            <v-flex xs6 sm4 class='text-sm-right pa-4'>
-              <h4 class='subheading uppercase' >Navigate</h4>
+            <v-flex xs6 sm4 class='text-sm-right pa-3'>
+            <h4 class='subheading uppercase' >Information</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="/help/">Help</a></li>
-                <li class="text-muted"><a href="/privacy/">Privacy</a></li>
                 <li class="text-muted"><a href="/terms/">Terms</a></li>
+                <li class="text-muted"><a href="/privacy/">Privacy</a></li>
                </ul>
             </v-flex>
-            <v-flex xs6 sm4 class='text-sm-right pa-4' >
-              <h4 class='subheading uppercase' >Access</h4>
+            <v-flex xs6 sm4 class='text-sm-right pa-3' >
+              <h4 class='subheading uppercase' >Connect</h4>
               <ul class="list-unstyled list-spaced mt-3">
-                <li class="text-muted"><a ><span @click='showsignup = true' >Signup</span></a></li>
-                <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
-                <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
+              <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
+              <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Facebook</a></li>
+              <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
               </ul>
             </v-flex>
           </v-layout>
