@@ -1,5 +1,13 @@
 <template>
 <div class='page-container' >
+<v-container>
+<v-breadcrumbs class='py-0' divider="/">
+  <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon></v-breadcrumbs-item>
+  <v-breadcrumbs-item href='/features/' nuxt >Features</v-breadcrumbs-item>
+  <v-breadcrumbs-item disabled nuxt >Client self-service</v-breadcrumbs-item>
+</v-breadcrumbs>
+</v-container>
+
     <template v-for='(block, index) in blocks'  >
       <v-container v-if='block.inContainer' :key='index' >
         <component :is='block.name' v-bind='block.props' :class='block.classes' />
@@ -45,7 +53,7 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Empower your clients to book and manage their appointments with you',
+            tagline: 'Empower your clients to book and manage appointments with you',
             img: '/img/app_for_clients_half.png'
           }
         },
