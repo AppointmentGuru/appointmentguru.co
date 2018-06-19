@@ -99,7 +99,7 @@ export default {
           props: {
             classes: ['mt-4', 'invoicing'],
             tagline: 'Built-in invoicing plus an integration with SnapScan',
-            content: 'Industry-standard invoices generated from your appointments. Include extra medical info like ICD-10, NAPPI and procedure codes. Accept credit card payments with SnapScan and AppointmentGuru. Each invoice displays a unique SnapScan QR code your clients can use to make payment.',
+            content: "Industry-standard invoices generated from your appointments that can include medical ICD-10, NAPPI and procedure codes. Accept credit card payments with AppointmentGuru's SnapScan integration.",
             img: 'img/invoice.png'
           }
         },
@@ -117,7 +117,7 @@ export default {
         {
           name: Callout,
           props: {
-            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants and any appointment-based business.'
+            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants - any appointment-based business.'
           }
         }
       ]
