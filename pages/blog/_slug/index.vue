@@ -1,8 +1,8 @@
 <template>
 <v-container class='page-container' >
   <v-breadcrumbs divider="/">
-    <v-breadcrumbs-item to='/' >AppointmentGuru</v-breadcrumbs-item>
-    <v-breadcrumbs-item to='/blog/' >Blog</v-breadcrumbs-item>
+    <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
+    <v-breadcrumbs-item href='/blog/' :disabled='false' nuxt >Blog</v-breadcrumbs-item>
     <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <v-layout>

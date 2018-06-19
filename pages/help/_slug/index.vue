@@ -1,8 +1,8 @@
 <template lang="md" >
 <v-container class='page-container' >
   <v-breadcrumbs divider="/">
-    <v-breadcrumbs-item to='/' >AppointmentGuru</v-breadcrumbs-item>
-    <v-breadcrumbs-item to='/help/' >Help</v-breadcrumbs-item>
+    <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
+    <v-breadcrumbs-item href='/help/' nuxt >Help</v-breadcrumbs-item>
     <v-breadcrumbs-item disabled>{{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <h1 class='headline mb-4' >{{page.fields.Title}}</h1>
