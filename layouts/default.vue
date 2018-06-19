@@ -116,7 +116,6 @@
                 <li class="text-muted"><a ><span @click='showsignup = true' >Signup</span></a></li>
                 <li class="text-muted"><a href="http://app.appointmentguru.co">Login</a></li>
                 <li class="text-muted"><a href="http://www.getapp.guru">Mobile apps</a></li>
-                <li class="text-muted"><a href="https://bookme.guru">Find a practitioner</a></li>
               </ul>
             </v-flex>
           </v-layout>
