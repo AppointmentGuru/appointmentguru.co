@@ -76,9 +76,9 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 10.1 Any AppointmentGuru paying customer may request a refund, in writing, to [support@appointmentguru.co](mailto:support@appointmentguru.co) with full details and explanation of their request. A refund may be issued, depending on the reasonability of the request.
 
-### 11. Refer a Friend program
+### 11. Refer and Earn program
 
-11.1 AppointmentGuru offers a [Refer a Friend program](/refer-a-friend) whereby AppointmentGuru customers (or any other interested person) can refer another person to AppointmentGuru and get a reward.
+11.1 AppointmentGuru offers a [Refer and Earn program](/features/refer-and-earn) whereby AppointmentGuru customers (or any other interested person) can refer another person to AppointmentGuru and get a reward.
 
 11.2 The referee has to have signed up via appointmentguru.co, used the free trial and made their first monthly subscription payment in order for the referrer to receive a discount of R400 on their AppointmentGuru subscription.
 
