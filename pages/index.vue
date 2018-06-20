@@ -119,7 +119,7 @@ export default {
             classes: 'mt-4',
             isLeft: true,
             withBackground: true,
-            tagline: 'Empower and know your client',
+            tagline: 'Empower and know your clients',
             content: 'Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.',
             img: 'img/book_online.png'
           }
