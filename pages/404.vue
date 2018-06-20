@@ -1,6 +1,8 @@
 <template>
 <section class='page-container' style='background-color:white;' >
-  <v-parallax src='https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/images/404.jpeg' >
+  <v-parallax
+    height='450'
+    src='https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/images/404.jpeg' >
     <v-container >
       <v-layout row wrap align-center>
         <!-- <v-flex xs12 sm4 class='text-xs-center' >
