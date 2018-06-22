@@ -114,6 +114,7 @@
               <ul class="list-unstyled list-spaced mt-3">
               <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
               <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Facebook</a></li>
+              <li class="text-muted"><a href="https://www.instagram.com/appointmentguru/">Instagram</a></li>
               <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
               </ul>
             </v-flex>
