@@ -63,12 +63,14 @@ module.exports = {
   },
   generate: {
     routes: function () {
-      function getAirtable (base, table) {
+      function getAirtable (base, table, view) {
         let airtable = 'keyt7MKFDGrXm3set'
         let method = 'get'
         let headers = { 'Authorization': 'Bearer ' + airtable }
+        let params = {}
+        if (view) { params = {view} }
         let url = `https://api.airtable.com/v0/${base}/${table}`
-        return axios({url, method, headers})
+        return axios({url, method, headers, params})
       }
       function airtableToRoutes (data, path, key) {
         return data.map((item) => {
@@ -87,7 +89,7 @@ module.exports = {
         .then(axios.spread(
           function (helppages, blogposts) {
             let helpRoutes = airtableToRoutes(helppages.data.records, 'help/', 'page')
-            let blogRoutes = airtableToRoutes(blogposts.data.records, 'blog/', 'page')
+            let blogRoutes = airtableToRoutes(blogposts.data.records, 'blog/', 'page', 'WebsiteBlogPage')
             let routes = helpRoutes.concat(blogRoutes)
             return routes
           }
