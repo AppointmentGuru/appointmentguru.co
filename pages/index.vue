@@ -70,7 +70,7 @@ export default {
           authorBio: 'Natural Therapist',
           link: 'http://bookme.guru/structuralmedicine/',
           linkText: 'Book now with the Centre for Structural Medicine',
-          image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png'
+          image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/logo.jpeg'
           }
         },
         {
