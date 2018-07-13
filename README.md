@@ -12,9 +12,8 @@ open: http://localhost:3000
 
 ## Deploy
 
-```
-sh ./deploy.sh
-```
+1. Log into [Netlify](app.netlify.com)
+2. Click on next.appointmentguru.co > production deploys > trigger deploy
 
 ## Build Setup
 
