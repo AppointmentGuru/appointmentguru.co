@@ -79,8 +79,8 @@ export default {
             classes: 'mt-0',
             isLeft: true,
             withBackground: true,
-            tagline: 'More than just an appointment manager',
-            content: 'Automate your appointment management, send good-looking invoices, be better at running your business, free up more time.',
+            tagline: 'More than just an appointment manager app',
+            content: 'Automate your appointment management, send good-looking invoices, enable online scheduling, be better at running your business, free up more time.',
             img: 'img/schedule.png'
           }
         },
@@ -89,7 +89,7 @@ export default {
           props: {
             classes: 'mt-4',
             tagline: 'Manage your business on the go',
-            content: 'Keep up-to-date with your appointments and invoicing with the AppointmentGuru app.',
+            content: 'Keep up-to-date with your daily appointment maker and invoicing with the AppointmentGuru app.',
             img: 'img/create_appointment.png'
           }
         },
@@ -100,7 +100,7 @@ export default {
             isLeft: true,
             withBackground: true,
             tagline: 'Lessen no-shows with notifications',
-            content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments.',
+            content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments through your online appointment system',
             img: 'img/notification.png'
           }
         },
@@ -127,7 +127,7 @@ export default {
         {
           name: Callout,
           props: {
-            callout: 'AppointmentGuru is perfect for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants - any appointment-based business.'
+            callout: 'AppointmentGuru is the perfect medical software for Physios, Biokineticists, Personal Trainers, Chiropractors, Psychologists, Dietitians, Consultants - any business that makes use of an online appointment system.'
           }
         }
       ]
