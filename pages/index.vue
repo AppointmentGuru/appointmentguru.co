@@ -13,7 +13,7 @@
       <h3 class='headline' >
         Try AppointmentGuru for free
       </h3>
-      <v-btn @click='$store.commit("SHOW_SIGNUP")' dark large
+      <v-btn style='z-index:1;' @click='$store.commit("SHOW_SIGNUP")' dark large
         class='mt-4 elevation-20'
         color='orange' >Get started</v-btn>
     </v-flex>
