@@ -34,7 +34,7 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions class='pa-0'>
-          <v-btn block dark large color='orange' class='ma-0' >Start Free Trial</v-btn>
+          <v-btn @click='$store.commit("SHOW_SIGNUP")' block dark large color='orange' class='ma-0' >Start Free Trial</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
