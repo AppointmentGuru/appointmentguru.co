@@ -80,9 +80,11 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 11.1 AppointmentGuru offers a [Refer and Earn program](/features/refer-and-earn) whereby AppointmentGuru customers (or any other interested person) can refer another person to AppointmentGuru and get a reward.
 
-11.2 The referee has to have signed up via appointmentguru.co, used the free trial and made their first monthly subscription payment in order for the referrer to receive a discount of R400 on their AppointmentGuru subscription.
+11.2 The referee has to have signed up via [appointmentguru.co](), used the free trial and made their first monthly subscription payment in order for the referrer to receive a discount of R400 on their AppointmentGuru subscription.
 
 11.3 Should the referrer not be an AppointmentGuru customer, they will receive a once-off R400 payment (via EFT) once the referee has become a paying AppointmentGuru customer.
+
+11.4 Referee's will also receive an additional free month once they've become a paying AppointmentGuru customer. This means that once they've entered their credit card details, they can choose to have the payment reversed or get a credit for the 2nd month of their subscription.
 
 ### 12. Online appointments
 
@@ -102,4 +104,4 @@ support@appointmentguru.com
 
 ### Last updated
 
-18 June 2018.
+14 August 2018.
