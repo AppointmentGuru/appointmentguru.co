@@ -169,12 +169,14 @@ export default {
   watch: {
     signupDialog () {
       this.showsignup = true
+      this.$ga.event({eventCategory: 'signup', eventAction: 'startSignup'})
     }
   },
   head: {
     script: [
       {
-        src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.js',
+        src: 'https://get-started.netlify.com/static/js/app.js',
+        // src: 'https://s3.eu-central-1.amazonaws.com/static.appointmentguru.co/signup/static/js/app.js',
         body: true,
         defer: true
       }
