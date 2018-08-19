@@ -31,6 +31,7 @@
             </v-card-actions>
             <v-card-actions>
               <v-btn
+                style='z-index:1'
                 @click='$store.commit("SHOW_SIGNUP")'
                 color='orange' block >Get started for free</v-btn>
             </v-card-actions>
@@ -59,7 +60,19 @@
   </v-system-bar>
   <slot name='dialog' >
     <v-card>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S-RBfTBraWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div id="player" style='min-width:560px;min-height:300px;'>
+        <center>
+        <v-progress-circular
+          style='margin-top:110px;'
+          color='amber'
+          :size="75"
+          indeterminate >
+        </v-progress-circular>
+        </center>
+      </div>
+      <!-- <v-btn >Play</v-btn>
+      <v-btn @click='stopPlayback' >Stop</v-btn> -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S-RBfTBraWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
     </v-card>
   </slot>
 </v-dialog>
@@ -67,6 +80,15 @@
 </template>
 
 <script>
+
+function onYouTubeIframeAPIReady() {
+  window.youtubeplayer = new YT.Player('promo-video', {
+    height: '315',
+    width: '560',
+    videoId: 'M7lc1UVf-VE'
+  })
+}
+
 export default {
   name: 'HeroParallax',
   props: {
@@ -78,11 +100,53 @@ export default {
   data () {
     return {
       showVideo: false,
+      isPaused: false
     }
+  },
+  mounted () {
+    this.loadVideo()
   },
   computed: {
     isFullScreen () {
       return this.$vuetify.breakpoint.smAndDown
+    }
+  },
+  watch: {
+    showVideo () {
+      if (this.showVideo === true) {
+        this.$ga.event('Landing pages', 'Play video')
+        if (!window.youtubeplayer) {
+          this.initVideo()
+        } else {
+          window.youtubeplayer.playVideo()
+        }
+      } else {
+        if (window.youtubeplayer) {
+          let playDuration = window.youtubeplayer.getDuration()
+          window.youtubeplayer.pauseVideo()
+          this.$ga.event({
+            eventCategory: 'Landing pages',
+            eventAction: 'Stop video',
+            eventValue: playDuration
+          })
+        }
+      }
+    }
+  },
+  methods: {
+    loadVideo () {
+      let vm = this
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+    },
+    initVideo () {
+      window.youtubeplayer = new YT.Player('player', {
+        height: '310',
+        width: '560',
+        videoId: 'S-RBfTBraWc'
+      })
     }
   }
 }
