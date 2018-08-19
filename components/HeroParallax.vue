@@ -59,7 +59,12 @@
   </v-system-bar>
   <slot name='dialog' >
     <v-card>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S-RBfTBraWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div id="player">
+        <v-progress-circular indeterminate ></v-progress-circular>
+      </div>
+      <!-- <v-btn >Play</v-btn>
+      <v-btn @click='stopPlayback' >Stop</v-btn> -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S-RBfTBraWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
     </v-card>
   </slot>
 </v-dialog>
@@ -67,6 +72,16 @@
 </template>
 
 <script>
+
+function onYouTubeIframeAPIReady() {
+  console.log('initing the player')
+  window.youtubeplayer = new YT.Player('promo-video', {
+    height: '315',
+    width: '560',
+    videoId: 'M7lc1UVf-VE'
+  })
+}
+
 export default {
   name: 'HeroParallax',
   props: {
@@ -77,12 +92,44 @@ export default {
   },
   data () {
     return {
-      showVideo: false,
+      showVideo: false
     }
+  },
+  mounted () {
+    this.loadVideo()
   },
   computed: {
     isFullScreen () {
       return this.$vuetify.breakpoint.smAndDown
+    }
+  },
+  watch: {
+    showVideo () {
+      if (this.showVideo === true) {
+        if (!window.youtubeplayer) {
+          this.initVideo()
+        }
+      } else {
+        if (window.youtubeplayer) {
+          window.youtubeplayer.pauseVideo()
+        }
+      }
+    }
+  },
+  methods: {
+    loadVideo () {
+      let vm = this
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+    },
+    initVideo () {
+      window.youtubeplayer = new YT.Player('player', {
+        height: '310',
+        width: '560',
+        videoId: 'M7lc1UVf-VE'
+      })
     }
   }
 }

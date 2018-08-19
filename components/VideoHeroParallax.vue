@@ -1,6 +1,7 @@
 <template>
 <section>
-  <iframe class='elevation-24 parallax-video hidden-xs-only' width="560" height="315" :src="video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div id="player"></div>
+  <!-- <iframe class='elevation-24 parallax-video hidden-xs-only' width="560" height="315" :src="video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
   <v-parallax :src='backgroundImage' height="430" >
     <v-container style='margin-top:85px;position:inherit;' class='text-xs-center' >
       <v-layout row wrap class='text-xs-center ' >
@@ -47,11 +48,38 @@ export default {
   data () {
     return {
       showVideo: false,
+      player: null
     }
+  },
+  mounted () {
+    this.initVideo()
   },
   computed: {
     isFullScreen () {
       return this.$vuetify.breakpoint.smAndDown
+    }
+  },
+  methods: {
+    initVideo () {
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player
+      function onYouTubeIframeAPIReady () {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        })
+      }
     }
   }
 }
