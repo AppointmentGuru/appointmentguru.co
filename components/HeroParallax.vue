@@ -31,6 +31,7 @@
             </v-card-actions>
             <v-card-actions>
               <v-btn
+                style='z-index:1'
                 @click='$store.commit("SHOW_SIGNUP")'
                 color='orange' block >Get started for free</v-btn>
             </v-card-actions>
@@ -59,8 +60,15 @@
   </v-system-bar>
   <slot name='dialog' >
     <v-card>
-      <div id="player">
-        <v-progress-circular indeterminate ></v-progress-circular>
+      <div id="player" style='min-width:560px;min-height:300px;'>
+        <center>
+        <v-progress-circular
+          style='margin-top:110px;'
+          color='amber'
+          :size="75"
+          indeterminate >
+        </v-progress-circular>
+        </center>
       </div>
       <!-- <v-btn >Play</v-btn>
       <v-btn @click='stopPlayback' >Stop</v-btn> -->
@@ -74,7 +82,6 @@
 <script>
 
 function onYouTubeIframeAPIReady() {
-  console.log('initing the player')
   window.youtubeplayer = new YT.Player('promo-video', {
     height: '315',
     width: '560',
@@ -92,7 +99,8 @@ export default {
   },
   data () {
     return {
-      showVideo: false
+      showVideo: false,
+      isPaused: false
     }
   },
   mounted () {
@@ -106,12 +114,21 @@ export default {
   watch: {
     showVideo () {
       if (this.showVideo === true) {
+        this.$ga.event('Landing pages', 'Play video')
         if (!window.youtubeplayer) {
           this.initVideo()
+        } else {
+          window.youtubeplayer.playVideo()
         }
       } else {
         if (window.youtubeplayer) {
+          let playDuration = window.youtubeplayer.getDuration()
           window.youtubeplayer.pauseVideo()
+          this.$ga.event({
+            eventCategory: 'Landing pages',
+            eventAction: 'Stop video',
+            eventValue: playDuration
+          })
         }
       }
     }
@@ -128,7 +145,7 @@ export default {
       window.youtubeplayer = new YT.Player('player', {
         height: '310',
         width: '560',
-        videoId: 'M7lc1UVf-VE'
+        videoId: 'S-RBfTBraWc'
       })
     }
   }
