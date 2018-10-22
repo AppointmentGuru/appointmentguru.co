@@ -50,6 +50,12 @@ export default {
           img: 'https://service.imageboss.me/cover/200x200/https://media-appointmentguru.s3.amazonaws.com:443/practitioner/images/1/profile.jpeg'
         },
         {
+          title: 'Juan Villamizar',
+          region: 'Northern Suburbs, Johannesburg',
+          id: 771,
+          img: 'https://service.imageboss.me/cover/200x200/https://media-appointmentguru.s3.amazonaws.com:443/practitioner/images/771/profile.jpeg'
+        },
+        {
           title: 'Marije Pierson',
           region: 'Cape Town',
           id: 125,
