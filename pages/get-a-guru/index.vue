@@ -81,9 +81,9 @@ export default {
     messages: {
       en: {
         title: 'Book a demo',
-        description: 'We are available to run your through AppointmentGuru and how it can work for you. Demo\'s are one on one sessions and are available either online or in person (depending on where you are)',
+        description: 'We are available to take you through AppointmentGuru and how it can work for you. Demo\'s are one-on-one sessions and are available either online or in person (depending on where you are)',
         list: {
-          title: 'Who would you like to book with?'
+          title: 'Make an appointment with an AppointmentGuru consultants today!'
         }
       }
     }
