@@ -5,7 +5,7 @@
     {{partner}}
   </pre> -->
   <hero-parallax style='margin-top: 60px;'
-    :headline='`${partner.member_name} get 2 months free!`'
+    :headline='`${partner.member_name} ${partner.offer_summary}`'
     tagline='AppointmentGuru is practice management for medical practitioners'
     :image='partner.logo'
     :backgroundImage='partner.background_image' >
