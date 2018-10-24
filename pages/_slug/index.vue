@@ -15,8 +15,6 @@
     callout='Learn more about AppointmentGuru' >
   </callout>
 
-
-
   <template v-for='(block, index) in blocks'  >
     <div name='foo' :class='block.props.classes' :key='index' >
       <v-container v-if='block.inContainer' >
