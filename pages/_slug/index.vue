@@ -60,7 +60,7 @@ export default {
   },
   async asyncData ({ params, query }) {
 
-    let url = `http://localhost:8001/partners/${params.slug}`
+    let url = `https://referralguru.appointmentguru.co/partners/${params.slug}`
     // let url = 'https://referralguru.appointmentguru.co/partners/'
     let response = await axios.get(url)
     return {
