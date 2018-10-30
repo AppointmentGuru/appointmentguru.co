@@ -72,7 +72,7 @@ export default {
             {
               icon: 'account_balance',
               title: 'Check on your cashflow',
-              description: "Quickly see how much money you've earned, what's been paid and the total amount still outstanding."
+              description: "Quickly see how much money you've earned, what's been paid and the total amount still outstanding over 30 or 90 days."
             },
             {
               icon: 'favorite',
