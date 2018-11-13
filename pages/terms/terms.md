@@ -66,6 +66,8 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 8.5 AppointmentGuru may offer other optional services for once-off fees, not included in the monthly subscription.
 
+8.6 BASA | AppointmentGuru discount. Biokineticists registered with BASA will receive a R100 discount on the monthly AppointmentGuru subscription. In order to qualify for the discount, customers are encouraged to mail a copy of the BASA membership certificate to [support@appointmentguru.co](mailto:support@appointmentguru.co).
+
 ### 9. Payment
 
 9.1 AppointmentGuru uses Peach Payments. Peach Payments performs technical services to support payments to South African businesses. This service includes consulting on a selection of technical and administrative topics, configuring and provisioning of a transaction platform, and providing access to this platform.
@@ -104,4 +106,4 @@ support@appointmentguru.com
 
 ### Last updated
 
-14 August 2018.
+13 November 2018.
