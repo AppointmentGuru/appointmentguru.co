@@ -78,25 +78,12 @@ export default {
           inContainer: true,
           props: {
             classes: 'elevation-0 mt-4',
-            quote: "This company has changed how my clinic runs over the last 2 years. Bookings, invoicing and anything admin - AppointmentGuru is a necessity for any modern business in today's technology-driven workplace.",
-            authorName: 'Sean Johnson',
-            authorBio: 'Natural Therapist',
-            link: 'http://bookme.guru/structuralmedicine/',
-            linkText: 'Book now with the Centre for Structural Medicine',
-            image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.jpeg'
-          }
-        },
-        {
-          name: Testimonial,
-          inContainer: true,
-          props: {
-            classes: 'elevation-0 mt-4',
-            quote: "This company has changed how my clinic runs over the last 2 years. Bookings, invoicing and anything admin - AppointmentGuru is a necessity for any modern business in today's technology-driven workplace.",
-            authorName: 'Sean Johnson',
-            authorBio: 'Natural Therapist',
-            link: 'http://bookme.guru/structuralmedicine/',
-            linkText: 'Book now with the Centre for Structural Medicine',
-            image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.jpeg'
+            quote: "My life has completely changed since I started using these guys for my therapy business. Professional and always available and willing to help me figure out my system, I can't recommend them enough. Every small business should use them.",
+            authorName: 'Cathie van Rooyen',
+            authorBio: 'EFT Therapist',
+            link: 'https://bookme.guru/eft-sa/',
+            linkText: 'Book now with Cathie van Rooyen',
+            image: 'https://media-appointmentguru.s3.amazonaws.com/practitioner/images/974/profile.jpeg'
           }
         },
         {
