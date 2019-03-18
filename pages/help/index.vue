@@ -9,6 +9,8 @@
         {{ $t('tagline') }}
       </blockquote>
     </v-layout>
+    <algolia-search :auto-search='false' >
+    </algolia-search>
     <v-divider></v-divider>
     <v-layout v-for='category in categories' :key='category.id' row wrap >
       <v-flex xs12 sm6>
@@ -63,13 +65,16 @@
 
 <script>
 import axios from 'axios'
+import AlgoliaSearch from '@/components/AlgoliaSearch'
 
 export default {
   name: 'HelpPage',
+  components: {AlgoliaSearch},
   data () {
     return {
       showVideo: false,
-      activeVideo: null
+      activeVideo: null,
+      autoSearch: false
     }
   },
   async asyncData ({ query }) {
