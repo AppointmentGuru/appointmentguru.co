@@ -26,7 +26,7 @@ import HeroParallax from '@/components/HeroParallax'
 import Vue from 'vue'
 
 export default {
-  name: 'Client Self Service',
+  name: 'ClientSelfService',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {

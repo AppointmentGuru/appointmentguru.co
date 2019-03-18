@@ -26,7 +26,7 @@ import FeatureHero from '@/components/FeatureHero'
 import Vue from 'vue'
 
 export default {
-  name: 'Get Paid',
+  name: 'GetPaid',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {

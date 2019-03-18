@@ -91,21 +91,21 @@ module.exports = {
         })
       }
       function getPartners () {
-        let url = 'https://referralguru.appointmentguru.co/partners/'
+        let url = 'http://referralguru.appointmentguru.co/partners/'
         return axios.get(url)
       }
       return axios
         .all([
           getAirtable('appB8tJlSNDM6eeWt', 'HelpPage'),
           getAirtable('appUmwBIxunmbdDPs', 'BlogPost'),
-          getPartners()
+          // getPartners()
         ])
         .then(axios.spread(
           function (helppages, blogposts, partners) {
             let helpRoutes = airtableToRoutes(helppages.data.records, 'help/', 'page')
             let blogRoutes = airtableToRoutes(blogposts.data.records, 'blog/', 'page', 'WebsiteBlogPage')
-            let partnerRoutes = partnersToRoutes(partners.data.results)
-            let routes = helpRoutes.concat(blogRoutes).concat(partnerRoutes)
+            // let partnerRoutes = partnersToRoutes(partners.data.results)
+            let routes = helpRoutes.concat(blogRoutes) // .concat(partnerRoutes)
             return routes
           }
         ))

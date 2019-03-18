@@ -26,7 +26,7 @@ import FeatureHero from '@/components/FeatureHero'
 import Vue from 'vue'
 
 export default {
-  name: 'SupportFeature',
+  name: 'TrainingAndSupport',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, FeatureHero},
   head () {
     return {

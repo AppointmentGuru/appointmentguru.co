@@ -25,7 +25,7 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'Keep track',
+  name: 'KeepTrack',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
