@@ -73,6 +73,7 @@ export default {
               icon: 'favorite',
               title: 'Earn rewards for successful referrals',
               description: "For each successful referral (your referral becomes a paying AppointmentGuru customer), we'll give you a free month on your AppointmentGuru subscription."
+            },
             {
               icon: 'text_format',
               title: 'Use this text to send to your referrals:',
