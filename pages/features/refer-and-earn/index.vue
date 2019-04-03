@@ -55,7 +55,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Be part of our growth and success, refer AppointmentGuru and win!'
+            callout: 'Be part of our growth and success, refer AppointmentGuru and get a free month!'
           }
         },
         {
@@ -75,19 +75,14 @@ export default {
               description: "For each successful referral (your referral becomes a paying AppointmentGuru customer), we'll give you a free month on your AppointmentGuru subscription."
             },
             {
-              icon: 'sentiment_very_satisfied',
-              title: 'Your referral gets rewarded too!',
-              description: "Once your referral becomes a paying AppointmentGuru customer, we'll give them a free month too."
-            },
-            {
               icon: 'text_format',
               title: 'Use this text to send to your referrals:',
-              description: "I use AppointmentGuru to manage my appointments, clients and invoicing and I think you should too! Get more info and sign up for a free trial at [appointmentguru.co](https://appointmentguru.co/). As my referral, you'll get an additional free month added to your AppointmentGuru subscription."
+              description: "I use AppointmentGuru to manage my appointments, clients and invoicing and I think you should too! Get more info and sign up for a free trial at [appointmentguru.co](https://appointmentguru.co/)."
             },
             {
               icon: 'contact_mail',
               title: 'Send us their names so we can keep track',
-              description: "Don't forget to let us know who you've referred so that we can reward you both. We're working on a more automated way to manage referrals in the future! We'll keep their info private and won't contact them unless they've signed up for AppointmentGuru."
+              description: "Don't forget to let us know who you've referred so that we can keep track and reward you. We're working on a more automated way to manage referrals in the future! We'll keep their info private and won't contact them unless they've signed up for AppointmentGuru."
             }
             ]
           }
