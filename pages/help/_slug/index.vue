@@ -67,7 +67,8 @@ export default {
 
 <style >
 .help-content {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 2.15; /* 1 */
   /* font-weight: 300; */
 }
 .help-content blockquote {
