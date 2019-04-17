@@ -80,12 +80,22 @@ export default {
   margin-top: 20px;
 }
 .blog-content h3 {
-  font-size: 16px!important;
-  font-weight: 400;
+  font-size: 18px!important;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .blog-content ul,
 .blog-content ol{
   margin-left: 20px !important;
   margin-bottom: 20px;
+}
+.blog-content img{
+  margin-left:10%; margin-right:10%;
+  max-width:80%;
+  -webkit-box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  margin-top: 20px; margin-bottom:20px;
 }
 </style>
