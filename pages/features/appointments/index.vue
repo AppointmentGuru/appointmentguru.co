@@ -87,7 +87,7 @@ export default {
               {
                 icon: 'visibility_off',
                 title: 'Block off ad hoc time',
-                description: "Taking Friday off? Need to go to a dentist appointment? Block that time in your AppointmentGuru calendar to show you're unavailable."
+                description: "Taking Friday off? Need to go to a dentist appointment? Block time in your AppointmentGuru calendar when you're unavailable."
               },
               {
                 icon: 'schedule',
