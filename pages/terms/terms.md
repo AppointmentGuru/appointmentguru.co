@@ -56,9 +56,9 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 ### 8. Cost and subscription
 
-8.1 AppointmentGuru requests a monthly (30-day) subscription fee be paid via credit card once a customer has enjoyed a free trial for one month.
+8.1 AppointmentGuru requests a monthly (30-day) subscription fee be paid via credit or debit card once a customer has enjoyed a free trial for one month.
 
-8.2 After the free month, customers will be requested to enter credit card details to purchase a repeating monthly subscription. If customers decline to subscribe, their AppointmentGuru account will become read-only (no functionality will be possible) with the option of upgrading to a paid subscription at any time.
+8.2 After the free month, customers will be requested to enter credit or debit card details to purchase a repeating monthly subscription. If customers decline to subscribe, their AppointmentGuru account will become inaccessible with the option of upgrading to a paid subscription at any time.
 
 8.3 The subscription may be canceled at any time and will stop at the end of the current month of subscription.
 
@@ -84,8 +84,6 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 11.3 Should the referrer not be an AppointmentGuru customer, they will receive a once-off R400 payment (via EFT) once the referee has become a paying AppointmentGuru customer.
 
-11.4 Referee's will also receive an additional free month once they've become a paying AppointmentGuru customer. This means that once they've entered their credit card details, they can choose to have the payment reversed or get a credit for the 2nd month of their subscription.
-
 ### 12. Online appointments
 
 12.1 Online appointments uses a Zoom integration which is an additional USD15 monthly charge outside of the monthly AppointmentGuru subscription fee.
@@ -104,4 +102,4 @@ support@appointmentguru.com
 
 ### Last updated
 
-14 August 2018.
+6 June 2019.
