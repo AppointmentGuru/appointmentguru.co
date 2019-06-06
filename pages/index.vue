@@ -109,7 +109,7 @@ export default {
           props: {
             classes: ['mt-4', 'invoicing'],
             tagline: 'Built-in invoicing plus an integration with SnapScan',
-            content: "Industry-standard invoices generated from your appointments that can include medical ICD-10, NAPPI and procedure codes. Accept credit card payments with AppointmentGuru's SnapScan integration.",
+            content: "Industry-standard invoices generated from your appointments that can include medical ICD-10, NAPPI and procedure codes. Add physical products and accept credit card payments with AppointmentGuru's SnapScan integration.",
             img: 'img/invoice.png'
           }
         },
