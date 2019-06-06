@@ -85,6 +85,11 @@ export default {
               description: 'AppointmentGuru allows you to add ICD10, NAPPI, procedure and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.'
             },
             {
+              icon: 'shopping_basket',
+              title: 'Add products to invoices',
+              description: 'Sell accessories and aids? Include product sales on invoices for specific appointments.'
+            },
+            {
               icon: 'credit_card',
               title: 'Accept payment via SnapScan',
               description: "AppointmentGuru's SnapScan integration adds a SnapScan code to each invoice. Once payment has been made via the SnapScan app, the invoice will be marked as paid in your AppointmentGuru account. Less work for you!"
