@@ -105,8 +105,8 @@
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="/help/">Help</a></li>
-                <li class="text-muted"><a href="/terms/">Terms</a></li>
-                <li class="text-muted"><a href="/privacy/">Privacy</a></li>
+                <li class="text-muted"><a href="/terms/">Terms</a> & <a href="/privacy/">Privacy</a></li>
+                <li class="text-muted"><a href="https://appointmentguru.freshstatus.io">System Status</a></li>
                </ul>
             </v-flex>
             <v-flex xs6 sm4 class='text-sm-right pa-3' >
