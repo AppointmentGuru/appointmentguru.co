@@ -3,16 +3,30 @@
   <v-breadcrumbs divider="/">
     <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
     <v-breadcrumbs-item href='/blog/' :disabled='false' nuxt >Blog</v-breadcrumbs-item>
+    <template v-if='page && page.fields && page.fields.CategoryLookup' >
+    <v-breadcrumbs-item
+      v-for = 'category in page.fields.CategoryLookup'
+      :key='category'
+      disabled  >{{ category }}</v-breadcrumbs-item>
+    </template>
     <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <v-layout>
     <v-card v-if='page && page.fields' >
       <v-card-title>
-        <h1 class='headline' >{{page.fields.Title}}</h1>
+        <h1 class='headline my-4 py-4' >{{page.fields.Title}}</h1>
+        <v-spacer></v-spacer>
+        <small>Published: {{page.fields.DatePublished}}</small>
       </v-card-title>
       <v-card-text>
         <div class='blog-content' v-html='$md.render(page.fields.Post)' ></div>
       </v-card-text>
+      <v-divider></v-divider>
+      <v-footer v-if='page.fields.TagLookup'>
+        <v-icon small>tag</v-icon> Topics:
+        <v-chip small v-for='tag in page.fields.TagLookup' :key='tag' >{{tag}}
+        </v-chip>
+      </v-footer>
     </v-card>
   </v-layout>
 </v-container>
@@ -53,15 +67,17 @@ export default {
 
 <style >
 .blog-content {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 2.15; /* 1 */
   /* font-weight: 300; */
 }
 .blog-content blockquote {
-  padding: 16px 0 16px 24px;
+  padding: 16px 0 10px 24px;
   font-size: 16px;
   font-weight: 300;
   border-left: solid 3px #E65100;
   background-color: #FAFAFA;
+  margin-bottom:20px;
 }
 .blog-content h1 {
   font-size: 24px!important;
@@ -80,12 +96,22 @@ export default {
   margin-top: 20px;
 }
 .blog-content h3 {
-  font-size: 16px!important;
-  font-weight: 400;
+  font-size: 18px!important;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .blog-content ul,
 .blog-content ol{
   margin-left: 20px !important;
   margin-bottom: 20px;
+}
+.blog-content img{
+  margin-left:10%; margin-right:10%;
+  max-width:80%;
+  -webkit-box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  box-shadow: 10px 0px 60px -20px rgba(0,0,0,0.75);
+  margin-top: 40px; margin-bottom:20px;
 }
 </style>
