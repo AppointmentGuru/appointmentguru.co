@@ -60,7 +60,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'Automatic appointment notifications lessen client no-shows. Include relevant info about their appointment and send payment reminders afterwards.'
+            callout: 'Automatic appointment notifications lessen client no-shows. Include relevant info about their appointment and send payment information afterwards.'
           }
         },
         {
@@ -93,6 +93,11 @@ export default {
               icon: 'send',
               title: 'Invoice and payment reminder notifications',
               description: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice by resending it as many times as you like.'
+              }
+            {
+              icon: 'sms_failed',
+              title: 'View the status of your sent notifications',
+              description: 'Check whether an SMS and/or email notification has been sent, delivered, received or failed.'
               }
             ]
           }

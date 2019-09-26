@@ -100,7 +100,7 @@ export default {
             isLeft: true,
             withBackground: true,
             tagline: 'Lessen no-shows with notifications',
-            content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments through your online appointment system',
+            content: 'Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments through your online appointment system.',
             img: 'img/notification.png'
           }
         },
