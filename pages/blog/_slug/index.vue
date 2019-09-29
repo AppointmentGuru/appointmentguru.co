@@ -3,6 +3,13 @@
   <v-breadcrumbs divider="/">
     <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
     <v-breadcrumbs-item href='/blog/' :disabled='false' nuxt >Blog</v-breadcrumbs-item>
+    <v-breadcrumbs-item
+      v-if='page.fields.CategoryLookup'
+      v-for='category in page.fields.CategoryLookup'
+      :key='category'
+      :disabled='true' nuxt >{{category}}
+    </v-breadcrumbs-item>
+    {{CategoryLookup}}
     <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <v-layout>
@@ -17,7 +24,15 @@
       </v-card-title>
       <v-card-text>
         <div class='blog-content' v-html='$md.render(page.fields.Post)' ></div>
+        <!-- <pre>{{page.fields}}</pre> -->
       </v-card-text>
+      <v-footer>
+        <span
+          v-for='tag in page.fields.TagLookup'
+          :key='tag' class='ml-2' >
+          {{tag}}
+        </span>
+      </v-footer>
     </v-card>
   </v-layout>
 </v-container>
