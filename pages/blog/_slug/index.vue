@@ -7,6 +7,11 @@
   </v-breadcrumbs>
   <v-layout>
     <v-card v-if='page && page.fields' >
+      <v-card-media
+        v-if='page.fields.CoverImage'
+        :src="page.fields.CoverImage[0].url" height="200px" >
+      </v-card-media>
+      <v-divider></v-divider>
       <v-card-title>
         <h1 class='headline' >{{page.fields.Title}}</h1>
       </v-card-title>
@@ -38,14 +43,10 @@ export default {
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
     let queryParams = {filterByFormula: formula}
-    let url = process.env.airtableBlogBaseUrl + '/BlogPost'
-    let options = {
-      headers: headers,
-      params: queryParams
-    }
-    let pageResponse = await axios.get(url, options)
+    let url = process.env.cloufflareBaseUrl + '/en/blog/websiteblogpage/' + slug
+    let pageResponse = await axios.get(url)
     return {
-      page: pageResponse.data.records[0]
+      page: pageResponse.data
     }
   }
 }
