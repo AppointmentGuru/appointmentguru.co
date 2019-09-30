@@ -61,8 +61,6 @@ export default {
       'Authorization': 'Bearer ' + process.env.airtableToken
     }
     let slug = params.slug
-    let formula = `{Slug} = '${slug}'`
-    let queryParams = {filterByFormula: formula}
     let url = process.env.cloufflareBaseUrl + '/en/blog/overview/' + slug
     console.log(url)
     let pageResponse = await axios.get(url)

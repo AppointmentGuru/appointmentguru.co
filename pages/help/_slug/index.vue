@@ -18,7 +18,7 @@
   </center>
   <v-card class='mt-4' >
     <v-card-text class='help-content pt-4'>
-    <div v-html="$md.render(content)" ></div>
+    <div v-if='content' v-html="$md.render(content)" ></div>
     </v-card-text>
   </v-card>
 </v-container>

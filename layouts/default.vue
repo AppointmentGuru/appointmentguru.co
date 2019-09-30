@@ -166,15 +166,12 @@ export default {
     if (referrer && referrers.indexOf(referrer) === -1) {
       referrers.push(referrer)
       let host = window.location.host.split('.').slice(1).join('.')
-      console.log(host)
-      console.log(referrer)
       let opts = {
         "domain": host,
         "path": "/"
       }
       this.$cookies.set('referrers', referrers, opts)
     }
-    console.log(this.$cookies.get('referrers'))
   },
   computed: {
     isMobile () {
