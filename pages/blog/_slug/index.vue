@@ -9,7 +9,6 @@
       :key='category'
       :disabled='true' nuxt >{{category}}
     </v-breadcrumbs-item>
-    {{CategoryLookup}}
     <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <v-layout>
