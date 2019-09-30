@@ -158,6 +158,21 @@ export default {
       showsignup: false
     }
   },
+  mounted () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const referrer = urlParams.get('utm_campaign');
+    let referrers = this.$cookies.get('referrers')
+    if (!referrers) { referrers = [] }
+    if (referrer && referrers.indexOf(referrer) === -1) {
+      referrers.push(referrer)
+      let host = window.location.host.split('.').slice(1).join('.')
+      let opts = {
+        "domain": host,
+        "path": "/"
+      }
+      this.$cookies.set('referrers', referrers, opts)
+    }
+  },
   computed: {
     isMobile () {
       return this.$vuetify.breakpoint.smAndDown

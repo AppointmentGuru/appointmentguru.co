@@ -3,16 +3,37 @@
   <v-breadcrumbs divider="/">
     <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
     <v-breadcrumbs-item href='/blog/' :disabled='false' nuxt >Blog</v-breadcrumbs-item>
+    <template v-if='page && page.fields && page.fields.CategoryLookup' >
+      <v-breadcrumbs-item
+        v-for='category in page.fields.CategoryLookup'
+        :key='category'
+        :disabled='true' nuxt >{{category}}
+      </v-breadcrumbs-item>
+    </template>
     <v-breadcrumbs-item v-if='page && page.fields' disabled> {{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <v-layout>
     <v-card v-if='page && page.fields' >
+      <v-card-media
+        v-if='page.fields.CoverImage'
+        :src="page.fields.CoverImage[0].url" height="200px" >
+      </v-card-media>
+      <v-divider></v-divider>
       <v-card-title>
         <h1 class='headline' >{{page.fields.Title}}</h1>
       </v-card-title>
-      <v-card-text>
+      <v-card-text v-if='page.fields.Post'>
         <div class='blog-content' v-html='$md.render(page.fields.Post)' ></div>
+        <!-- <pre>{{page.fields}}</pre> -->
       </v-card-text>
+      <v-footer>
+        <span
+          v-if='page.fields.TagLookup'
+          v-for='tag in page.fields.TagLookup'
+          :key='tag' class='ml-2' >
+          {{tag}}
+        </span>
+      </v-footer>
     </v-card>
   </v-layout>
 </v-container>
@@ -24,10 +45,14 @@ import axios from 'axios'
 export default {
   name: 'BlogPostPage',
   head () {
+    let fields = {}
+    if (this.page && this.page.fields) {
+      fields = this.page.fields
+    }
     return {
-      title: this.page.fields.Title,
+      title: fields.Title,
       meta: [
-        { hid: 'description', name: 'description', content: this.page.fields.Summary }
+        { hid: 'description', name: 'description', content: fields.Summary }
       ]
     }
   },
@@ -36,16 +61,11 @@ export default {
       'Authorization': 'Bearer ' + process.env.airtableToken
     }
     let slug = params.slug
-    let formula = `{Slug} = '${slug}'`
-    let queryParams = {filterByFormula: formula}
-    let url = process.env.airtableBlogBaseUrl + '/BlogPost'
-    let options = {
-      headers: headers,
-      params: queryParams
-    }
-    let pageResponse = await axios.get(url, options)
+    let url = process.env.cloufflareBaseUrl + '/en/blog/overview/' + slug
+    console.log(url)
+    let pageResponse = await axios.get(url)
     return {
-      page: pageResponse.data.records[0]
+      page: pageResponse.data
     }
   }
 }

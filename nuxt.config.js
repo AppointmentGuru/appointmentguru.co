@@ -18,13 +18,15 @@ module.exports = {
   env: {
     airtableBaseUrl: process.env.AIRTABLE_BASE_URL || 'https://api.airtable.com/v0/appB8tJlSNDM6eeWt',
     airtableBlogBaseUrl: process.env.AIRTABLE_BLOG_BASE_URL || 'https://api.airtable.com/v0/appUmwBIxunmbdDPs',
-    airtableToken: process.env.AIRTABLE_TOKEN || 'keyt7MKFDGrXm3set'
+    airtableToken: process.env.AIRTABLE_TOKEN || 'keyt7MKFDGrXm3set',
+    cloufflareBaseUrl: process.env.CLOUDFLARE_BASE_URL || 'http://appointmentguru-co.appointmentguru.workers.dev'
   },
   router: {
     middleware: 'i18n'
   },
   modules: [
     '@nuxtjs/markdownit',
+    'cookie-universal-nuxt',
     ['@nuxtjs/google-analytics', {
       id: 'UA-93898571-1'
     }]
@@ -97,7 +99,7 @@ module.exports = {
       return axios
         .all([
           getAirtable('appB8tJlSNDM6eeWt', 'HelpPage'),
-          getAirtable('appUmwBIxunmbdDPs', 'BlogPost'),
+          getAirtable('appUmwBIxunmbdDPs', 'BlogPost', 'WebsiteBlogPage'),
           // getPartners()
         ])
         .then(axios.spread(

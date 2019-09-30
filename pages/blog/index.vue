@@ -5,8 +5,10 @@
   <h2 class='subheading mb-2' >{{ $t('recentPosts') }}</h2>
   <v-divider class='mb-4' ></v-divider>
   <v-layout wrap row >
-    <v-flex xs12 sm12 >
-      <v-card v-for='post in posts' :key='post.id' class='mb-4' >
+    <v-flex
+      xs12 sm12
+      v-for='post in posts' :key='post.id' >
+      <v-card class='ma-2 mb-4' >
         <v-card-title>
           <h2 class='subheading' >
           <nuxt-link :to='`/blog/${post.fields.Slug}`' class='blog-title' >
@@ -16,8 +18,9 @@
         <v-card-text  >
           <p v-if='post.fields.Summary' v-html='$md.render(post.fields.Summary)' ></p>
           <v-layout v-if='post.fields.TagLookup'>
-            <strong class='mt-2'><v-icon left>label</v-icon> Tags: </strong>
-            <v-chip label small v-for='tag in post.fields.TagLookup' :key='tag' >{{tag}}</v-chip>
+            <v-chip small outline
+              v-for='tag in post.fields.TagLookup'
+              :key='tag' >{{tag}}</v-chip>
           </v-layout>
         </v-card-text>
         <v-divider></v-divider>
@@ -69,7 +72,7 @@ export default {
         title: 'AppointmentGuru Blog',
         subtitle: 'News and updates from the team at AppointmentGuru',
         recentPosts: 'Recent posts',
-        datePublished: 'Date published',
+        datePublished: 'Published on',
         readMore: 'Read more'
       }
     }

@@ -18,7 +18,7 @@
   </center>
   <v-card class='mt-4' >
     <v-card-text class='help-content pt-4'>
-    <div v-html="$md.render(content)" ></div>
+    <div v-if='content' v-html="$md.render(content)" ></div>
     </v-card-text>
   </v-card>
 </v-container>
@@ -43,16 +43,11 @@ export default {
     }
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
-    let queryParams = {filterByFormula: formula, view: 'Summary'}
-    let url = process.env.airtableBaseUrl + '/HelpPage'
-    let options = {
-      headers: headers,
-      params: queryParams
-    }
-    let pageResponse = await axios.get(url, options)
+    let url = process.env.cloufflareBaseUrl + '/en/support-docs/grid-view/' + slug
+    console.log(url)
+    let pageResponse = await axios.get(url)
     return {
-      page: pageResponse.data.records[0],
-      params: params
+      page: pageResponse.data
     }
   },
   computed: {
@@ -60,6 +55,7 @@ export default {
       if (this.page && this.page.fields) {
         return this.page.fields.Description
       }
+      return ''
     }
   }
 }
