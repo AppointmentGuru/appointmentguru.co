@@ -44,6 +44,7 @@ export default {
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
     let url = process.env.cloufflareBaseUrl + '/en/support-docs/grid-view/' + slug
+    console.log(url)
     let pageResponse = await axios.get(url)
     return {
       page: pageResponse.data
@@ -54,6 +55,7 @@ export default {
       if (this.page && this.page.fields) {
         return this.page.fields.Description
       }
+      return ''
     }
   }
 }
