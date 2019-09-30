@@ -26,6 +26,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/markdownit',
+    'cookie-universal-nuxt',
     ['@nuxtjs/google-analytics', {
       id: 'UA-93898571-1'
     }]
