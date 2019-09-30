@@ -4,7 +4,7 @@
     <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
     <v-breadcrumbs-item href='/blog/' :disabled='false' nuxt >Blog</v-breadcrumbs-item>
     <v-breadcrumbs-item
-      v-if='page.fields.CategoryLookup'
+      v-if='page && page.fields && page.fields.CategoryLookup'
       v-for='category in page.fields.CategoryLookup'
       :key='category'
       :disabled='true' nuxt >{{category}}
