@@ -108,4 +108,7 @@ export default {
   margin-left: 20px !important;
   margin-bottom: 20px;
 }
+.blog-content img{
+  max-width: 95%;
+}
 </style>
