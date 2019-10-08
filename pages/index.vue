@@ -81,7 +81,7 @@ export default {
             withBackground: true,
             tagline: 'More than just an appointment manager app',
             content: 'Automate your appointment management, send good-looking invoices, enable online scheduling, be better at running your business, free up more time.',
-            img: 'img/schedule.jpg'
+            img: 'img/schedule.png'
           }
         },
         {
