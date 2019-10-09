@@ -97,7 +97,7 @@ export default {
             {
               icon: 'receipt',
               title: 'Send, remind, receipt',
-              description: "Send invoices to your clients by email, SMS or in-app, remind them if they haven't paid and send a receipt once they have. All at the touch of a button."
+              description: "Send invoices to your clients by email, SMS and WhatsApp, remind them if they haven't paid and send a receipt once they have. All at the touch of a button."
             },
             {
               icon: 'done_all',

@@ -75,6 +75,11 @@ export default {
                   description: "Super-handy reporting on your appointments and invoices updates itself. [See more on AppointmentGuru's reporting](/features/keep-track)."
                 },
                 {
+                  icon: 'post_add',
+                  title: 'Automatically add medical coding to invoices',
+                  description: "Make the same ICD-10 and process codes apply to all the invoice for a specific client within a certain time frame."
+                },
+                {
                   icon: 'accessibility_new',
                   title: 'Clients create their own appointments',
                   description: "Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget. [See more on AppointmentGuru's self-service features for your clients](/features/client-self-service)."
