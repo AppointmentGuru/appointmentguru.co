@@ -26,13 +26,13 @@
         <div class='blog-content' v-html='$md.render(page.fields.Post)' ></div>
         <!-- <pre>{{page.fields}}</pre> -->
       </v-card-text>
-      <v-footer>
-        <span
+      <v-footer style='clear:both'>
+        <v-chip outline outlined small
           v-if='page.fields.TagLookup'
           v-for='tag in page.fields.TagLookup'
           :key='tag' class='ml-2' >
           {{tag}}
-        </span>
+        </v-chip>
       </v-footer>
     </v-card>
   </v-layout>
@@ -97,18 +97,39 @@ export default {
   line-height: 1!important;
   letter-spacing: .02em!important;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  clear: both;
 }
 .blog-content h3 {
   font-size: 16px!important;
   font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 25px;
 }
 .blog-content ul,
 .blog-content ol{
   margin-left: 20px !important;
   margin-bottom: 20px;
 }
-.blog-content img{
+.blog-content img {
   max-width: 95%;
+}
+
+.blog-content img[src*="#img-center"] {
+  display: block;
+  margin-left: auto; margin-right: auto;
+}
+
+.blog-content img[src*="#mobile-screenshot-left"] {
+   max-width:320px;
+   float:left;
+   margin-right: 40px;
+   margin-bottom: 30px;
+}
+.blog-content img[src*="#mobile-screenshot-right"] {
+   max-width:320px;
+   float:right;
+   margin-left: 40px;
+   margin-bottom: 30px;
 }
 </style>
