@@ -167,7 +167,7 @@ export default {
     console.log(referrers)
     if (referrer && referrers.indexOf(referrer) === -1) {
       referrers.push(referrer)
-      let host = window.location.host.split('.').slice(1).join('.')
+      let host = window.location.host
       console.log(host)
       let opts = {
         "domain": host,
