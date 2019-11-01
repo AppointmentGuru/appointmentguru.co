@@ -91,8 +91,8 @@ export default {
             },
             {
               icon: 'send',
-              title: 'Invoice and payment reminder notifications',
-              description: 'Send invoices to your clients (and yourself) by SMS and email. Quickly remind your clients about an outstanding invoice by resending it as many times as you like.'
+              title: 'Invoice, payment reminder and statement notifications',
+              description: 'Send invoices and statements to your clients (and yourself) by SMS, email and WhatsApp. Quickly remind your clients about an outstanding invoice by resending it or creating a statement.'
             },
             {
               icon: 'sms_failed',
