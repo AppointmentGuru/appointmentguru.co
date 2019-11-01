@@ -100,6 +100,11 @@ export default {
               description: "Send invoices to your clients by email, SMS and WhatsApp, remind them if they haven't paid and send a receipt once they have. All at the touch of a button."
             },
             {
+              icon: 'receipt',
+              title: 'Generate statements',
+              description: "Create statements from outstanding invoices and send them to your clients by email, SMS and WhatsApp. Statements can include an opening balance as well as paid invoices."
+            },
+            {
               icon: 'done_all',
               title: 'Reconcile and view your reports',
               description: "Mark invoices as paid as you get paid and easily view those still outstanding. Reporting updates to show your financial health over the month."
