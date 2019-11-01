@@ -60,7 +60,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: "Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow. AppointmentGuru's invoicing also includes built-in ICD10, NAPPI, procedure and process codes for medical aid submission. And payment reminders!"
+            callout: "Automatically generated invoices that are easy to complete, simple to send and let you keep on top of your cash flow. AppointmentGuru's invoicing also includes built-in ICD10, NAPPI and process codes for medical aid submission. And payment reminders!"
           }
         },
         {
@@ -82,7 +82,7 @@ export default {
             {
               icon: 'local_hospital',
               title: 'Powerful support for medical codes',
-              description: 'AppointmentGuru allows you to add ICD10, NAPPI, procedure and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.'
+              description: 'AppointmentGuru allows you to add ICD10, NAPPI and process codes. Built-in Smart search helps find the right codes quickly and previously-used codes are suggested, reducing repetitive work.'
             },
             {
               icon: 'shopping_basket',
@@ -100,7 +100,7 @@ export default {
               description: "Send invoices to your clients by email, SMS and WhatsApp, remind them if they haven't paid and send a receipt once they have. All at the touch of a button."
             },
             {
-              icon: 'receipt',
+              icon: 'input',
               title: 'Generate statements',
               description: "Create statements from outstanding invoices and send them to your clients by email, SMS and WhatsApp. Statements can include an opening balance as well as paid invoices."
             },
