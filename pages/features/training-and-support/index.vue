@@ -82,7 +82,7 @@ export default {
             {
               icon: 'live_help',
               title: 'Support',
-              description: "Live chat on our website or in the app - we're available almost all of the time. And read up on lots of useful information in our [help pages](https://appointmentguru.co/help)."
+              description: "Live chat on our website and easy access to [help pages](https://appointmentguru.co/help)in the web app."
             },
             {
               icon: 'video_library',
