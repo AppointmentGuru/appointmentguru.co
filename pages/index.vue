@@ -36,7 +36,7 @@ export default {
     return {
       title: 'AppointmentGuru - Be better at admin, spend less time doing it',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru helps you to automate appointments, invoices and customer management. It has an online calendar, automated notifications and mobile apps for you and your clients to book and manage their appointments.' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru helps you to automate appointments, invoices, statements and customer management. It has an online calendar, automated notifications and mobile apps for you and your clients to book and manage their appointments.' }
       ]
     }
   },
