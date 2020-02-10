@@ -88,7 +88,7 @@ export default {
         },
         {
           icon: 'star',
-          title: 'Integrated invoicing (with medical codes) and statements'
+          title: 'Integrated invoicing (with medical codes)'
         },
         {
           icon: 'star',
