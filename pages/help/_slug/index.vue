@@ -43,7 +43,7 @@ export default {
     }
     let slug = params.slug
     let formula = `{Slug} = '${slug}'`
-    let url = process.env.cloufflareBaseUrl + '/en/support-docs/grid-view/' + slug
+    let url = process.env.cloufflareBaseUrl + '/en/support-docs/grid-view-en/' + slug
     console.log(url)
     let pageResponse = await axios.get(url)
     return {

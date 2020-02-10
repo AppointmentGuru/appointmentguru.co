@@ -64,6 +64,8 @@ module.exports = {
     }
   },
   generate: {
+    interval: 200,
+    concurrency: 1,
     routes: function () {
       function getAirtable (base, table, view) {
         let airtable = 'keyt7MKFDGrXm3set'
@@ -98,12 +100,12 @@ module.exports = {
       }
       return axios
         .all([
-          getAirtable('appB8tJlSNDM6eeWt', 'HelpPage'),
+          getAirtable('appB8tJlSNDM6eeWt', 'HelpPage', 'WebsitePublshed-en'),
           getAirtable('appUmwBIxunmbdDPs', 'BlogPost', 'WebsiteBlogPage'),
           // getPartners()
         ])
         .then(axios.spread(
-          function (helppages, blogposts, partners) {
+          function (helppages, blogposts) {
             let helpRoutes = airtableToRoutes(helppages.data.records, 'help/', 'page')
             let blogRoutes = airtableToRoutes(blogposts.data.records, 'blog/', 'page', 'WebsiteBlogPage')
             // let partnerRoutes = partnersToRoutes(partners.data.results)
