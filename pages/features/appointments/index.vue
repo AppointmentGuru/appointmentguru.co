@@ -102,7 +102,7 @@ export default {
               {
                 icon: 'create',
                 title: 'Add notes',
-                description: 'Keep tabs on each client session by adding notes to an appointment.'
+                description: 'Keep tabs on each client session by adding notes and uploading files to an appointment.'
               },
               {
                 icon: 'send',
