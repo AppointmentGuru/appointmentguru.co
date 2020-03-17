@@ -16,6 +16,7 @@ This document was created using a Contractology template available at [contracto
 * Information that you provide for the purpose of subscribing to the website and mobile application services
 * Any other information that you send to AppointmentGuru
 
+
 ### Using personal information
 
 **AppointmentGuru may use your personal information to:**
@@ -29,6 +30,7 @@ This document was created using a Contractology template available at [contracto
 * Send to you statements and invoices
 * Collect payments from you
 * Send you marketing communications
+
 
 Where AppointmentGuru discloses your personal information to its agents or sub-contractors for these purposes, the agent or sub-contractor in question will be obligated to use that personal information in accordance with the terms of this privacy statement.
 
