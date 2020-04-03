@@ -1,4 +1,5 @@
 <template lang="md" >
+
 <v-container class='page-container' >
   <v-breadcrumbs divider="/">
     <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon> </v-breadcrumbs-item>
@@ -12,8 +13,11 @@
       v-html='$md.render(page.fields.Summary)' ></blockquote>
   </div>
   <center>
-  <iframe v-if='page.fields.Video' width="560" height="315" class='ma-4'
-    :src="page.fields.Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  <iframe v-if='page.fields.Video' width="560"
+    height="315" class='ma-4'
+    :src="page.fields.Video"
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
   </center>
   <v-card class='mt-4' >
@@ -21,6 +25,7 @@
     <div v-if='content' v-html="$md.render(content)" ></div>
     </v-card-text>
   </v-card>
+
 </v-container>
 </template>
 
