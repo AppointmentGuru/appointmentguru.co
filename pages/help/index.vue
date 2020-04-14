@@ -2,7 +2,8 @@
 <section style='margin-top:60px;' >
   <v-container>
     <v-layout class='ml-4 mr-4 mt-4' >
-      <h1 class='headline' >{{ $t('headline') }}</h1>
+      <h1 class='headline' >{{ $t('headline') }}
+      </h1>
     </v-layout>
     <v-layout class='ml-4 mr-4' >
       <blockquote class='blockquote pl-0' >
@@ -32,6 +33,7 @@
         <v-expansion-panel class='mt-4 mb-4' >
           <v-expansion-panel-content v-for='page in pages[category.id]' :key='page.id' class='mr-2 ml-2' >
             <div slot="header">
+              <span v-if='page.fields.Published !== true' >[DRAFT]</span>
               <nuxt-link :to='`/help/${page.fields.Slug}/`' >{{page.fields.Title}}</nuxt-link>
             </div>
             <v-divider></v-divider>
@@ -97,7 +99,10 @@ export default {
         let formula = 'FIND(RECORD_ID(), "' + category.fields.HelpPage + '")'
         let params = {filterByFormula: formula, view: 'Summary'}
         let res = await axios.get(url, {headers, params})
-        pages[category.id] = res.data.records
+        pages[category.id] = res.data.records.filter((record) => {
+          if (process.env.NODE_ENV === 'development') { return true }
+          return record.fields.Published
+        })
       }
     }
     return {

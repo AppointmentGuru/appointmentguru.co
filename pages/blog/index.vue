@@ -5,10 +5,9 @@
   <h2 class='subheading mb-2' >{{ $t('recentPosts') }}</h2>
   <v-divider class='mb-4' ></v-divider>
   <v-layout wrap row >
-    <v-flex
-      xs12 sm12
+    <v-flex xs12 sm12 lg6
       v-for='post in posts' :key='post.id' >
-      <v-card class='ma-2 mb-4' >
+      <v-card class='ma-2 mb-4' height='90%' >
         <v-card-title>
           <h2 class='subheading' >
           <nuxt-link :to='`/blog/${post.fields.Slug}`' class='blog-title' >
@@ -23,7 +22,7 @@
               :key='tag' >{{tag}}</v-chip>
           </v-layout>
         </v-card-text>
-        <v-divider></v-divider>
+        <v-divider class='hidden-lg-and-up' ></v-divider>
         <v-card-actions>
           <span class='ml-2' >
             {{ $t('datePublished') }}

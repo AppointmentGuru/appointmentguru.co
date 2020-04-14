@@ -62,7 +62,6 @@ export default {
     }
     let slug = params.slug
     let url = process.env.cloufflareBaseUrl + '/en/blog/overview/' + slug
-    console.log(url)
     let pageResponse = await axios.get(url)
     return {
       page: pageResponse.data

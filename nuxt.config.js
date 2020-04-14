@@ -86,18 +86,6 @@ module.exports = {
           }
         })
       }
-      function partnersToRoutes (data) {
-        return data.map((item) => {
-          return {
-            route: item.path,
-            payload: item
-          }
-        })
-      }
-      function getPartners () {
-        let url = 'http://referralguru.appointmentguru.co/partners/'
-        return axios.get(url)
-      }
       return axios
         .all([
           getAirtable('appB8tJlSNDM6eeWt', 'HelpPage', 'WebsitePublshed-en'),
