@@ -16,7 +16,6 @@ This document was created using a Contractology template available at [contracto
 * Information that you provide for the purpose of subscribing to the website and mobile application services
 * Any other information that you send to AppointmentGuru
 
-
 ### Using personal information
 
 **AppointmentGuru may use your personal information to:**
@@ -31,7 +30,6 @@ This document was created using a Contractology template available at [contracto
 * Collect payments from you
 * Send you marketing communications
 
-
 Where AppointmentGuru discloses your personal information to its agents or sub-contractors for these purposes, the agent or sub-contractor in question will be obligated to use that personal information in accordance with the terms of this privacy statement.
 
 In addition to the disclosures reasonably necessary for the purposes identified elsewhere above, AppointmentGuru may disclose your personal information to the extent that it is required to do so by law, in connection with any legal proceedings or prospective legal proceedings, and in order to establish, exercise or defend its legal rights.
@@ -39,6 +37,10 @@ In addition to the disclosures reasonably necessary for the purposes identified 
 ### Securing your data
 
 AppointmentGuru will take reasonable technical and organisational precautions to prevent the loss, misuse or alteration of your personal information. AppointmentGuru will store all the personal information you provide on secure servers. Information relating to electronic transactions entered into via this website will be protected by encryption technology.
+
+### Zoom Integration
+
+AppointmentGuru offers an integration with [Zoom](zoom.us) to hold online appointments with video conferencing. For our integration, we store some basic meeting information on online appointments such as the Zoom meeting URL (the URL shared with clients), Zoom start URL (the URL used to start a meeting) and Zoom meeting ID (used to generate a link from AppointmentGuru to the meeting in Zoom). If a Zoom integration is uninstalled from AppointmentGuru, all stored Zoom meeting information will also be removed from AppointmentGuru unless permission is given to not remove the information during the uninstall.
 
 ### Cross-border data transfers
 
@@ -58,4 +60,4 @@ hello@appointmentguru.com
 
 ### Last updated
 
-05 May 2017
+14 April 2020

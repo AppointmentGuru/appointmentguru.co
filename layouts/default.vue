@@ -112,7 +112,8 @@
             <v-flex xs6 sm4 class='text-sm-right pa-3' >
               <h4 class='subheading uppercase' >Connect</h4>
               <ul class="list-unstyled list-spaced mt-3">
-              <li class="text-muted"><a href="mailto:hello@appointmentguru.co">Email us</a></li>
+              <li class="text-muted"><a href="/contact-us">Contact us</a></li>
+              <li class="text-muted"><a href="mailto:support@appointmentguru.co">Email us</a></li>
               <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Facebook</a></li>
               <li class="text-muted"><a href="https://www.instagram.com/appointmentguru/">Instagram</a></li>
               <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
