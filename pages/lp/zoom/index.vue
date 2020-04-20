@@ -1,8 +1,12 @@
 <template>
   <div>
-    <v-container style="min-height:300px;">
-      <v-layout row class="mt-4 mb-3">
-        <v-flex xs7 class="text-center">
+    <v-container
+      fluid
+      style="min-height:300px;background-image:url('/img/lp/zoom/video_call.png');height:450px;background-position:bottom left;"
+      class="blue lighten-5 elevation-4"
+    >
+      <v-layout row wrap>
+        <v-flex xs12 sm6 md7 class="text-center mt-3">
           <!-- <v-img class="white--text align-end" height="200px" src="/img/lp/zoom/video_call.png" /> -->
           <!-- <v-card-media
               class="white--text align-end"
@@ -13,10 +17,7 @@
                 class="subheading white--text pl-5"
               >Add Zoom to your AppointmentGuru account</v-card-title>
           </v-card-media>-->
-          <div
-            style="background-image:url('/img/lp/zoom/video_call.png');height:400px;background-position:bottom left;"
-            class="text-center elevation-2 light-blue lighten-5"
-          >
+          <div>
             <!-- <img src="~/static/img/lp/zoom/video_call.png" /> -->
             <center>
               <p class="title pt-5">Already an AppointmentGuru member?</p>
@@ -28,8 +29,9 @@
             </center>
           </div>
         </v-flex>
-        <v-flex xs5>
-          <v-card class="my-4 mt-5 ml-3 elevation-10">
+        <v-flex xs12 sm6 md5>
+          <br />
+          <v-card class="my-4 mt-5 mx-1 elevation-10">
             <v-list>
               <v-list-tile>
                 <v-list-tile-content>
