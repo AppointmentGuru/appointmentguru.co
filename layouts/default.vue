@@ -164,8 +164,6 @@ export default {
     const referrer = urlParams.get('utm_campaign');
     let referrers = this.$cookies.get('referrers')
     if (!referrers) { referrers = [] }
-    console.log(referrer)
-    console.log(referrers)
     if (referrer && referrers.indexOf(referrer) === -1) {
       referrers.push(referrer)
       let host = window.location.host

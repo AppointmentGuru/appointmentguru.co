@@ -98,6 +98,9 @@ export default {
   font-size: 16px!important;
   font-weight: 400;
 }
+.help-content blockquote {
+  margin-bottom:20px;
+}
 .help-content ul,
 .help-content ol{
   margin-left: 20px !important;

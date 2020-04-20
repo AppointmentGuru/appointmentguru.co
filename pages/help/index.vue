@@ -25,7 +25,9 @@
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
-            <blockquote class='blockquote ml-1 pl-0'>{{category.fields.Summary}}</blockquote>
+            <blockquote class='blockquote ml-1 pl-0'>
+              {{category.fields.Summary}}
+            </blockquote>
           </v-card-text>
         </v-card>
       </v-flex>
