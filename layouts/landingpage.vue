@@ -29,9 +29,9 @@
         <v-list-tile href='https://app.appointmentguru.co' target='_blank' >
           <v-list-tile-title >Login</v-list-tile-title>
         </v-list-tile>
-        <v-list-tile @click='showsignup = true' >
+        <!-- <v-list-tile @click='showsignup = true' >
           <v-list-tile-title >Sign up</v-list-tile-title>
-        </v-list-tile>
+        </v-list-tile> -->
       </v-list>
      </v-navigation-drawer>
     <v-toolbar app dark color='orange' >
@@ -51,14 +51,10 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn href='https://app.appointmentguru.co' flat>Login</v-btn>
-        <v-btn @click='showsignup = true' color='green' class='elevation-0' >Sign up</v-btn>
+        <!-- <v-btn @click='showsignup = true' color='green' class='elevation-0' >Sign up</v-btn> -->
       </v-toolbar-items>
       <v-toolbar-side-icon class='hidden-md-and-up' @click='showNav = !showNav' ></v-toolbar-side-icon>
     </v-toolbar>
-
-    <no-ssr placeholder="Loading...">
-      <div id="agsignup"></div>
-    </no-ssr>
 
     <nuxt/>
 
@@ -132,21 +128,6 @@
         <v-spacer></v-spacer>
         &copy; AppointmentGuru {{ new Date().getFullYear() }}</v-footer>
     </footer>
-
-    <v-dialog :fullscreen='isMobile' v-model="showsignup" max-width="500px" >
-      <v-card>
-        <v-toolbar class='orange lighten-2' dark>
-          <v-toolbar-title >
-          Get started with AppointmentGuru
-          </v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-toolbar-side-icon >
-            <v-btn icon @click='showsignup=false' ><v-icon>close</v-icon></v-btn>
-          </v-toolbar-side-icon>
-        </v-toolbar>
-        <div id="agsignup"></div>
-      </v-card>
-    </v-dialog>
 
   </v-app>
 </template>
