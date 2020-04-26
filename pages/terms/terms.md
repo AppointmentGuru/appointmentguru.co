@@ -100,4 +100,4 @@ support@appointmentguru.com
 
 ### Last updated
 
-31 January 2020.
+26 April 2020.
