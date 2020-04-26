@@ -85,6 +85,11 @@ export default {
                 description: 'Create a single appointment or schedule a series of repeat appointments with a client.'
               },
               {
+                icon: 'video_call',
+                title: 'Hold online appointments with Zoom',
+                description: "Hook up your Zoom account and create online appointments that automatically include Zoom meeting information."
+              },
+              {
                 icon: 'visibility_off',
                 title: 'Block off ad hoc time',
                 description: "Taking Friday off? Need to go to a dentist appointment? Block time in your AppointmentGuru calendar when you're unavailable."

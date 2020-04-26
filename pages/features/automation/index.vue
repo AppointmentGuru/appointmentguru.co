@@ -80,6 +80,11 @@ export default {
                   description: "Make the same ICD-10 and process codes apply to all the invoice for a specific client within a certain time frame."
                 },
                 {
+                  icon: 'video_call',
+                  title: 'Integrate with Zoom video calls',
+                  description: "Hook up your Zoom account and create online appointments that automatically include Zoom meeting information."
+                },
+                {
                   icon: 'accessibility_new',
                   title: 'Clients create their own appointments',
                   description: "Automate your appointment creation and empower your clients to book appointments themselves via the app, your free website or booking widget. [See more on AppointmentGuru's self-service features for your clients](/features/client-self-service)."
