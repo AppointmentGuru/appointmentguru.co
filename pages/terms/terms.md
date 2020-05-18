@@ -84,7 +84,7 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 ### 12. Online appointments
 
-12.1 Online appointments uses a Zoom integration which is an additional USD15 monthly charge outside of the monthly AppointmentGuru subscription fee.
+12.1 Online appointments uses a Zoom integration. Zoom offer a free account or a paid account beginning at US$14.99, an additional monthly charge outside of the monthly AppointmentGuru subscription fee, and charged by Zoom directly.
 
 12.2 The online appointments feature is currently in beta and AppointmentGuru customers may experience some bugs and hiccups. We encourage any problems be reported.
 
@@ -100,4 +100,4 @@ support@appointmentguru.com
 
 ### Last updated
 
-31 January 2020.
+26 April 2020.
