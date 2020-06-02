@@ -3,3 +3,6 @@ https://next.appointmentguru.co/* https://appointmentguru.co/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://appointmentguru.netlify.com/* https://next.appointmentguru.co/:splat 301!
+
+# content:
+https://appointmentguru.co/covid https://appointmentguru.co/blog/covid-19:-how-appointmentguru-can-help-you
