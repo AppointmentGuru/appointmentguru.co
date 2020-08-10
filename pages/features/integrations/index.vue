@@ -31,7 +31,7 @@ export default {
     return {
       title: 'Integrations | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'AppointmentGuru's integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru\'s integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.' }
       ]
     }
   },
