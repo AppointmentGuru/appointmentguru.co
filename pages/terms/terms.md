@@ -94,10 +94,22 @@ We reserve the right to amend this Notice at any time and your use of the websit
 
 13.2 The AppointmentGuru monthly subscription does not include any SnapScan fees, those are charged separately by SnapScan.
 
+### 14. Yoco integration
+
+14.1 Yoco ([yoco.co.za](https://www.yoco.co.za/za/)) is a 3rd-party payment service that enables AppointmentGuru clients to accept payments from their clients. For more information on Yoco and their service, we encourage AppointmentGuru clients to visit their website.
+
+14.2 The AppointmentGuru monthly subscription does not include any Yoco fees, those are charged separately by Yoco.
+
+### 15. Mailchimp integration
+
+13.1 Mailchimp ([mailchimp.com](https://www.mailchimp.com)) is a 3rd-party email marketing service that enables AppointmentGuru clients to create and send email marketing campaigns to their clients. For more information on Mailchimp and their service, we encourage AppointmentGuru clients to visit their website.
+
+13.2 The AppointmentGuru monthly subscription does not include any Mailchimp fees, those are charged separately by Mailchimp.
+
 ### Service contact
 
 support@appointmentguru.com
 
 ### Last updated
 
-26 April 2020.
+10 August 2020.
