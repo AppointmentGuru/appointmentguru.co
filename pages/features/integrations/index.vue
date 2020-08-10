@@ -4,7 +4,7 @@
 <v-breadcrumbs class='py-0' divider="/">
   <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon></v-breadcrumbs-item>
   <v-breadcrumbs-item href='/features/' nuxt >Features</v-breadcrumbs-item>
-  <v-breadcrumbs-item disabled nuxt >Website integration</v-breadcrumbs-item>
+  <v-breadcrumbs-item disabled nuxt >Integrations</v-breadcrumbs-item>
 </v-breadcrumbs>
 </v-container>
 
@@ -25,13 +25,13 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 
 export default {
-  name: 'WebsiteIntegration',
+  name: 'Integrations',
   components: {FeatureBox, FeatureBlock, Callout, HeroParallax, HeroInfo},
   head () {
     return {
-      title: 'Website integration | AppointmentGuru',
+      title: 'Integrations | AppointmentGuru',
       meta: [
-        { hid: 'description', name: 'description', content: 'Get your business online, AppointmentGuru provides a free website, app and booking widget to add to your existing site.' }
+        { hid: 'description', name: 'description', content: 'AppointmentGuru's integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.' }
       ]
     }
   },
@@ -48,14 +48,14 @@ export default {
           inContainer: true,
           props: {
             classes: 'mt-4',
-            tagline: 'Accept appointments online',
+            tagline: 'Integrations to use with AppointmentGuru',
             img: '/img/free_website_and_app.png'
           }
         },
         {
           name: 'Callout',
           props: {
-            callout: 'AppointmentGuru gives you an online presence. Your clients will be to get info on your business and make appointments anytime.'
+            callout: 'AppointmentGuru's integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.'
           }
         },
         {
@@ -78,7 +78,27 @@ export default {
               icon: 'code',
               title: 'Add the AppointmentGuru booking widget to your website',
               description: 'Add the AppointmentGuru booking code to your existing website so that appointments can be made.'
-              }
+            },
+            {
+              icon: 'mobile_friendly',
+              title: 'Connect your SnapScan account to accept payments',
+              description: 'Unique SnapScan QR codes added to your invoices allow clients to make payments which is automatically reconciled in your AppointmentGuru account.'
+            },
+            {
+              icon: 'headset_mic',
+              title: 'Integrate with Zoom to offer online appointments',
+              description: 'Link your Zoom account and offer online appointments with Zoom. Automatic reminders will include the Zoom meeting URL.'
+            },
+            {
+              icon: 'credit_card',
+              title: 'Link Yoco with your AppointmentGuru to accept payments',
+              description: 'Clients can pay via Yoco by clicking on a unique link on the invoice, and it'll automatically update in your AppointmentGuru account.'
+            },
+            {
+              icon: 'alternate_email',
+              title: 'Sync your AppointmentGuru clients to your Mailchimp account',
+              description: 'Keep in touch with your client base with Mailchimp's email marketing tools.'
+            }
             ]
           }
         },
