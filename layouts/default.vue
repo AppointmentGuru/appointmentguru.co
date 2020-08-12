@@ -106,6 +106,7 @@
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="/help/">Help</a></li>
                 <li class="text-muted"><a href="/terms/">Terms</a> & <a href="/privacy/">Privacy</a></li>
+                <li class="text-muted"><a href="/press-kit/">Press Kit</a></li>
                 <li class="text-muted"><a href="https://appointmentguru.freshstatus.io">System Status</a></li>
                </ul>
             </v-flex>

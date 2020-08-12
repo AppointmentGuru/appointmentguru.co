@@ -1,20 +1,22 @@
 <template>
-<div class='page-container' >
-<v-container>
-<v-breadcrumbs class='py-0' divider="/">
-  <v-breadcrumbs-item href='/' nuxt ><v-icon small>home</v-icon></v-breadcrumbs-item>
-  <v-breadcrumbs-item href='/features/' nuxt >Features</v-breadcrumbs-item>
-  <v-breadcrumbs-item disabled nuxt >Integrations</v-breadcrumbs-item>
-</v-breadcrumbs>
-</v-container>
+  <div class="page-container">
+    <v-container>
+      <v-breadcrumbs class="py-0" divider="/">
+        <v-breadcrumbs-item href="/" nuxt>
+          <v-icon small>home</v-icon>
+        </v-breadcrumbs-item>
+        <v-breadcrumbs-item href="/features/" nuxt>Features</v-breadcrumbs-item>
+        <v-breadcrumbs-item disabled nuxt>Integrations</v-breadcrumbs-item>
+      </v-breadcrumbs>
+    </v-container>
 
-    <template v-for='(block, index) in blocks'  >
-      <v-container v-if='block.inContainer' :key='index' >
-        <component :is='block.name' v-bind='block.props' :class='block.classes' />
+    <template v-for="(block, index) in blocks">
+      <v-container v-if="block.inContainer" :key="index">
+        <component :is="block.name" v-bind="block.props" :class="block.classes" />
       </v-container>
-      <component v-else :is='block.name' v-bind='block.props' :key='index' :class='block.classes' />
+      <component v-else :is="block.name" v-bind="block.props" :key="index" :class="block.classes" />
     </template>
-</div>
+  </div>
 </template>
 
 <script>
@@ -55,7 +57,7 @@ export default {
         {
           name: 'Callout',
           props: {
-            callout: 'AppointmentGuru's integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.'
+            callout: 'AppointmentGuru\'s integrations include a widget to add to your website and also third-party services like SnapScan, Zoom, Yoco and Mailchimp.'
           }
         },
         {
@@ -92,12 +94,12 @@ export default {
             {
               icon: 'credit_card',
               title: 'Link Yoco with your AppointmentGuru to accept payments',
-              description: 'Clients can pay via Yoco by clicking on a unique link on the invoice, and it'll automatically update in your AppointmentGuru account.'
+              description: 'Clients can pay via Yoco by clicking on a unique link on the invoice, and it\'ll automatically update in your AppointmentGuru account.'
             },
             {
               icon: 'alternate_email',
               title: 'Sync your AppointmentGuru clients to your Mailchimp account',
-              description: 'Keep in touch with your client base with Mailchimp's email marketing tools.'
+              description: 'Keep in touch with your client base with Mailchimp\'s email marketing tools.'
             }
             ]
           }
@@ -116,9 +118,10 @@ export default {
 }
 @media only screen and (max-width: 599px) {
   .container {
-      padding: 0px;
+    padding: 0px;
   }
 }
-.blockquote.smaller { font-size: 16px; }
-
+.blockquote.smaller {
+  font-size: 16px;
+}
 </style>
