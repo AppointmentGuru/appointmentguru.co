@@ -26,15 +26,15 @@
             <div class='summary-md' v-html="$md.render(result.Summary)"></div>
           </v-card-text>
           <v-card-actions>
-            <v-icon
+            <!-- <v-icon
               v-if='result.Tags && result.Tags.length > 2'
               class='ml-2' small >tag</v-icon>
-            <i>{{ result.Tags}}</i>
+            <i>{{ result.Tags}}</i> -->
             <v-spacer>
             </v-spacer>
             <v-btn
               v-if='result.Video && result.Video.length > 2'
-              :href='result.Video.replace("/embed/", "/watch?v=")'
+              :href='getVideoLink(result.Video)'
               target='_blank'
               flat small>
               <v-avatar>
@@ -74,6 +74,14 @@ export default {
     showChat () {
       if (window.drift) {
         window.drift.api.goToNewConversation()
+      }
+    },
+    getVideoLink (link) {
+      if (link.toLowerCase().indexOf('youtube.com') !== -1) {
+        return link.replace("/embed/", "/watch?v=")
+      }
+      if (link.toLowerCase().indexOf('loom.com') !== -1) {
+        return link.replace("/embed/", "/share/")
       }
     }
   }

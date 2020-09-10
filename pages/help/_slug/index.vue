@@ -106,4 +106,5 @@ export default {
   margin-left: 20px !important;
   margin-bottom: 20px;
 }
+.help-content p img {max-width: 100%;}
 </style>
