@@ -7,7 +7,7 @@
   <v-layout wrap row >
     <v-flex xs12 sm12 lg6
       v-for='post in posts' :key='post.id' >
-      <v-card class='ma-2 mb-4' height='90%' >
+      <v-card class='ma-2 mb-4 elevation-4' height='90%' >
         <v-card-title>
           <h2 class='subheading' >
           <nuxt-link :to='`/blog/${post.fields.Slug}`' class='blog-title' >

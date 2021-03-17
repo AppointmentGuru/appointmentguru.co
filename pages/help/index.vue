@@ -15,7 +15,7 @@
     <v-divider></v-divider>
     <v-layout v-for='category in categories' :key='category.id' row wrap >
       <v-flex xs12 sm6>
-        <v-card class='mt-4 mb-4 mr-xs-2 ml-xs-2 mr-2 ml-2' >
+        <v-card class='mt-4 mb-4 mr-xs-2 ml-xs-2 mr-2 ml-2 elevation-5' >
           <v-card-title>
             <h2 class='title text-xs-center' >
                 <v-avatar color='blue-grey' class='mr-1' >
@@ -29,6 +29,12 @@
               {{category.fields.Summary}}
             </blockquote>
           </v-card-text>
+          <v-card-actions >
+            <v-spacer/>
+            <v-btn
+              :to='`/help/category/${category.fields.Slug}`'
+              flat >More</v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
       <v-flex xs12 sm6>

@@ -7,20 +7,24 @@
     <v-breadcrumbs-item disabled>{{page.fields.Title}}</v-breadcrumbs-item>
   </v-breadcrumbs>
   <h1 class='headline mb-4' >{{page.fields.Title}}</h1>
-  <v-divider></v-divider>
-  <div class='callout' >
-    <blockquote v-if='page.fields.Summary' class='blockquote ma-4'
-      v-html='$md.render(page.fields.Summary)' ></blockquote>
-  </div>
-  <center>
-  <iframe v-if='page.fields.Video' width="560"
-    height="315" class='ma-4'
-    :src="page.fields.Video"
-    frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
-  </center>
-  <v-card class='mt-4' >
+  <v-alert v-if='page.fields.Preview' type='warning' :value='true' class='mb-4' >
+    <strong>Note:</strong>
+    This article is for upcoming functionality which is not yet generally available in AppointmentGuru
+  </v-alert>
+
+  <v-card class='mt-4 elevation-5' >
+    <div class='callout' >
+      <blockquote v-if='page.fields.Summary' class='blockquote ma-4'
+        v-html='$md.render(page.fields.Summary)' ></blockquote>
+    </div>
+    <center>
+    <iframe v-if='page.fields.Video' width="560"
+      height="315" class='ma-4'
+      :src="page.fields.Video"
+      frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+    </center>
     <v-card-text class='help-content pt-4'>
     <div v-if='content' v-html="$md.render(content)" ></div>
     </v-card-text>
@@ -47,9 +51,7 @@ export default {
       'Authorization': 'Bearer ' + process.env.airtableToken
     }
     let slug = params.slug
-    let formula = `{Slug} = '${slug}'`
     let url = process.env.cloufflareBaseUrl + '/en/support-docs/grid-view-en/' + slug
-    console.log(url)
     let pageResponse = await axios.get(url)
     return {
       page: pageResponse.data
