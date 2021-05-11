@@ -41,7 +41,7 @@ export default {
       gurus: [
         {
           title: "Christo Crampton",
-          region: "Northern Suburbs, Johannesburg",
+          region: "Online",
           id: 1,
           img:
             "https://media-appointmentguru.s3.amazonaws.com/practitioner/images/1/profile.jpeg",

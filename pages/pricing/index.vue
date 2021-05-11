@@ -6,7 +6,7 @@
       <v-card class='elevation-24 mt-4 pl=0 pr-0' >
         <div class='pa-2 text-xs-center orange--text' >
           <span class='currency display-3' >R</span>
-          <span class='price display-4' >400</span>
+          <span class='price display-4' >500</span>
           <span class='frequency title uppercase' >/month</span>
         </div>
         <v-divider></v-divider>
@@ -106,7 +106,7 @@ export default {
         },
         {
           question: 'Can I use AppointmentGuru for my practice?',
-          answer: 'For practitioners who work together in a practice the cost is R400/month for your practice account (this includes one practitioner). Each additional practitioner costs an extra R150/month.'
+          answer: 'For practitioners who work together in a practice the cost is R500/month for your practice account (this includes one practitioner). Each additional practitioner costs an extra R400/month.'
         },
         {
           question: 'Can clients make their own appointments?',
