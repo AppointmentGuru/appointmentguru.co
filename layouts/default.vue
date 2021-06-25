@@ -148,10 +148,11 @@
         <div id="agsignup"></div>
       </v-card>
     </v-dialog>
-
+    <cookies />
   </v-app>
 </template>
 <script>
+import Cookies from '@/components/Cookies.vue'
 export default {
   name: 'Main',
   data () {
@@ -160,6 +161,7 @@ export default {
       showsignup: false
     }
   },
+  components: {Cookies},
   mounted () {
     const urlParams = new URLSearchParams(window.location.search);
     const referrer = urlParams.get('utm_campaign');
@@ -168,7 +170,6 @@ export default {
     if (referrer && referrers.indexOf(referrer) === -1) {
       referrers.push(referrer)
       let host = window.location.host
-      console.log(host)
       let opts = {
         "domain": host,
         "path": "/"
