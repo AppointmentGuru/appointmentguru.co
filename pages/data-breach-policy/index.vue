@@ -3,12 +3,10 @@
     <section v-html='page' class='mt-4' ></section>
   </v-container>
 </template>
-
 <script>
-import page from './disclosure.md'
-
+import page from './breach.md'
 export default {
-  name: 'Disclosure',
+  name: 'DataBreach',
   computed: {
     page () { return page }
   }

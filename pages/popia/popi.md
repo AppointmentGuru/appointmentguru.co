@@ -13,11 +13,11 @@ This page serves as a certral hub for all things POPI. Our goal is to provide tr
 
 ### Access to records & Procedure for requesting access to information
 
-..
+* For considerations specific to the POPIA, please see the section ["Information Regarding Your Data Protection Rights Under the Protection of Personal Information Act (POPIA)"](/privacy/#popi)
 
 ### Standard operating procedures
 
-* [Standard data breach response]()
+* [Standard data breach response](/data-breach-policy/)
 * Visit our [Trust center](https://appointmentguru.trust.page/) to understand various standard procedures and operations that are in place to protect your privacy and security.
 
 ### Contact details for Information Officer
