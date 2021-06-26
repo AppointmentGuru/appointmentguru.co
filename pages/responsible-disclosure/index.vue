@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import page from './privacy2.md'
+import page from './disclosure.md'
 export default {
-  name: 'PrivacyPage',
+  name: 'Disclosure',
   computed: {
     page () { return page }
   }
