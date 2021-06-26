@@ -129,6 +129,10 @@ You can opt-out of having made your activity on the Service available to Google 
 
 For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: http://www.google.com/intl/en/policies/privacy/
 
+### Zoom Integration
+
+AppointmentGuru offers an integration with [Zoom](zoom.us) to hold online appointments with video conferencing. For our integration, we store some basic meeting information on online appointments such as the Zoom meeting URL (the URL shared with clients), Zoom start URL (the URL used to start a meeting) and Zoom meeting ID (used to generate a link from AppointmentGuru to the meeting in Zoom). If a Zoom integration is uninstalled from AppointmentGuru, all stored Zoom meeting information will also be removed from AppointmentGuru unless permission is given to not remove the information during the uninstall.
+
 ## Payments processors
 
 We provide paid products and/or services on our Website. In that case, we use third-party services for payment processing (e.g. payment processors).
