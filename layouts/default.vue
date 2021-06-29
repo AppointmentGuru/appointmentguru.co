@@ -97,22 +97,28 @@
                 <li class="text-muted"><a href="/features/">Features</a></li>
                 <li class="text-muted"><a href="/pricing/">Pricing</a></li>
                 <li class="text-muted"><a href="/features/apps/">Apps</a></li>
+                <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
               </ul>
             </v-flex>
             <v-flex xs6 sm4 class='text-sm-right pa-3'>
             <h4 class='subheading uppercase' >Information</h4>
               <ul class="list-unstyled list-spaced mt-3">
-                <li class="text-muted"><a href="/blog/">Blog</a></li>
-                <li class="text-muted"><a href="/help/">Help</a></li>
-                <li class="text-muted"><a href="/terms/">Terms</a> & <a href="/privacy/">Privacy</a></li>
+                <li class="text-muted">
+                  <a href="/terms/">Terms</a></li>
+                <li class="text-muted"><a href="/privacy/">Privacy</a></li>
+                <li class="text-muted"><a href="/popia/">POPIA</a></li>
+                <li class="text-muted"><a href="/cookies/">Cookies</a></li>
+                <li class="text-muted"><a href="https://appointmentguru.trust.page" target="_blank" >Trust</a></li>
+
                 <li class="text-muted"><a href="/press-kit/">Press Kit</a></li>
-                <li class="text-muted"><a href="https://appointmentguru.freshstatus.io">System Status</a></li>
+                <li class="text-muted"><a href="https://appointmentguru.freshstatus.io" target="_blank" >System Status</a></li>
                </ul>
             </v-flex>
             <v-flex xs6 sm4 class='text-sm-right pa-3' >
               <h4 class='subheading uppercase' >Connect</h4>
               <ul class="list-unstyled list-spaced mt-3">
+              <li class="text-muted"><a href="/help/">Help</a></li>
               <li class="text-muted"><a href="/contact-us">Contact us</a></li>
               <li class="text-muted"><a href="mailto:support@appointmentguru.co">Email us</a></li>
               <li class="text-muted"><a href="https://www.facebook.com/appointmentguru/">Facebook</a></li>
@@ -148,10 +154,11 @@
         <div id="agsignup"></div>
       </v-card>
     </v-dialog>
-
+    <cookies />
   </v-app>
 </template>
 <script>
+import Cookies from '@/components/Cookies.vue'
 export default {
   name: 'Main',
   data () {
@@ -160,6 +167,7 @@ export default {
       showsignup: false
     }
   },
+  components: {Cookies},
   mounted () {
     const urlParams = new URLSearchParams(window.location.search);
     const referrer = urlParams.get('utm_campaign');
@@ -168,7 +176,6 @@ export default {
     if (referrer && referrers.indexOf(referrer) === -1) {
       referrers.push(referrer)
       let host = window.location.host
-      console.log(host)
       let opts = {
         "domain": host,
         "path": "/"

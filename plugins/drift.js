@@ -20,5 +20,5 @@ export default () => {
     }
   }();
   drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('8b6spivfgiz7');
+  // drift.load('8b6spivfgiz7');
 }
