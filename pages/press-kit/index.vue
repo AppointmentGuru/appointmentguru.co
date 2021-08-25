@@ -28,9 +28,39 @@
           Appointments, online bookings, reminders, invoices, customer support, medical aid codes, integrations, birthday reminders.
         </blockquote>
 
-        <h4>Company logo</h4>
+        <h4>Brand assets</h4>
 
-        <img src="https://handbook.appointmentguru.co/assets/img/AppointmentGuru_logo.8610addc.png" width="80%" />
+        <v-list class='elevation-4 mb-5 mt-3 pa-0'>
+          <v-list-tile href='https://dropbox-appointmentguru.s3.eu-central-1.amazonaws.com/brand-kit.zip' target="_blank" >
+            <v-list-tile-content>
+              <v-list-tile-title>Download a zip file of hi-res brand assets</v-list-tile-title>
+            </v-list-tile-content>
+            <v-list-tile-action >
+              <v-icon>download</v-icon>
+            </v-list-tile-action>
+          </v-list-tile>
+        </v-list>
+
+        <h4>Company logo</h4>
+        <center>
+        <img src="https://ik.imagekit.io/appointmentguru/brand/Appointment_guru_logo_white_background.png?updatedAt=1617041015996"
+          alt="AppointmentGuru logo"
+          width="80%" />
+        </center>
+
+        <h4>Company logo. <small>powered by</small></h4>
+        <center>
+        <img src="https://ik.imagekit.io/appointmentguru/brand/Appointment_guru_final_logo-03.png?updatedAt=1617041015116"
+          alt="AppointmentGuru logo - powered by AppointmentGuru"
+          width="80%" />
+        </center>
+
+        <h4>Company logo. <small>vertical splash page</small></h4>
+        <center>
+        <img src="https://ik.imagekit.io/appointmentguru/brand/Appointment_guru_final_logo-02.png?updatedAt=1617041015117"
+          alt="AppointmentGuru logo - vertical"
+          width="80%" />
+        </center>
 
         <h4>Tile logos</h4>
         <v-layout >
