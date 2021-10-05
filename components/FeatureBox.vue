@@ -2,13 +2,15 @@
   <v-layout row wrap class="mt-4">
     <v-flex v-for="feature in features" :key="feature.icon" xs12 :class="flexWidth">
       <v-card class="ma-2" height="100%">
+        <center>
+        <v-avatar color="blue-grey" class="mr-1 elevation-5" style='margin-top:-10px;margin-left:-10px;' >
+          <v-icon large dark>{{feature.icon}}</v-icon>
+        </v-avatar>
+        </center>
         <v-card-title>
-          <h2 class="title text-xs-center">
-            <v-avatar color="blue-grey" class="mr-1">
-              <v-icon large dark>{{feature.icon}}</v-icon>
-            </v-avatar>
-            {{feature.title}}
-          </h2>
+          <v-spacer/>
+          <h2 class="title text-xs-center" v-html="feature.title" />
+          <v-spacer/>
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
