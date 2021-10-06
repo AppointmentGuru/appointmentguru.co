@@ -4,12 +4,14 @@
 
         <v-layout class="feature-block d-flex align-center" align="center" row wrap>
           <v-flex xs12 sm6 :class="col1Order" class="align-center" >
-            <v-sheet color='white' height='100%' flat elevation=10 >
-              <h1 class="pa-3 blue-grey--text">{{headline}}</h1>
-              <h2 class="pa-3 display-1 deep-orange--text darken-4--text">{{tagline}}</h2>
 
-              <div class="display-1 pa-3" style="font-weight: 300;" v-html="renderedContent" />
-            </v-sheet>
+            <h1 class="pa-3 blue-grey--text">{{headline}}</h1>
+            <h2 class="pa-3 display-1 deep-orange--text darken-4--text">{{tagline}}</h2>
+
+            <div
+              class="display-1 pa-3" style="font-weight: 300;"
+              v-html="renderedContent" />
+
           </v-flex>
           <v-flex xs12 sm6 :class="col2Order">
             <v-sheet color='white' height='100%' flat >

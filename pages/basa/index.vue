@@ -1,42 +1,5 @@
 <template>
   <div>
-    <!-- <v-container
-      fluid
-      style="background-image:url('https://images.unsplash.com/photo-1536922246289-88c42f957773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80');background-position:cover;width:100% !important;max-width:none !important;"
-      class="blue lighten-5 elevation-4" >
-      <v-layout row wrap>
-        <v-flex xs12 sm6 md5>
-          <br />
-          <v-form action="https://go.appointmentguru.co/#/" >
-          <v-card tile class="my-4 mt-5 mx-1 elevation-15 pt-3" >
-            <v-card-title class="title" >
-              Sign up for free
-            </v-card-title>
-            <v-card-text>
-              <v-text-field solo
-                type="email" name="email" class='mr-3'
-                label="Your work email address" />
-            </v-card-text>
-
-              <v-card-actions>
-                <v-spacer/>
-                <v-btn color="primary" x-large >Get started for free</v-btn>
-              </v-card-actions>
-            <v-footer dark class='pa-3' >
-              BASA members get a R100/month discount!
-            </v-footer>
-          </v-card>
-          </v-form>
-        </v-flex>
-
-        <v-flex xs12 sm6 md7 class="text-center mt-3">
-          <div>
-            <center>
-            </center>
-          </div>
-        </v-flex>
-      </v-layout>
-    </v-container> -->
 
     <v-container >
       <v-layout row wrap >
@@ -55,7 +18,7 @@
           </center>
         </v-flex>
 
-        <v-flex xs12 class='text-center pa-5' >
+        <v-flex xs12 class='text-center pb-5' >
           <sign-up-form />
         </v-flex>
       </v-layout>
@@ -133,8 +96,10 @@ export default {
   },
   data() {
     return {
+      // appUrl: appUrl,
       flatImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/iphone-x-flat.png',
-      heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png?updatedAt=1633461769274',
+      heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3.png',
+      // heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png',
       heroBackground:
         "https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80",
       blocks: [
@@ -254,22 +219,22 @@ export default {
               "Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.",
             img: "/img/book_online.png"
           }
-        },
-        {
-          name: Testimonial,
-          inContainer: true,
-          props: {
-            classes: "elevation-2",
-            quote:
-              "I don't think I could imagine running my business without AppointmentGuru anymore.",
-            authorName: "Sean Johnson",
-            authorBio: "Natural Therapist",
-            link: "http://bookme.guru/structuralmedicine/",
-            linkText: "Book now with the Centre for Structural Medicine",
-            image:
-              "https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png"
-          }
         }
+        // {
+        //   name: Testimonial,
+        //   inContainer: true,
+        //   props: {
+        //     classes: "elevation-2",
+        //     quote:
+        //       "I don't think I could imagine running my business without AppointmentGuru anymore.",
+        //     authorName: "Sean Johnson",
+        //     authorBio: "Natural Therapist",
+        //     link: "http://bookme.guru/structuralmedicine/",
+        //     linkText: "Book now with the Centre for Structural Medicine",
+        //     image:
+        //       "https://media-appointmentguru.s3.amazonaws.com/practitioner/images/7/profile.png"
+        //   }
+        // }
       ]
     };
   }
