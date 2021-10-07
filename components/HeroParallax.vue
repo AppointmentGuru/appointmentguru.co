@@ -7,12 +7,12 @@
 -->
 <template>
 <section>
-<v-parallax :src='backgroundImage'
-    height="550" >
+<v-parallax :src='backgroundImage' >
   <v-container style='margin-top:100px;position:inherit;' >
-    <v-layout row wrap >
-      <v-flex md5 sm12 >
-        <v-card class='parallax-text elevation-4 mt-4' flat dark >
+    <v-layout row wrap class="d-flex align-center" align="center" >
+      <v-flex md5 sm12 order-xs2 >
+        <!-- style='margin-top:55px;' -->
+        <v-card class='parallax-text elevation-4 mt-lg-5' flat dark >
           <!-- <v-card-media src='https://appointmentguru.co/assets/img/guru/appointment-logo.png' height='100' ></v-card-media> -->
           <v-card-title>
             <v-layout>
@@ -38,13 +38,19 @@
           </slot>
         </v-card>
       </v-flex>
-      <v-flex xs7 class='hidden-sm-and-down' >
+      <v-flex xs7 order-xs1 class='hidden-sm-and-down' >
         <!-- <img
           style='height: 400px;position: absolute;right:20px;z-index=-1;'
           :src='image' /> -->
-          <img
-          style='height: 400px;position: absolute;right:20px;z-index=-1;'
-          src='~/assets/calendar-mobile-laptop.png' />
+          <!-- style='height: 400px;position: absolute;right:20px;z-index=-1;' -->
+          <picture>
+              <source :srcset="`${image}?tr=f-avif`" type="image/avif" >
+              <source :srcset="`${image}?tr=f-webp`" type="image/webp" >
+              <img
+                alt="AppointmentGuru - appointments, invoicing, CRM and client management"
+                width='100%'
+                :src='image' />
+          </picture>
 
       </v-flex>
     </v-layout>

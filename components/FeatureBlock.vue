@@ -9,12 +9,12 @@
             <h2 class="pa-3 display-1 deep-orange--text darken-4--text">{{tagline}}</h2>
 
             <div
-              class="display-1 pa-3" style="font-weight: 300;"
+              class="display-1 pa-3"
+              style="font-weight: 200;"
               v-html="renderedContent" />
 
           </v-flex>
           <v-flex xs12 sm6 :class="col2Order">
-            <v-sheet color='white' height='100%' flat >
 
               <picture>
                   <source :srcset="`${img}?tr=f-avif`" type="image/avif" >
@@ -24,7 +24,6 @@
                     :alt="headline" >
               </picture>
 
-            </v-sheet>
           </v-flex>
         </v-layout>
 

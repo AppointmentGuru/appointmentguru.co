@@ -3,7 +3,8 @@
     <v-flex v-for="feature in features" :key="feature.icon" xs12 :class="flexWidth">
       <v-card class="ma-2" height="100%">
         <center>
-        <v-avatar color="blue-grey" class="mr-1 elevation-5" style='margin-top:-10px;margin-left:-10px;' >
+        <v-avatar color="blue-grey" class="mr-1 elevation-5"
+        style='margin-top:-20px;' >
           <v-icon large dark>{{feature.icon}}</v-icon>
         </v-avatar>
         </center>

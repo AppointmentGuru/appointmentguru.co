@@ -49,7 +49,8 @@ export default {
           props: {
             headline: 'Be better at admin.<br/>Spend less time doing it.',
             tagline: 'Appointments. Invoices. Clients. More.',
-            image: '~/assets/calendar-mobile-laptop.png',
+            image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3_jCzkqCt3C.png',
+            // image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png',
             // backgroundImage: 'https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80'
             // backgroundImage: 'https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35840c5a386390076c95d47b745ae459&auto=format&fit=crop&w=1950&q=80'
             // backgroundImage: 'https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a9e41e445772471708b74b0835e4c35&auto=format&fit=crop&w=2378&q=80'
@@ -81,7 +82,7 @@ export default {
             withBackground: true,
             tagline: 'More than just an appointment manager app',
             content: 'Automate your appointment management, send good-looking invoices, enable online scheduling, be better at running your business, free up more time.',
-            img: 'img/schedule.png'
+            img: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/lp-feature-invoice-appointments-client.png'
           }
         },
         {
@@ -90,7 +91,7 @@ export default {
             classes: 'mt-4',
             tagline: 'Manage your business on the go',
             content: 'Keep up-to-date with your daily appointment maker and invoicing with the AppointmentGuru app.',
-            img: 'img/create_appointment.png'
+            img: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/create-on-the-go.png'
           }
         },
         {
@@ -110,7 +111,7 @@ export default {
             classes: ['mt-4', 'invoicing'],
             tagline: 'Built-in invoicing plus an integration with SnapScan and Yoco',
             content: "Industry-standard invoices generated from your appointments that can include medical ICD-10, NAPPI and procedure codes. Add physical products and accept credit card payments with AppointmentGuru's SnapScan and Yoco integrations.",
-            img: 'img/invoice.png'
+            img: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/invoice-example.png'
           }
         },
         {
@@ -121,7 +122,7 @@ export default {
             withBackground: true,
             tagline: 'Empower and know your clients',
             content: 'Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.',
-            img: 'img/book_online.png'
+            img: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/website-booking-page.png'
           }
         },
         {

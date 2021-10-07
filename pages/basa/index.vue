@@ -24,6 +24,44 @@
       </v-layout>
     </v-container>
 
+    <v-container >
+        <v-layout row wrap class='mb-5' >
+          <v-flex xs12 sm4 class='px-2 hidden-xs-only' >
+            <picture>
+                  <source srcset="https://ik.imagekit.io/appointmentguru/partners/basa.png?tr=f-avif" type="image/avif" >
+                  <source srcset="https://ik.imagekit.io/appointmentguru/partners/basa.png?tr=f-webp" type="image/webp" >
+                  <img class="pa-2 my-5"
+                    width='273' height='116'
+                    src="https://ik.imagekit.io/appointmentguru/partners/basa.png"
+                    alt="BASA - Biokinetics South Africa" >
+              </picture>
+          </v-flex>
+          <v-flex xs12 sm8 class='px-2' >
+            <div :style='centerOnMobile' >
+
+              <picture>
+                  <source srcset="https://ik.imagekit.io/appointmentguru/partners/basa.png?tr=f-avif" type="image/avif" >
+                  <source srcset="https://ik.imagekit.io/appointmentguru/partners/basa.png?tr=f-webp" type="image/webp" >
+                  <img class="pa-2 hidden-sm-and-up"
+                    width='273' height='116'
+                    src="https://ik.imagekit.io/appointmentguru/partners/basa.png"
+                    alt="BASA - Biokinetics South Africa" >
+              </picture>
+
+              <h3 class='display-1 mt-5' >Special offer for BASA members</h3>
+              <blockquote class='blockquote pl-0' >
+                BASA members get a R100 discount/month.
+              </blockquote>
+              <p >
+                Send a copy of your BASA membership certificate to support@appointmentguru.co to claim your discount
+              </p>
+            </div>
+          </v-flex>
+          <!-- {{centerOnMobile}} -->
+        </v-layout>
+
+    </v-container>
+
     <template v-for="(block, index) in blocks">
       <v-container v-if="block.inContainer" :key="index">
         <component :is="block.name" v-bind="block.props" :class="block.classes" />
@@ -34,6 +72,7 @@
     <v-flex xs12 class='text-center pa-5' >
       <sign-up-form />
     </v-flex>
+
     </v-container>
 
     <v-container >
@@ -94,6 +133,14 @@ export default {
       ]
     };
   },
+  computed: {
+    centerOnMobile () {
+      if (this.$vuetify.breakpoint.xs === true) {
+        return {'textAlign': 'center'}
+      }
+      return {}
+    }
+  },
   data() {
     return {
       // appUrl: appUrl,
@@ -142,22 +189,22 @@ export default {
             rowSize: 3,
             features: [
               {
-                icon: "videocam",
-                title: "Integrate with Zoom",
+                icon: "paid",
+                title: "Save time on invoicing and improve collections",
                 description:
-                  "Connect your AppointmentGuru account to your Zoom account so that you can manage your Zoom meetings right from AppointmentGuru"
+                  "Quickly generate ethical invoices suitable for South African medical aids. Make it easy for your clients to pay with online payments with Yoco. AppointmentGuru users save hours previously spent invoicing"
               },
               {
                 icon: "flash_on",
-                title: "Automate your notifications",
+                title: "Run your business smoothly and efficiently",
                 description:
-                  "Once connected, AppointmentGuru can automatically send your Zoom meeting information to your clients with our automatated confirmations and reminders"
+                  "Automate your notifications to reduce no-shows. All your client information safely stored in the cloud helps you offer personalisd service to your clients"
               },
               {
                 icon: "language",
-                title: "Let your clients book online",
+                title: "Grow your practice",
                 description:
-                  "Your clients can book appointments online via your online booking page, our mobile app, or though a booking form embedded in your web page"
+                  "Take bookings online, publish a website with us for free. AppointmentGuru gives you everything you need to build and promote your brand"
               }
             ]
           }
@@ -177,12 +224,12 @@ export default {
         {
           name: FeatureBlock,
           props: {
-            classes: ["mt-4", "invoicing"],
+            classes: ["mt-4"],
             withBackground: false,
             tagline: "Create ethical invoices and take payment online",
             content:
               "Industry-standard invoices generated from your appointments that can include medical ICD-10, NAPPI and procedure codes. Add physical products and accept credit card payments with AppointmentGuru's Yoco integration.",
-            img: "/img/invoice.png"
+            img: "https://ik.imagekit.io/appointmentguru/landing-pages/home/invoice-example.png"
           }
         },
         {
@@ -194,7 +241,7 @@ export default {
             tagline: "Manage your business on the go",
             content:
               "Keep up-to-date with your daily appointment maker and invoicing with the AppointmentGuru app.",
-            img: "https://ik.imagekit.io/appointmentguru/landing-pages/home/create-on-the-go.png?updatedAt=1633470930813"
+            img: "https://ik.imagekit.io/appointmentguru/landing-pages/home/create-on-the-go.png"
           }
         },
         {
@@ -217,7 +264,7 @@ export default {
             tagline: "Empower and know your clients",
             content:
               "Clients can book and manage their appointments with the AppointmentGuru app. Data, notes and personal details are all safely stored on our platform.",
-            img: "/img/book_online.png"
+            img: "https://ik.imagekit.io/appointmentguru/landing-pages/home/website-booking-page.png"
           }
         }
         // {
