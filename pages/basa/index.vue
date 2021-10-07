@@ -4,11 +4,21 @@
     <v-container >
       <v-layout row wrap >
         <v-flex xs12 class='text-center pt-5' >
+          <v-btn absolute fab bottom center >
+            <v-icon>keyboard_arrow_down</v-icon>
+          </v-btn>
           <center>
-          <img
-            alt="AppointmentGuru dashboard screenshot"
-            width="90%"
-            :src="heroImage" />
+
+          <picture>
+              <source :srcset="`${heroImage}?tr=f-avif`" type="image/avif" >
+              <source :srcset="`${heroImage}?tr=f-webp`" type="image/webp" >
+              <img
+                alt="AppointmentGuru dashboard screenshot"
+                class='mt-4'
+                width='90%'
+                style="max-width:700px;"
+                :src="heroImage" />
+          </picture>
 
           <!-- <img class="mt-5"
             width="90%"
