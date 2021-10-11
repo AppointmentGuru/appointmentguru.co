@@ -11,7 +11,7 @@
 <v-card flat class='grey lighten-5' width='500px' style='max-width:90%;' >
   <v-card-title >
     <v-text-field solo
-      type="email" name="email" class="ag-input-xl"
+      type="email" name="email"
       label="Your work email address" />
     <v-btn large
       :loading='loading'
