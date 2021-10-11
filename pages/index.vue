@@ -8,14 +8,27 @@
       <component v-else :is='block.name' v-bind='block.props' />
     </div>
   </template>
-  <v-parallax :src='backgroundImage' height='200' >
+  <v-parallax :src='backgroundImage' height='400' >
     <v-flex class='text-xs-center mt-4' >
-      <h3 class='headline' >
+      <h3 class='headline mb-5 mt-3' >
         Try AppointmentGuru for free
       </h3>
       <v-btn style='z-index:1;' @click='$store.commit("SHOW_SIGNUP")' dark large
         class='mt-4 elevation-20'
         color='orange' >Get started</v-btn>
+
+      <div>
+        <picture>
+            <source :srcset="`${flatImage}?tr=f-avif`" type="image/avif" >
+            <source :srcset="`${flatImage}?tr=f-webp`" type="image/webp" >
+            <img class="mt-5"
+              :src="flatImage"
+              height='100px;'
+              style='max-width:100%;'
+              alt="AppointmentGuru calendar screenshot" >
+        </picture>
+      </div>
+
     </v-flex>
   </v-parallax>
 </div>
@@ -42,6 +55,7 @@ export default {
   },
   data () {
     return {
+      flatImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/iphone-x-flat.png',
       backgroundImage: 'https://images.unsplash.com/photo-1515136194762-84618729b8df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f26f412a62f4e342b739989b9e8aa308&auto=format&fit=crop&w=1950&q=80',
       blocks: [
         {
