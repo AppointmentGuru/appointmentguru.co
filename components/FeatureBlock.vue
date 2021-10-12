@@ -1,16 +1,32 @@
 <template>
   <section :class="containerClasses">
-    <v-container>
-      <v-layout class="feature-block" row wrap>
-        <v-flex xs12 sm6 :class="col1Order">
-          <h1 class="ml-4 mr-4 mt-4 blue-grey--text">{{headline}}</h1>
-          <h2 class="ml-4 mr-4 headline deep-orange--text darken-4--text">{{tagline}}</h2>
-          <blockquote class="blockquote" v-html="renderedContent"></blockquote>
-        </v-flex>
-        <v-flex xs12 sm6 :class="col2Order">
-          <img style="width:100%;" class="pa-2" :src="img" />
-        </v-flex>
-      </v-layout>
+    <v-container fill-height >
+
+        <v-layout class="feature-block d-flex align-center" align="center" row wrap>
+          <v-flex xs12 sm6 :class="col1Order" class="align-center" >
+
+            <h1 class="pa-3 blue-grey--text">{{headline}}</h1>
+            <h2 class="pa-3 display-1 deep-orange--text darken-4--text">{{tagline}}</h2>
+
+            <div
+              class="display-1 pa-3"
+              style="font-weight: 200;"
+              v-html="renderedContent" />
+
+          </v-flex>
+          <v-flex xs12 sm6 :class="col2Order">
+
+              <picture>
+                  <source :srcset="`${img}?tr=f-avif`" type="image/avif" >
+                  <source :srcset="`${img}?tr=f-webp`" type="image/webp" >
+                  <img style="width:100%;" class="pa-2 my-5"
+                    :src="img"
+                    :alt="headline" >
+              </picture>
+
+          </v-flex>
+        </v-layout>
+
     </v-container>
   </section>
 </template>

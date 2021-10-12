@@ -70,10 +70,19 @@
           <section class='pa-3' >
             <h4 class='subheading' >MOBILE APP FOR CLIENTS</h4>
             <blockquote class='blockquote smaller ml-1 pl-0'>
-              Clients of AppointmentGuru practitioners can book and manage their appointments from our mobile app.
+              Clients of AppointmentGuru practitioners can book and manage their appointments from our mobile web app.
             </blockquote>
           </section>
-          <section>
+          <section >
+            <a class="app-link" id="appleLink"
+              title="Get the AppointmentGuru progressive web app (PWA)"
+              href="https://app.appointmentguru.co">
+              <img class="ml-3 app-icon img-responsive"
+                alt="Get the AppointmentGuru progressive web app (PWA)"
+                src="https://ik.imagekit.io/appointmentguru/app-stores/pwa.png" />
+            </a>
+          </section>
+          <!-- <section>
             <div >
               <a class="app-link" id="appleLink"
                 href="https://itunes.apple.com/us/app/appointment-guru/id1163805838?mt=8">
@@ -83,7 +92,7 @@
                 <img class="ml-3 app-icon img-responsive" src="https://getapp.guru/template/badgegoogleplay.png">
               </a>
             </div>
-          </section>
+          </section> -->
         </v-flex>
         <v-flex sm7 xs12 >
           <v-layout class='mt-3' row wrap >
