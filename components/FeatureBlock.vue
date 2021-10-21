@@ -21,7 +21,7 @@
                   <source :srcset="`${img}?tr=f-webp`" type="image/webp" >
                   <img style="width:100%;" class="pa-2 my-5"
                     :src="img"
-                    :alt="headline" >
+                    :alt="headline || tagline" >
               </picture>
 
           </v-flex>

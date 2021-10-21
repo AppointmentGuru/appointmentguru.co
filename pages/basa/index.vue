@@ -4,9 +4,9 @@
     <v-container >
       <v-layout row wrap >
         <v-flex xs12 class='text-center pt-5' >
-          <v-btn absolute fab bottom center >
+          <!-- <v-btn absolute fab bottom center >
             <v-icon>keyboard_arrow_down</v-icon>
-          </v-btn>
+          </v-btn> -->
           <center>
 
           <picture>
@@ -110,6 +110,7 @@
 </template>
 
 <script>
+import Features from "@/components/Features";
 import FeatureBox from "@/components/FeatureBox";
 import FeatureBlock from "@/components/FeatureBlock";
 import Callout from "@/components/Callout";
@@ -122,6 +123,7 @@ export default {
   name: "LandingPage",
   layout: "landingpage",
   components: {
+    Features,
     FeatureBox,
     FeatureBlock,
     Callout,
@@ -156,6 +158,7 @@ export default {
       // appUrl: appUrl,
       flatImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/iphone-x-flat.png',
       heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3.png',
+      lazyHeroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3.png?tr=bl-6',
       // heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png',
       heroBackground:
         "https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80",
@@ -194,6 +197,7 @@ export default {
         },
         {
           name: FeatureBox,
+          // name: Features,
           inContainer: true,
           props: {
             rowSize: 3,
@@ -262,7 +266,7 @@ export default {
             tagline: "Lessen no-shows with notifications",
             content:
               "Automatically send customisable SMS or email notifications to confirm, remind, reschedule and cancel appointments through your online appointment system.",
-            img: "/img/notification.png"
+            img: "https://ik.imagekit.io/appointmentguru/landing-pages/home/notification.png"
           }
         },
         {

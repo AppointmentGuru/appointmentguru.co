@@ -75,10 +75,10 @@
           </section>
           <section >
             <a class="app-link" id="appleLink"
-              title="Get the AppointmentGuru progressive web app (PWA)"
+              title="Get the AppointmentGuru progressive web app (PWA) for mobile"
               href="https://app.appointmentguru.co">
               <img class="ml-3 app-icon img-responsive"
-                alt="Get the AppointmentGuru progressive web app (PWA)"
+                alt="Get the AppointmentGuru progressive web app (PWA) for mobile"
                 src="https://ik.imagekit.io/appointmentguru/app-stores/pwa.png" />
             </a>
           </section>
@@ -97,24 +97,44 @@
         <v-flex sm7 xs12 >
           <v-layout class='mt-3' row wrap >
             <v-flex xs6 sm4 class='text-sm-right pa-3'>
-            <h4 class='subheading uppercase' >About us</h4>
+              <h4 class='subheading uppercase' >About us</h4>
               <ul class="list-unstyled list-spaced mt-3 ">
                 <li class="text-muted"><a href="/features/">Features</a></li>
                 <li class="text-muted"><a href="/pricing/">Pricing</a></li>
                 <li class="text-muted"><a href="/features/apps/">Apps</a></li>
                 <li class="text-muted"><a href="https://www.youtube.com/channel/UCAZppp_Yg3dC9M1-ec8E6Tg">Watch our videos</a></li>
               </ul>
+
+              <!-- <h4
+                class='subheading uppercase mt-4'
+                title='AppointmentGuru has special offers available for certain organisations' >Organizations</h4>
+              <ul class="list-unstyled list-spaced mt-3 ">
+                <li class="text-muted"><a title="Biokinetics Association of South Africa - BASA" href="/basa/">BASA</a></li>
+                <li class="text-muted"><a title="Chiropractic Association of South Africa - CASA" href="/casa/">CASA</a></li>
+                <li class="text-muted"><a
+                  title="COMENSA is the professional body for coaching and mentoring in South Africaprofessional body for coaching and mentoring in South Africa"
+                  href="/commensa/">COMENSA</a></li>
+              </ul> -->
             </v-flex>
             <v-flex xs6 sm4 class='text-sm-right pa-3'>
-            <h4 class='subheading uppercase' >Information</h4>
+              <h4 class='subheading uppercase' >Information</h4>
               <ul class="list-unstyled list-spaced mt-3">
                 <li class="text-muted"><a href="/blog/">Blog</a></li>
                 <li class="text-muted"><a href="/help/">Help</a></li>
                 <li class="text-muted"><a href="/terms/">Terms</a> & <a href="/privacy/">Privacy</a></li>
                 <li class="text-muted"><a href="https://appointmentguru.freshstatus.io">System Status</a></li>
-               </ul>
+              </ul>
+
+              <!-- <h4 class='subheading uppercase mt-4' >Professionals</h4>
+              <ul class="list-unstyled list-spaced mt-3">
+                <li class="text-muted"><a href="/blog/">Biokineticists</a></li>
+                <li class="text-muted"><a href="/help/">Chiropractic</a></li>
+                <li class="text-muted"><a href="/help/">Coaches and mentors</a></li>
+                <li class="text-muted"><a href="/terms/">Dietitians</a></li>
+              </ul> -->
             </v-flex>
             <v-flex xs6 sm4 class='text-sm-right pa-3' >
+
               <h4 class='subheading uppercase' >Connect</h4>
               <ul class="list-unstyled list-spaced mt-3">
               <li class="text-muted"><a href="/contact-us">Contact us</a></li>
@@ -123,11 +143,14 @@
               <li class="text-muted"><a href="https://www.instagram.com/appointmentguru/">Instagram</a></li>
               <li class="text-muted"><a href="/get-a-guru">Book a demo</a></li>
               </ul>
+
             </v-flex>
           </v-layout>
           <v-layout class='text-xs-right' >
             <v-spacer></v-spacer>
-            <img class='mt-4' align='right' src='~/assets/logo-full-dark.png' />
+            <a href="/" title="Go to the AppointmentGuru homepage" >
+            <img class='mt-4' alt='AppointmentGuru - practice management software: appointments, invoicings, customer management, online bookings and more' align='right' src='~/assets/logo-full-dark.png' />
+            </a>
           </v-layout>
         </v-flex>
       </v-layout>
