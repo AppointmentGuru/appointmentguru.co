@@ -138,7 +138,14 @@
           </v-layout>
           <v-layout class='text-xs-right' >
             <v-spacer></v-spacer>
-            <img class='mt-4' align='right' src='~/assets/logo-full-dark.png' />
+            <picture>
+              <source srcset="https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png?tr=f-avif" type="image/avif" >
+              <source srcset="https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png?tr=f-webp" type="image/webp" >
+              <img class='mt-4' align='right'
+                width='200' height='54'
+                alt='AppointmentGuru - practice management software: appointments, invoicings, customer management, online bookings and more'
+                src='https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png' />
+            </picture>
           </v-layout>
         </v-flex>
       </v-layout>

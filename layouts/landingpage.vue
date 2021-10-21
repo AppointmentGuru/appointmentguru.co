@@ -149,7 +149,15 @@
           <v-layout class='text-xs-right' >
             <v-spacer></v-spacer>
             <a href="/" title="Go to the AppointmentGuru homepage" >
-            <img class='mt-4' alt='AppointmentGuru - practice management software: appointments, invoicings, customer management, online bookings and more' align='right' src='~/assets/logo-full-dark.png' />
+              <picture>
+                <source srcset="https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png?tr=f-avif" type="image/avif" >
+                <source srcset="https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png?tr=f-webp" type="image/webp" >
+                <img
+                  class='mt-4'
+                  width='200' height='54'
+                  alt='AppointmentGuru - practice management software: appointments, invoicings, customer management, online bookings and more' align='right'
+                  src='https://ik.imagekit.io/appointmentguru/brand/logo-full-dark.png' />
+              </picture>
             </a>
           </v-layout>
         </v-flex>
