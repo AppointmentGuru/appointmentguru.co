@@ -3,7 +3,10 @@
      <v-navigation-drawer app disable-resize-watcher dark :value='showNav' >
       <v-toolbar app dark color='orange' >
         <nuxt-link to='/' >
-          <img src='~/assets/icon.png' width='40px' height='40px' />
+          <img
+            src='https://ik.imagekit.io/appointmentguru/brand/icon_64x64.png?updatedAt=1617041015906'
+            alt="AppointmentGuru - run, grow and manage your business like a pro"
+            width='40px' height='40px' />
         </nuxt-link>
         <v-toolbar-title color='orange' >
           <nuxt-link to='/' style='text-decoration:none;color:white;' >
@@ -36,7 +39,10 @@
      </v-navigation-drawer>
     <v-toolbar app dark color='orange' >
       <nuxt-link to='/' >
-        <img src='~/assets/icon.png' width='40px' height='40px' />
+        <img
+          src='https://ik.imagekit.io/appointmentguru/brand/icon_64x64.png?updatedAt=1617041015906'
+          alt="AppointmentGuru - run, grow and manage your business like a pro"
+          width='40px' height='40px' />
       </nuxt-link>
       <v-toolbar-title color='orange' class='mr-4' >
         <nuxt-link to='/' style='text-decoration:none;color:white;' >

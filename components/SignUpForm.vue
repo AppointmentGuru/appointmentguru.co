@@ -27,14 +27,20 @@
       class="hidden-sm-and-up mx-2"
       @click='loading=true' >Get started</v-btn>
   </v-card-actions>
-  <v-card-actions class='px-3' >
+  <v-card-actions >
+    <v-spacer/>
+    Need more info?
+    <v-spacer/>
+  </v-card-actions>
+  <v-card-actions >
     <!-- <v-btn text flat color="primary" large block class="mr-2" >Watch a video
       <v-icon small class='ml-2' >smart_display</v-icon>
     </v-btn> -->
     <v-spacer/>
-    <v-btn to='/get-a-guru/' text flat color="primary" large block class="ml-2" >Book a demo
+    <v-btn to='/get-a-guru/' text outline round color="primary"  >Book a demo
       <v-icon small class='ml-2' >live_tv</v-icon>
     </v-btn>
+    <v-spacer/>
   </v-card-actions>
 </v-card>
 </center>
