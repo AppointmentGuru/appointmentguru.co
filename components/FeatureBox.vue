@@ -5,7 +5,7 @@
         <center>
         <v-avatar color="blue-grey" class="mr-1 elevation-5"
         style='margin-top:-20px;' >
-          <v-icon large dark>{{feature.icon}}</v-icon>
+          <v-icon color='amber' large dark>{{feature.icon}}</v-icon>
         </v-avatar>
         </center>
         <v-card-title>

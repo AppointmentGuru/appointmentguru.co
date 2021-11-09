@@ -17,6 +17,7 @@
       :loading='loading'
       type="submit"
       color="primary"
+      class="hidden-xs-only"
       @click='loading=true' >Get started</v-btn>
   </v-card-title>
   <v-card-actions >

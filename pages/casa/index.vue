@@ -8,7 +8,6 @@
             <v-icon>keyboard_arrow_down</v-icon>
           </v-btn> -->
           <center>
-
           <picture>
               <source :srcset="`${heroImage}?tr=f-avif`" type="image/avif" >
               <source :srcset="`${heroImage}?tr=f-webp`" type="image/webp" >
@@ -36,7 +35,7 @@
 
     <v-container >
         <v-layout row wrap class='mb-5' >
-          <v-flex xs12 sm4 class='px-2 hidden-xs-only' >
+          <v-flex xs12 md4 class='px-2 hidden-sm-and-down' >
             <picture>
                   <source srcset="https://ik.imagekit.io/appointmentguru/partners/casa.gif?tr=f-avif" type="image/avif" >
                   <source srcset="https://ik.imagekit.io/appointmentguru/partners/casa.gif?tr=f-webp" type="image/webp" >
@@ -46,23 +45,24 @@
                     alt="Chiropractic Association of South Africa (CASA)" >
               </picture>
           </v-flex>
-          <v-flex xs12 sm8 class='px-2' >
+          <v-flex xs12 md8 class='px-2' >
             <div :style='centerOnMobile' >
-
               <picture>
                   <source srcset="https://ik.imagekit.io/appointmentguru/partners/casa.gif?tr=f-avif" type="image/avif" >
                   <source srcset="https://ik.imagekit.io/appointmentguru/partners/casa.gif?tr=f-webp" type="image/webp" >
-                  <img class="pa-2 hidden-sm-and-up"
+                  <img class="pa-2 hidden-md-and-up" width='200px;'
                     src="https://ik.imagekit.io/appointmentguru/partners/casa.gif"
                     alt="Chiropractic Association of South Africa (CASA)" >
               </picture>
 
-              <h3 class='display-1 mt-5 pt-5' >Special offer for CASA members</h3>
+              <h3 class='display-1 mt-4' >Special offer for CASA members</h3>
+
               <blockquote class='blockquote pl-0' >
-                CASA members get a R500 credit when you conver to a paying subscriber.
+                <strong >Try AppointmentGuru for free for the rest of 2021.</strong>
               </blockquote>
-              <p >
-                Send a copy of your CASA membership certificate to support@appointmentguru.co to claim your credit
+
+              <p>
+                Send a copy of your CASA membership certificate to support@appointmentguru.co to claim your extended free trial
               </p>
             </div>
           </v-flex>
@@ -146,10 +146,11 @@ export default {
   },
   computed: {
     centerOnMobile () {
-      if (this.$vuetify.breakpoint.xs === true) {
+      if (this.$vuetify.breakpoint.mdAndUp === true) {
+        return {'marginTop': '100px'}
+      } else {
         return {'textAlign': 'center'}
       }
-      return {}
     }
   },
   data() {
