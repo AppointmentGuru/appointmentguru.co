@@ -24,7 +24,9 @@
         </v-flex>
       </v-layout>
       <v-layout>
-        <v-btn @click='$store.commit("SHOW_SIGNUP")' color='orange' large block dark >{{ctaText}}</v-btn>
+        <v-btn
+          href='https://go.appointmentguru.co' target='_blank'
+          color='orange' large block dark >{{ctaText}}</v-btn>
       </v-layout>
     </v-flex>
     <v-flex xs12 sm6 class='order-sm2 order-xs1' >

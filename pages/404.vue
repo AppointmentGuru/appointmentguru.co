@@ -30,7 +30,9 @@
             <v-card-actions class='pa-2'>
               This may not be the page you're looking for. But we're sure it is the app you're looking for!
               <v-spacer></v-spacer>
-              <v-btn @click='$store.commit("SHOW_SIGNUP")'  large color="green" class="mx-0 my-4">
+              <v-btn large
+                href='https://go.appointmentguru.co' target='_blank'
+                color="green" class="mx-0 my-4">
               <v-icon class='mr-4'>star</v-icon>
               Try it for free</v-btn>
             </v-card-actions>

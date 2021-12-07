@@ -1,5 +1,39 @@
 <template>
 <div >
+
+  <v-container >
+    <v-layout row wrap >
+      <v-flex xs12 class='text-center pt-5' >
+        <!-- <v-btn absolute fab bottom center >
+          <v-icon>keyboard_arrow_down</v-icon>
+        </v-btn> -->
+        <center>
+
+        <picture>
+            <source :srcset="`${heroImage}?tr=f-avif`" type="image/avif" >
+            <source :srcset="`${heroImage}?tr=f-webp`" type="image/webp" >
+            <img
+              alt="AppointmentGuru dashboard screenshot"
+              class='mt-4'
+              width='90%'
+              style="max-width:700px;"
+              :src="heroImage" />
+        </picture>
+
+        <!-- <img class="mt-5"
+          width="90%"
+          alt="AppointmentGuru dashboard screenshot"
+          src="https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3_jCzkqCt3C.png" /> -->
+
+        </center>
+      </v-flex>
+
+      <v-flex xs12 class='text-center pb-5' >
+        <sign-up-form />
+      </v-flex>
+    </v-layout>
+  </v-container>
+
   <template v-for='(block, index) in blocks'  >
     <div name='foo' :class='block.props.classes' :key='index' >
       <v-container v-if='block.inContainer' >
@@ -13,7 +47,9 @@
       <h3 class='headline mb-5 mt-3' >
         Try AppointmentGuru for free
       </h3>
-      <v-btn style='z-index:1;' @click='$store.commit("SHOW_SIGNUP")' dark large
+      <v-btn style='z-index:1;'
+        href='https://go.appointmentguru.co' target='_blank'
+        dark large
         class='mt-4 elevation-20'
         color='orange' >Get started</v-btn>
 
@@ -41,10 +77,19 @@ import Callout from '@/components/Callout'
 import HeroParallax from '@/components/HeroParallax'
 import Testimonial from '@/components/Testimonial'
 import VideoHeroParallax from '@/components/VideoHeroParallax'
+import SignUpForm from "@/components/SignUpForm";
 
 export default {
   name: 'HomePage',
-  components: {FeatureBox, FeatureBlock, Callout, HeroParallax, VideoHeroParallax, Testimonial},
+  components: {
+    FeatureBox,
+    FeatureBlock,
+    Callout,
+    HeroParallax,
+    VideoHeroParallax,
+    Testimonial,
+    SignUpForm
+  },
   head () {
     return {
       title: 'AppointmentGuru - Be better at admin, spend less time doing it',
@@ -57,24 +102,27 @@ export default {
     return {
       flatImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/iphone-x-flat.png',
       backgroundImage: 'https://images.unsplash.com/photo-1515136194762-84618729b8df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f26f412a62f4e342b739989b9e8aa308&auto=format&fit=crop&w=1950&q=80',
+      heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/appointmentguru-screens.png',
+      // heroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3.png',
+      lazyHeroImage: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3.png?tr=bl-6',
       blocks: [
-        {
-          name: 'HeroParallax',
-          props: {
-            headline: 'Be better at admin.<br/>Spend less time doing it.',
-            tagline: 'Appointments. Invoices. Clients. More.',
-            image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3_jCzkqCt3C.png',
-            // image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png',
-            // backgroundImage: 'https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80'
-            // backgroundImage: 'https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35840c5a386390076c95d47b745ae459&auto=format&fit=crop&w=1950&q=80'
-            // backgroundImage: 'https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a9e41e445772471708b74b0835e4c35&auto=format&fit=crop&w=2378&q=80'
-            // backgroundImage: 'https://images.unsplash.com/photo-1485714104612-01bce6019729?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e63a299ccd3b0c5cd4149a4d06a2c9e8&auto=format&fit=crop&w=1993&q=80'
-            // backgroundImage: 'https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=defe121eb958a24b9e2c4f2041897339&auto=format&fit=crop&w=1868&q=80'
-            backgroundImage: 'https://images.unsplash.com/photo-1515136194762-84618729b8df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f26f412a62f4e342b739989b9e8aa308&auto=format&fit=crop&w=1950&q=80'
-            // backgroundImage: 'https://images.unsplash.com/photo-1463134836706-8bcc60f7d78b?ixlib=rb-0.3.5&s=ae9b36a5009e585b400b2f5370ff9858&auto=format&fit=crop&w=1950&q=80'
-            //backgroundImage: 'https://images.unsplash.com/photo-1515386078358-daf436633fba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4acb1b2241487c257e65c113766b8e46&auto=format&fit=crop&w=1949&q=80'
-          }
-        },
+        // {
+        //   name: 'HeroParallax',
+        //   props: {
+        //     headline: 'Be better at admin.<br/>Spend less time doing it.',
+        //     tagline: 'Appointments. Invoices. Clients. More.',
+        //     image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/apopointmentguru-hero-3_jCzkqCt3C.png',
+        //     // image: 'https://ik.imagekit.io/appointmentguru/landing-pages/home/appointmentguru-hero-home_Q3koIsDWE.png',
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1517497052582-25e6fe8ec001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a796c72fc4b68772c227b39dc6c3754&auto=format&fit=crop&w=1950&q=80'
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35840c5a386390076c95d47b745ae459&auto=format&fit=crop&w=1950&q=80'
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a9e41e445772471708b74b0835e4c35&auto=format&fit=crop&w=2378&q=80'
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1485714104612-01bce6019729?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e63a299ccd3b0c5cd4149a4d06a2c9e8&auto=format&fit=crop&w=1993&q=80'
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=defe121eb958a24b9e2c4f2041897339&auto=format&fit=crop&w=1868&q=80'
+        //     backgroundImage: 'https://images.unsplash.com/photo-1515136194762-84618729b8df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f26f412a62f4e342b739989b9e8aa308&auto=format&fit=crop&w=1950&q=80'
+        //     // backgroundImage: 'https://images.unsplash.com/photo-1463134836706-8bcc60f7d78b?ixlib=rb-0.3.5&s=ae9b36a5009e585b400b2f5370ff9858&auto=format&fit=crop&w=1950&q=80'
+        //     //backgroundImage: 'https://images.unsplash.com/photo-1515386078358-daf436633fba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4acb1b2241487c257e65c113766b8e46&auto=format&fit=crop&w=1949&q=80'
+        //   }
+        // },
         {
         name: Testimonial,
         inContainer: true,
