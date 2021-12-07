@@ -32,7 +32,7 @@
             <v-card-actions>
               <v-btn
                 style='z-index:1'
-                @click='$store.commit("SHOW_SIGNUP")'
+                href='https://go.appointmentguru.co' target='_blank'
                 color='orange' block >Get started for free</v-btn>
             </v-card-actions>
           </slot>

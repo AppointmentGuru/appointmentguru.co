@@ -8,7 +8,9 @@
       <h1 class='mr-4 mt-4 blue-grey--text headline hidden-sm-and-up'>{{headline}}</h1>
       <h2 class='mb-4 mt-4 headline deep-orange--text darken-4--text hidden-xs-only'>{{tagline}}</h2>
       <v-layout>
-        <v-btn @click='$store.commit("SHOW_SIGNUP")' color='orange' large block dark >{{ctaText}}</v-btn>
+        <v-btn
+          href='https://go.appointmentguru.co' target='_blank'
+          color='orange' large block dark >{{ctaText}}</v-btn>
       </v-layout>
     </v-flex>
     <v-flex xs12 sm6 class='order-sm2 order-xs1 text-xs-center' >

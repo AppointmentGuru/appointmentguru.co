@@ -28,7 +28,8 @@
       <h3 class='headline' >
         Try AppointmentGuru for free
       </h3>
-      <v-btn style='z-index:1;' @click='$store.commit("SHOW_SIGNUP")' dark large
+      <v-btn style='z-index:1;' dark large
+        href='https://go.appointmentguru.co' target='_blank'
         class='mt-4 elevation-20'
         color='orange' >Get started</v-btn>
     </v-flex>

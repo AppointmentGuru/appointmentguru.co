@@ -34,7 +34,9 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions class='pa-0'>
-          <v-btn @click='$store.commit("SHOW_SIGNUP")' block dark large color='orange' class='ma-0' >Start Free Trial</v-btn>
+          <v-btn block dark large
+            href='https://go.appointmentguru.co' target='_blank'
+            color='orange' class='ma-0' >Start Free Trial</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -58,7 +60,9 @@
   </v-layout>
   <v-layout>
     <v-flex xs12 sm6 offset-sm3 >
-      <v-btn @click='$store.commit("SHOW_SIGNUP")' color='orange' block large class='mt-4 mb-4' >Get started for free</v-btn></v-flex>
+      <v-btn
+        href='https://go.appointmentguru.co' target='_blank'
+        color='orange' block large class='mt-4 mb-4' >Get started for free</v-btn></v-flex>
   </v-layout>
 </v-container>
 </section>
