@@ -11,6 +11,18 @@ export default {
   name: 'Disclosure',
   computed: {
     page () { return page }
+  },
+  head() {
+    return {
+      title: 'Responsible disclosure',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          name: 'robots',
+          content: 'noindex,nofollow'
+        }
+      ]
+    }
   }
 }
 </script>

@@ -55,7 +55,7 @@
                     alt="Chiropractic Association of South Africa (CASA)" >
               </picture>
 
-              <h3 class='display-1 mt-4' >Special offer for CASA members</h3>
+              <!-- <h3 class='display-1 mt-4' >Special offer for CASA members</h3>
 
               <blockquote class='blockquote pl-0' >
                 <strong >Try AppointmentGuru for free for the rest of 2021.</strong>
@@ -63,7 +63,7 @@
 
               <p>
                 Send a copy of your CASA membership certificate to support@appointmentguru.co to claim your extended free trial
-              </p>
+              </p> -->
             </div>
           </v-flex>
           <!-- {{centerOnMobile}} -->
